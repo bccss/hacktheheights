@@ -11,23 +11,70 @@ body
     background-color: #fff;
 }
 
+.navbar-default {
+    .navbar-nav {
+        .active {
+            a {
+                border-radius: 0px !important;
+            }
+        }
+    }
+}
+.navbar-shrink {
+    .navbar-nav {
+        .active {
+            a {
+                border-radius: 0px !important;
+            }
+        }
+    }
+}
+/* .navbar-shrink a { */
+                /* background: rgba(0, 0, 0, 0.3) !important; */
+            /* } */
+
+#about-us {
+    padding-top: 50px;
+}
+
+.navbar-collapse {
+    text-align: right !important;
+}
+
+.navbar-shrink {
+    background-color: @brand-primary !important;
+}
+
+#rsvp {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
 header
 {
     width: 100%;
     height: 100%;
     margin: 0;
 
-    background-color: #581517;
+    /* background-color: @brand-primary; */
+    /* background-image: url('../img/hth-banner.png'); */
 }
 
 #hack
 {
     display: table;
-
     width: 100%;
-    height: 100%;
-
+    /* height: 100%; */
+    /* min-heighti */
+    background-color: @brand-primary;
     text-align: center;
+    /* to align with hth banner */
+    box-shadow: inset 0 -10px 0 -5px white;
+}
+
+#hthbanner {
+    width: 100%;
+    max-width: 750px;
 }
 
 #onesixty
@@ -129,8 +176,21 @@ h1, h2, h3, h4, h5, h6 {
 
 // Custom Navigation Bar
 
+.navbar-fixed-top {
+    background-color: transparent !important;
+}
+
+.navbar-shrink {
+    .nav {
+        li {
+            a {
+                background: rgba(0, 0, 0, 0.3);
+            }
+        }
+    }
+}
 .navbar-default {
-	background-color: @gray-darkest;
+	background-color: transparent;
 	border-color: transparent;
 	.navbar-brand {
 		color: @brand-primary;
@@ -143,10 +203,10 @@ h1, h2, h3, h4, h5, h6 {
         }
 	}
 	.navbar-collapse {
-		border-color: fade(white, 2%);
+        border-top: 0px !important;
 	}
 	.navbar-toggle {
-		background-color: @brand-primary;
+        background-color: @brand-primary;
 		border-color: @brand-primary;
 		.icon-bar {
 			background-color: white;
@@ -159,29 +219,44 @@ h1, h2, h3, h4, h5, h6 {
     .nav {
     	li {
     		a {
+                background: rgba(0, 0, 0, 0.3);
     			.heading-font;
     			font-weight: 400;
     			letter-spacing: 1px;
     			color: white;
     			&:hover,
     			&:focus {
-    				color: @brand-primary;
+    				color: black;
     				outline: none;
     			}
     		}
     	}
     }
+    .navbar-nav {
+        margin-top: 0px !important;
+    }
+    .navbar-nav > li > a:hover {
+		background-color: fadeout(darken(@brand-primary, 10%), 30%);
+        color: white;
+    }
 	.navbar-nav>.active>a {
 		border-radius: 0;
 		color: white;
-		background-color: @brand-primary;
+        background-color: rgba(0, 0, 0, 0.3);
 	}
 	.navbar-nav>.active>a:hover,
 	.navbar-nav>.active>a:focus {
 		color: white;
-		background-color: darken(@brand-primary, 10%);
+		background-color: fadeout(darken(@brand-primary, 10%), 30%);
 	}
 }
+
+/* .navbar-toggle a { */
+                /* background: rgba(0, 0, 0, 0.3); */
+            /* } */
+/* .navbar-shrink a { */
+                /* background: rgba(0, 0, 0, 0.3); */
+            /* } */
 
 @media(min-width:768px) {
     .navbar-default {
@@ -201,6 +276,56 @@ h1, h2, h3, h4, h5, h6 {
 			border-radius: 3px;
 		}
     }
+
+            .navbar-default {
+                .nav {
+                    li {
+                        a {
+                            background: transparent;
+                        }
+                    }
+                }
+                .navbar-nav {
+                    .active {
+                        a {
+                            background: transparent;
+                        }
+                    }
+                    li {
+                        a:hover {
+                            background: transparent;
+                            color: black;
+                        }
+                        a:focus {
+                            background: transparent;
+                            color: black;
+                        }
+                    }
+                }
+            }
+            .navbar-shrink {
+                .nav {
+                    li {
+                        a {
+                            background: rgba(0, 0, 0, 0.3) !important;
+                        }
+                    }
+                }
+                .navbar-nav {
+                    li {
+                        a:hover {
+		background-color: fadeout(darken(@brand-primary, 10%), 30%) !important;
+        color: white;
+                        }
+                        a:focus {
+		background-color: fadeout(darken(@brand-primary, 10%), 30%) !important;
+        color: white;
+                        }
+                    }
+                }
+
+            }
+
     .navbar-default.navbar-shrink {
     	background-color: @gray-darkest;
         padding: 10px 0;
@@ -211,11 +336,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-	background-image: url('../img/header-bg.jpg');
-	background-repeat: none;
+	/* background-image: url('../img/header-bg.jpg'); */
+	background-repeat: no-repeat;
 	background-attachment: scroll;
-	background-position: center center;
-	.background-cover;
+	background-position: top center;
+    background-size: 100%;
 	text-align: center;
 	color: white;
 	.intro-text {
@@ -264,7 +389,7 @@ header {
 // Global Section Styles
 
 section {
-    padding: 100px 0;
+    padding: 50px 0;
     h2.section-heading {
 		font-size: 40px;
 		margin-top: 0;
@@ -282,7 +407,7 @@ section {
 
 @media(min-width:768px) {
 	section {
-		padding: 150px 0;
+		padding: 50px 0;
 	}
 }
 
