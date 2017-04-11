@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <header>
+
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Hack the Heights is Boston College's first full-scale hackathon, taking place April 21 - 23, 2017. Come build with us! All skill levels and backgrounds welcome.">
     <meta name="keywords" content="Hack,Heights,Hackathon,BCCSS,Boston,College,Computer,Science,Society,CS,BC">
     <meta name="author" content="James LeDoux, Evan Otero">
-    <title>#HackTheHeights</title>
+    <title>Hack the Heights</title>
     <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
       <!-- Bootstrap Core CSS   <link href="css/bootstrap.min.css" rel="stylesheet"> -->
       <link href="css/bootstrap.css" rel="stylesheet">
       <!-- Custom CSS -->
     <link href="css/agency.css" rel="stylesheet">
+
       <!-- Custom Fonts -->
       <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
       <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -25,20 +26,6 @@
       <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
       <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
-    <div id="hack">
-      <div id="onesixty">
-        <a><img id="logo" src="img/logo.png" alt="BCCSS logo"></a>
-        #HackTheHeights
-        <br>
-        April 21 - 22, 2017
-        <div style="line-height:0;">
-          <br>
-        </div>
-        <div class='wrapper text-center'>
-            <a href="#about-us" class="page-scroll btn btn-xl">Tell Me More</a>
-        </div>
-      </div>
-    </div>
     <!--div class="container">
       <div class="intro-text">
         <div class='wrapper text-center'>
@@ -48,6 +35,29 @@
         </div>
       </div>
     </div-->
+                <style>
+                table {
+                    font-family: arial, sans-serif;
+                    border-collapse: collapse;
+                    width: 100%;
+                }
+
+                td, th {
+                    border: 1px solid #dddddd;
+                    text-align: left;
+                    padding: 8px;
+                }
+
+                td.colA { width: 20%; }
+                td.colB { width: 60%; }
+                td.colC { width: 20%; }
+                th.colA { width: 20%; }
+                th.colB { width: 60%; }
+                th.colC { width: 20%; }
+                tr:nth-child(even) {
+                    background-color: #dddddd;
+                }
+                </style>
 
 <!-- google analytics -->
 <script>
@@ -61,8 +71,12 @@
 
 </script>
 
-  </header>
+</head>
 
+<body>
+    <div id="hack">
+      <img id="hthbanner" src="img/hth-banner.png" alt="hacktheheights banner">
+    </div>
       <!-- Navigation -->
       <nav class="navbar navbar-default navbar-fixed-top">
          <div class="container" style="width:auto; margin-right:50px">
@@ -103,26 +117,14 @@
       </nav>
 
 
-  <body>
     <section id="about-us">
          <div class="container">
             <div class="row">
                <div class="col-lg-12 text-center">
-                  <h2 class="section-heading">About the Event</h2>
+                  <h2 class="section-heading">Hack the Heights</h2>
                   <p>We are excited to introduce Boston College's first full-scale hackathon! Hack the Heights will feature corporate sponsors, tech talks, and prizes for beginners and seasoned hackers alike. The event kicks off on Friday, April 21 at 6pm with dinner and special guests from GE, and concludes Saturday, April 22 at 8pm. </p>
-                  <p>Interested in learning more? See the FAQ below or reach out to bccssociety@gmail.com with any questions.</p>
-                  <!-- Begin MailChimp Signup Form -->
-                  <form action="http://bcskills.us4.list-manage.com/subscribe/post" method="POST">
-                     <input type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" value="" style="text-align: center" placeholder="appleseed@bc.edu">
-                     <br>
-                     <br>
-                     <input type="submit" value="Get Updates" name="subscribe" id="mc-embedded-subscribe" class="btn btn-xl">
-                     <br>
-                     <br>
-                     <input type="hidden" name="u" value="1b70be498004c115d153aaeeb">
-                     <input type="hidden" name="id" value="59bdfc55c0">
-                  </form>
-                  <!--End mc_embed_signup-->
+                  <p>Registrations are required! RSVP Here:</p>
+                  <a href="//bit.ly/hacktheheights"><div id="rsvp" class="btn btn-xl">RSVP</div></a>
                </div>
             </div>
             <div class="row text-center">
@@ -159,11 +161,11 @@
                   <h2 class="section-heading">Prizes and Award Categories</h2> 
                 </div>
               <div class="col-lg-12 text-left">
-                  <h2> General Prizes: Awarded to the Best Hacks<h2>
+                  <h2> General Prizes: Awarded to the Best Hacks</h2>
                   <h3> First Place: 4 Amazon Echo Dots </h3>
                   <h3> Second Place: Raspberry Pi Kit </h3>
 
-                  <h2> Category Prizes <h2>
+                  <h2> Category Prizes </h2>
                   <h3> GE Prize (Best Social Justice Hack): Google Home</h3>
                   <h3> Freshman Prize: Awarded to the Best Hack by a CS 101 or 102 Student </h3> 
                </div>
@@ -181,32 +183,9 @@
                   <h2 class="section-heading">Schedule of Events</h2> 
                 </div>
                <div class="col-lg-12 text-left">
-                  <h3 class="section-heading">Friday, April 21</h2> 
+                  <h3 class="section-heading">Friday, April 21</h3> 
                 </div>
 
-                <style>
-                table {
-                    font-family: arial, sans-serif;
-                    border-collapse: collapse;
-                    width: 100%;
-                }
-
-                td, th {
-                    border: 1px solid #dddddd;
-                    text-align: left;
-                    padding: 8px;
-                }
-
-                td.colA { width: 20%; }
-                td.colB { width: 60%; }
-                td.colC { width: 20%; }
-                th.colA { width: 20%; }
-                th.colB { width: 60%; }
-                th.colC { width: 20%; }
-                tr:nth-child(even) {
-                    background-color: #dddddd;
-                }
-                </style>
                 <table>
                   <tr>
                     <th class="colA">Time</th>
@@ -236,7 +215,7 @@
                 </table>
                 <div class="col-lg-12 text-left">
                   <br>
-                  <h3 class="section-heading">Saturday, April 22</h2> 
+                  <h3 class="section-heading">Saturday, April 22</h3> 
                 </div>
                 <table>
                   <tr>
@@ -275,17 +254,17 @@
                 </div>
               <div class="col-lg-12 text-left">
               <!-- So you may have noiced that none of these H3 tags are closed... This is a feature, not a bug. It looks better if they aren't, and I don't feel like looking into the CSS of this to figure out why that is. Let's leave it this way. - JLD -->
-                  <h3> What is a hackathon? <h3>
+                  <h3> What is a hackathon? </h3>
                     <p> A hackathon is an invention marathon. Programmers, designers, builders and more come together to learn, build, and share their creations over the course of a few days. Hackathons are not limited to computer science majors — anyone who has an interest in technology and is eager to learn can participate in a hackathon. Not to be confused with illegal and unauthorized programming, "hacking" in this context means quickly and intelligently creating a real application that others can use.</p>
-                  <h3> I'm new to CS. Can I still come? <h3> 
+                  <h3> I'm new to CS. Can I still come? </h3> 
                    <p> Yes! This event is open to students of all levels and backgrounds. Students new to programming are encouraged to come, hone their skills, and learn something new.</p> 
-                  <h3> I've never seen a computer in my life. What can I do at a hackathon? <h3>
+                  <h3> I've never seen a computer in my life. What can I do at a hackathon? </h3>
                     <p> While most participants will have some level of programming ability, people of all backgrounds can contribute. This includes designers, entrepreneurs, and beginners looking to learn. </p>
-                  <h3> Am I allowed to work on a pre-existing project? <h3>
+                  <h3> Am I allowed to work on a pre-existing project? </h3>
                     <p> While you are allowed to work on an existing project, you are encouraged to begin something new the day of the event. Rapid innovation is in the spirit of a hackathon, and only new hacks will be considrered for prizes.</p>
-                  <h3> Who decides prize winners? <h3>
+                  <h3> Who decides prize winners? </h3>
                    <p> Three judges from BC and our sponsors will determine prize winners based on the criteria of creativity, complexity, and utility.</p>
-                  <h3> Do I need to be a BC student to attend? <h3>  
+                  <h3> Do I need to be a BC student to attend? </h3>  
                     <p> Yes, only BC students are allowed at this year's hackathon. Check back next year if you are a non-BC student interested in attending!</p>
                </div>
             </div>
@@ -349,7 +328,6 @@
       <h4 class="section-heading">Interested in sponsoring the event? For inquiries about tech talks, prize sponsorhsip, or swag/food donations, contact James at <a href="http://jamesrledoux.com" target="_blank">ledouxja@bc.edu.</a></h4> 
     </div>
       </section>
-  </body>
 
 
   <footer>
@@ -362,7 +340,6 @@
                <li><a href="https://twitter.com/BCCSSociety"><i class="fa fa-twitter"></i></a>
                </li>
                <!-- <li><a href="#"><i class="fa fa-facebook"></i></a> -->
-               </li>
             </ul>
          </div>
          <div class="col-md-4">
@@ -380,4 +357,5 @@
   <script src="js/classie.js"></script>
   <script src="js/cbpAnimatedHeader.js"></script>
   <script src="js/agency.js"></script>
+</body>
 </html>
