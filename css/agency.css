@@ -1,10 +1,21 @@
 html,
 body {
   width: 100%;
-  height: 100%;
+  height: auto;
+  min-height: 100%;
   margin: 0;
+  padding: 0;
+  overflow-x: hidden;
   background-color: #fff;
-  text-transform: default !important;
+}
+.navbar-default {
+  border-width: 0px !important;
+}
+.navbar-fixed-top {
+  border-width: 0px !important;
+}
+.navbar-shrink {
+  border-width: 0px !important;
 }
 .navbar-default .navbar-nav .active a {
   border-radius: 0px !important;
