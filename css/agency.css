@@ -8,6 +8,10 @@ body {
   overflow-x: hidden;
   background-color: #fff;
 }
+.nav li a {
+  padding-right: 10px !important;
+  padding-left: 10px !important;
+}
 .navbar-default {
   border-width: 0px !important;
 }
@@ -309,6 +313,10 @@ fieldset[disabled] .btn-xl.active {
   }
   .navbar-default .navbar-nav .active a {
     background: transparent;
+  }
+  .navbar-default .navbar-nav .active a:hover {
+    background: transparent;
+    color: black;
   }
   .navbar-default .navbar-nav li a:hover {
     background: transparent;
