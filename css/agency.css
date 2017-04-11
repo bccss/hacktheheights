@@ -8,6 +8,9 @@ body {
   overflow-x: hidden;
   background-color: #fff;
 }
+.prize {
+  font-size: 24px;
+}
 .nav li a {
   padding-right: 10px !important;
   padding-left: 10px !important;
