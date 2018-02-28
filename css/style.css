@@ -2,14 +2,21 @@
 
 html, body, header, #intro {
   height: 100%;
+
 }
 
 #intro{
-  background: url("/img/HTH Banner.png") no-repeat center center fixed;
+  background: url("../img/HTH Banner.png") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
+}
+
+.b{
+position: absolute;
+bottom:5%;
+top:80%;
 }
 
 .buttom {
@@ -44,7 +51,8 @@ html, body, header, #intro {
 }
 
 .navbar {
-  background-color: #58595b;
+  background-color: #F8F9FA;
+
 }
 .navbar .navbar-brand {
   color: #f7945d;
@@ -168,4 +176,45 @@ html, body, header, #intro {
 .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item.active {
   color: #f6639d;
   background-color: #f6a346;
+}
+
+.gradient-background {
+  background: -webkit-linear-gradient(45deg, rgba(234, 21, 129, 0.6), rgba(10, 23, 187, 0.6) 100%);
+  background: -webkit-gradient(linear, 45deg, from(rgba(234, 21, 129, 0.6)), to(rgba(10, 23, 187, 0.6)));
+  background: linear-gradient(to 45deg, rgba(234, 21, 129, 0.6), rgba(10, 23, 187, 0.6) 100%); }
+.accordion.accordion-2 p {
+  font-size: 1rem; }
+.accordion.accordion-2 .card {
+  border: 0;
+  background-color: transparent; }
+  .accordion.accordion-2 .card .card-header,
+  .accordion.accordion-2 .card .card-body {
+    border: 0;
+    border-radius: 3px; }
+
+
+    [data-toggle="collapse"]:after {
+    display: inline-block;
+        display: inline-block;
+        font: normal normal normal 12px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      content: "\f054";
+      transform: rotate(90deg) ;
+      transition: all linear 0.25s;
+      float: right;
+      }
+    [data-toggle="collapse"].collapsed:after {
+      transform: rotate(-90deg) ;
+    }
+
+    .navbar-brand img{
+    	height: 30px;
+    	width: 30px;
+    }
+
+#FAQ .mb-0{
+  color: orange;
 }
