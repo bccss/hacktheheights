@@ -198,6 +198,7 @@ top:80%;
     display: inline-block;
         display: inline-block;
         font: normal normal normal 12px/1 FontAwesome;
+        color: #fa609d;
         font-size: inherit;
         text-rendering: auto;
         -webkit-font-smoothing: antialiased;
@@ -217,5 +218,5 @@ top:80%;
     }
 
 #FAQ .mb-0{
-  color: orange;
+  color: #FB9725;
 }
