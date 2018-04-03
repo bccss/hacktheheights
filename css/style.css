@@ -5,7 +5,7 @@ html, body, header, #intro {
 
 }
 
-#intro{
+/* #intro{
   background: url("../img/HTH Banner.png") no-repeat center center;
 
   -webkit-background-size: cover;
@@ -13,7 +13,7 @@ html, body, header, #intro {
   -o-background-size: cover;
   -webkit-background-size: cover;
 
-}
+} */
 
 .b{
 position: absolute;
@@ -223,9 +223,6 @@ top:80%;
 #FAQ .mb-0{
   color: #ff7600;
 }
-
-
-
 
 
 
