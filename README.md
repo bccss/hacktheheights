@@ -1,19 +1,16 @@
-# Boston College Hackathon: April 21 - 22
-
-### Friday, April 21
-
-* Kickoff event: Fulton 415, 6pm
-* Hacking begins: Carney, 7pm
+# Boston College Hackathon (HTH3): TBD Spring 2019
 
 
-### Saturday, April 22: 
+* Kickoff event: TBD
+* Hacking begins: TBD
 
 
-* Hacking ends: Everywhere, 6:00pm 
-* Judging begins: Eagle's Nest, 7:00pm
-* Awards Ceremony: Eagle's Nest, 7:30pm
+
+* Hacking ends: TBD
+* Judging begins: TBD
+* Awards Ceremony: TBD
 
 
 ### Food: Yes
 
-### Prizes: Google Home, Amazon Echo Dot, Raspberry Pi, and More
+### Prizes: TBD
