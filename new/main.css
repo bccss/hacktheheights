@@ -24,7 +24,7 @@ a {
 } */
 
 #home {
-    background: url('/images/splash-background.svg') no-repeat;
+    background: url('./images/splash-background.svg') no-repeat;
     background-size: cover;
     height: 100vh;
     /* position: absolute; */
