@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTH Dashboard</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="loader.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+</head>
+<body>
+
+    <div id="page-loader">
+        <div class="sk-folding-cube">
+            <div class="sk-cube1 sk-cube"></div>
+            <div class="sk-cube2 sk-cube"></div>
+            <div class="sk-cube4 sk-cube"></div>
+            <div class="sk-cube3 sk-cube"></div>
+        </div>
+        <h1 id="loader-text">FETCHING DETAILS</h1>
+    </div>
+
+    <div class="sidebar">
+        <div id="logo">
+            <img src="../images/logo.svg"/>
+        </div>
+        <a class="active" href="#home"><i class="fas fa-home"></i>Home</a>
+        <!-- <a href="#events"><i class="fas fa-calendar-alt"></i>Events</a> -->
+        <a id="logout-btn" onclick="logout()"><i class="fas fa-sign-out-alt"></i>Logout</a>
+    </div>
+    
+    <!-- Page content -->
+    <div class="content">
+        <h2 id="greeting">HI THERE, <strong id="firstName">ESTEVAN!</strong></h2>
+        <div id="promo-splash">
+            <div id="promo-container">
+                <!-- <p>Want to compete at this hackathon or be a mentor, apply now!</p> -->
+                <a id="applyBtn"class="button-filled" style="margin-right: 25px; background-color:#DABFFF; border-color:#DABFFF;" href="/apply" role="button">
+                    APPLY!
+                </a>
+                <a id="sponsorBtn"class="button-filled" style="background-color: #5B6DBC; border-color:#5B6DBC;" href="/apply?type=sponsor" role="button">
+                    SPONSOR!
+                </a>
+            </div>
+            
+        </div>
+        <!-- <div id="user-events">
+            <h2 class="pane-label">MY EVENTS</h2>
+            <hr class="pane-divider"/>
+        </div>
+
+        <div id="upcoming-events">
+            <h2 class="pane-label">UPCOMING EVENTS</h2>
+            <hr class="pane-divider"/>
+        </div> -->
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./dashboard.js"></script>
+</body>
+</html>

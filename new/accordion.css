@@ -1,0 +1,95 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+
+.hide {
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  .accordion {
+    background: #fff;
+    margin-left: auto;
+    padding-left: 10px;
+    margin-right: auto;
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    list-style-type: none;
+    
+  }
+  
+  .accordion-item {
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .accordion-item:last-child {
+    border-bottom: none;
+  }
+  
+  .accordion-label {
+    padding: 20px 0 20px 30px;
+    width: 100%;
+    display: block;
+    font-size: 18px;
+  }
+  .accordion-label:hover {
+    cursor: pointer;
+    color: #3E5087;
+  }
+  .accordion-label:before {
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    top: 22px;
+    left: 12px;
+    display: inline-block;
+    border-left: 5px solid #999;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+  }
+  input[type=checkbox]:checked ~ .accordion-label:before {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  
+  .accordion-child {
+    margin: 0;
+    list-style-type: none;
+    overflow: hidden;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    opacity: 0;
+    height: 0;
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+    -webkit-transform-origin: center top;
+            transform-origin: center top;
+  }
+
+  input[type=checkbox]:checked ~ .accordion-label {
+    color: #3E5087;
+  }
+
+  input[type=checkbox]:checked ~ .accordion-child {
+    position: relative;
+    left: -6%;
+    border: 1px solid #e0e0e0;
+    /* margin: 0 20px 25px -6vw; */
+    background: #fff;
+    box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.16);
+    padding: 20px;
+    width: 110%;
+
+    height: auto;
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  

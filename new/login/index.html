@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTH Login</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+</head>
+<body>
+   
+    <div class="login-page">
+        <div id="normal-login-form" class="form">
+            <a href="/"><img id="logo" src="../images/logo.svg"/></a>
+            <p id="response-text" hidden>Please enter the correct password.</p>
+            <form class="register-form">
+                <input id="firstNameField" type="text" placeholder="FIRST NAME"/>
+                <input id="lastNameField" type="text" placeholder="LAST NAME"/>
+                <input id="schoolField" type="text" placeholder="SCHOOL"/>
+                <input id="majorField" type="text" placeholder="MAJOR"/>
+                <input id="emailField" type="text" placeholder="EMAIL ADDRESS"/>
+                <input id="passwordField" type="password" placeholder="PASSWORD"/>
+                <p style="margin:0; color: dimgray;">GENDER:</p>
+                <select id="genderField" style="color:#5B6DBC; margin-top:5px; margin-bottom: 15px;">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <a class="button-filled" style="display:block;" onclick="createPressed()">CREATE</a>
+                <p class="message">Already registered? <a onclick="//">Sign In</a></p>
+            </form>
+            <form class="login-form">
+                <input id="login-emailField" type="text" placeholder="EMAIL"/>
+                <input style="margin-bottom: 30px;" id="login-passwordField" type="password" placeholder="PASSWORD"/>
+                <a style="padding-left: 80px; padding-right: 80px;" class="button-filled" onclick="loginPressed()">LOGIN</a>
+                <p style="margin-top: 25px;" class="message">Not registered? <a onclick="//">Create an account</a></p>
+            </form>
+        </div>
+        <div id="admin-login-form" hidden>
+            <h1>ADMIN LOGIN</h1>
+            <p id="admin-response-text" style="margin:0;margin-top: 10px;" hidden>HELLO</p>
+            <input id="admin-pass-field" type="password" placeholder="PASSWORD"/>
+            <a id="admin-login-btn" class="button-filled" onclick="adminLoginPressed()">LOGIN</a>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>
