@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTH Application</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+</head>
+<body>
+    <div class="form-container" id="hacker-form" hidden>
+        <h1 id="form-title">Hacker Application</h1>
+        <p id="form-description">
+            Due to space limitations, you will not be confirmed to participate in Hack The Heights after completing this form. We will be sending out a confirmation form on a rolling basis so please fill this form out as soon as possible to be considered. <br><br>
+
+            ***ALL SKILL LEVELS ARE WELCOME***<br><br>
+                
+            If you have any questions email: <a href="mailto:hacktheheights@gmail.com">hacktheheights@gmail.com</a>
+        </p>
+
+        <!-- T-Shirt Size: XS, S, M, L, XL, XXL -->
+        <h2 class="form-section-title">T-Shirt Size:</h2>
+        <input type="radio" name="shirt-size" value="xs" checked> XS<br>
+        <input type="radio" name="shirt-size" value="s"> S <br>
+        <input type="radio" name="shirt-size" value="m"> M <br>
+        <input type="radio" name="shirt-size" value="l"> L<br>
+        <input type="radio" name="shirt-size" value="xl"> XL<br>
+        <input type="radio" name="shirt-size" value="xxl"> XXL
+        <!-- FORM SECTION END -->
+
+        <!-- Dietary Restrictions: "N/A" if not applicable -->
+        <h2 class="form-section-title">Dietary Restrictions:</h2>
+        <p class="form-section-description">Please enter "N/A" if not applicable.</p>
+        <input id="dietaryField" class="form-textbox" type="text" placeholder="ex. gluten, nuts, etc.">
+        <!-- FORM SECTION END -->
+
+        <!-- Prior Hackathon Attendance: 0, 1-4, 5+ -->
+        <h2 class="form-section-title">How many hackathons have you attended?</h2>
+        <input type="radio" name="hackathon-attendance" value="0" checked> (0) This is my first hackathon! 🐣<br>
+        <input type="radio" name="hackathon-attendance" value="1-4"> (1-4) I've been to a few hackathons... 👨‍💻<br>
+        <input type="radio" name="hackathon-attendance" value="5+"> (5+) Hackathon Veteran 😎<br>
+        <!-- FORM SECTION END -->
+
+        <!-- Prior coding/building experience: ideally under 200 words (textbox) -->
+        <h2 class="form-section-title">Prior coding experience:</h2>
+        <p class="form-section-description">Tell us about something you've built in the past! Please keep your response under 200 words.</p>
+        <textarea id="hackerPriorExperienceField" class="form-textarea" placeholder="ex. coding projects, electronics, or whatever! :)"></textarea>
+        <!-- FORM SECTION END -->
+
+        <!-- Interested in learning: Machine Learning, Frontend Web, Backend Web, iOS Development, Android Development, UI/UX, Game Dev, AR/VR, Blockchain -->
+        <h2 class="form-section-title">What areas would you like to learn more about?</h2>
+        <input type="checkbox" name="learning-interest" value="Machine Learning"> Machine Learning<br>
+        <input type="checkbox" name="learning-interest" value="Front-end Web"> Front-end Web<br>
+        <input type="checkbox" name="learning-interest" value="Back-end Web"> Back-end Web<br>
+        <input type="checkbox" name="learning-interest" value="iOS Development"> iOS Development<br>
+        <input type="checkbox" name="learning-interest" value="Android Development"> Android Development<br>
+        <input type="checkbox" name="learning-interest" value="UI/UX"> UI/UX<br>
+        <input type="checkbox" name="learning-interest" value="Game Development"> Game Development<br>
+        <input type="checkbox" name="learning-interest" value="AR/VR"> Augmented Reality/Virtual Reality<br>
+        <input type="checkbox" name="learning-interest" value="Blockchain"> Blockchain<br>
+        <!-- FORM SECTION END -->
+
+        <!-- Resume Link: enter link to attach resume -->
+        <h2 class="form-section-title">Resume:</h2>
+        <p class="form-section-description">Please enter a link to your resume for review.</p>
+        <input id="resumeLinkField" class="form-textbox" type="text" placeholder="ex. shared PDF from Google Drive, OneDrive, etc.">
+        <!-- FORM SECTION END -->
+
+        <a class="form-button" onclick="submitHacker()">submit</a>
+    </div>
+
+    <div class="form-container" id="mentor-form" hidden>
+        <h1 id="form-title">Mentor Application</h1>
+        <p id="form-description">
+            Thank you for your interest in being a mentor for Hack the Heights! Please fill out this form to tell us a little about yourself and give us your contact info. 
+            We will contact you in the next few months with more information about the event and a time slot registration form.
+            <br><br>
+            If you have any questions email us at: <a href="mailto:hacktheheights@gmail.com">hacktheheights@gmail.com</a>
+        </p>
+
+        <!-- Prior Experience: single-line textbox -->
+        <h2 class="form-section-title">Previous Mentor-Like Experience?</h2>
+        <p class="form-section-description">If you have any previous experience in a tech-related mentor-like role, please describe it here.</p>
+        <input id="priorExperienceField" class="form-textbox" type="text" placeholder="ex. served as a team mentor, project management, etc.">
+        <!-- FORM SECTION END -->
+
+        <!-- Interested in mentoring: Machine Learning, Frontend Web, Backend Web, iOS Development, Android Development, UI/UX, Game Dev, AR/VR, Blockchain -->
+        <h2 class="form-section-title">Which areas are you comfortable mentoring?</h2>
+        <input type="checkbox" name="learning-interest" value="Machine Learning"> Machine Learning<br>
+        <input type="checkbox" name="learning-interest" value="Front-end Web"> Front-end Web<br>
+        <input type="checkbox" name="learning-interest" value="Back-end Web"> Back-end Web<br>
+        <input type="checkbox" name="learning-interest" value="iOS Development"> iOS Development<br>
+        <input type="checkbox" name="learning-interest" value="Android Development"> Android Development<br>
+        <input type="checkbox" name="learning-interest" value="UI/UX"> UI/UX<br>
+        <input type="checkbox" name="learning-interest" value="Game Development"> Game Development<br>
+        <input type="checkbox" name="learning-interest" value="AR/VR"> Augmented Reality/Virtual Reality<br>
+        <input type="checkbox" name="learning-interest" value="Blockchain"> Blockchain<br>
+        <!-- FORM SECTION END -->
+
+        <a class="form-button" onclick="submitMentor()">submit</a>
+
+    </div>
+
+    <div class="form-container" id="sponsor-form" hidden>
+            <h1 id="form-title">Sponsor Application</h1>
+            <p id="form-description">
+                Thank you for your interest in being a sponsor for Hack the Heights! Please fill out this form to tell us a little about you and provide us with your contact info. 
+                We will contact you in the next few weeks with more information about the event and the options available for sponsoring our event.
+                <br><br>
+                If you have any questions email us at: <a href="mailto:hacktheheights@gmail.com">hacktheheights@gmail.com</a>
+            </p>
+
+            <!-- Full Name Field -->
+            <h2 class="form-section-title">full name:</h2>
+            <input id="fullNameField" class="form-textbox" type="text" placeholder="ex. John Doe">
+            <!-- FORM SECTION END -->
+
+            <!-- Email Address: for contacting-->
+            <h2 class="form-section-title">email address:</h2>
+            <p class="form-section-description">Please enter your preferred email address, to ensure that we can reach you in a timely manner.</p>
+            <input id="emailField" class="form-textbox" type="text" placeholder="ex. john.doe@email.com">
+            <!-- FORM SECTION END -->
+
+            <!-- Additional Comments Box -->
+            <h2 class="form-section-title">Additional Comments:</h2>
+            <p class="form-section-description">Is there anything that you'd like to tell us? Any questions?</p>
+            <textarea id="commentsField" class="form-textarea" placeholder="ex. hackathon info, company info, sponsor packages, etc."></textarea>
+            <!-- FORM SECTION END -->
+
+            <a class="form-button" onclick="submitSponsor()">submit</a>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="apply.js"></script>
+</body>
+</html>

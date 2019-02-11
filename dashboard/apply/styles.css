@@ -1,0 +1,144 @@
+body{
+    /* background: #76b852;
+    background: -webkit-linear-gradient(right, #76b852, #8DC26F);
+    background: -moz-linear-gradient(right, #76b852, #8DC26F);
+    background: -o-linear-gradient(right, #76b852, #8DC26F);
+    background: linear-gradient(to left, #76b852, #8DC26F); */
+    background: url("../../images/plain-background.svg") no-repeat;
+    background-size: cover;
+    background-color: #263572;
+    font-family: "Montserrat", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;      
+  }
+
+html{
+    height: 100%;
+}
+
+.form-container{
+    width: 50vw;
+    min-height: 70vh;
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translateY(-12%);
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 2vh 3vw;
+}
+
+#form-title{
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#form-description a{
+    color: #3E5087;
+}
+
+.form-section-title{
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.form-section-description{
+    margin-top:0;
+    margin-bottom: 12px;
+}
+
+.form-textbox{
+    outline: 0;
+    background: #f2f2f2;
+    width: 60%;
+    border: 0;
+    border-radius: 5px;
+    margin: 0 0 15px;
+    margin-bottom: 0;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.form-textarea{
+    outline: 0;
+    background: #f2f2f2;
+    width: 60%;
+    min-height: 100px;
+    border: 0;
+    border-radius: 5px;
+    margin: 0 0 15px;
+    margin-bottom: 0;
+    font-size: 14px;
+    padding: 8px 12px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.form-button{
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: white;
+    float: right;
+    border-radius: 5px;
+    background-color: #3E5087;
+    padding: 12px 20px;
+    position: absolute;
+    right: 25px;
+    bottom: 20px;
+}
+
+.form-button:hover{
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* RESPONSIVE SECTION */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .form-container{
+        top: 4%;
+        width: 70vw;
+        padding: 2vh 8vw;
+    }
+
+    #form-description{
+        font-size: 0.9em;
+    }
+
+    .form-section-title{
+        font-size: 1.5em;
+    }
+
+    .form-section-description{
+        font-size: 0.9em;
+    }
+
+    .form-textbox{
+        width: 100%;
+    }
+
+    .form-textarea{
+        width: 100%;
+    }
+
+    .form-button{
+        float:none;
+        text-align: center;
+        display: block;
+        position: static;
+    }
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 1112px) {} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1200) {} 
