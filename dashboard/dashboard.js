@@ -6,7 +6,8 @@ function logout(){
         method: 'get',
         crossDomain: true,
         withCredentials: true,
-        url: "http://hacktheheights.co.nf/api/logout.php"
+        url: "http://hacktheheights.co.nf/api/logout.php",
+        headers: { 'Cache-Control': 'no-cache' }
     })
     .then(function (response) {
         console.log("Response: \n");
@@ -28,7 +29,8 @@ function getUserDetails(){
         crossDomain: true,
         withCredentials: true,
         url: 'http://www.hacktheheights.co.nf/api/user.php',
-        data: bodyFormData
+        data: bodyFormData,
+        headers: { 'Cache-Control': 'no-cache' }
     })
     .then(function (response) {
         console.log("Response: \n");

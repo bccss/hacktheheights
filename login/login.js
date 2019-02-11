@@ -59,7 +59,8 @@ function loginPressed(){
             crossDomain: true,
             withCredentials: true,
             url: 'http://www.hacktheheights.co.nf/api/login.php',
-            data: bodyFormData
+            data: bodyFormData,
+            headers: { 'Cache-Control': 'no-cache' }
         })
         .then(function (response) {
             console.log("Response: \n");
@@ -124,7 +125,8 @@ function createPressed(){
             crossDomain: true,
             withCredentials: true,
             url: requestURL,
-            data: bodyFormData
+            data: bodyFormData,
+            headers: { 'Cache-Control': 'no-cache' }
         })
         .then(function (response) {
             console.log("Response: \n");
@@ -173,7 +175,8 @@ function adminLoginPressed(){
             crossDomain: true,
             withCredentials: true,
             url: 'http://www.hacktheheights.co.nf/api/admin.php',
-            data: bodyFormData
+            data: bodyFormData,
+            headers: { 'Cache-Control': 'no-cache' }
         })
         .then(function (response) {
             console.log("Response: \n");
