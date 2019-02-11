@@ -14,3 +14,6 @@
 ### Food: Yes
 
 ### Prizes: TBD
+
+### Website Redesign:
+Developed by: Estevan Feliz
