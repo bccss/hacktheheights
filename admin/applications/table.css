@@ -130,6 +130,8 @@
 
   .view-button-filled {
     padding: 6px 1vw;
+    margin-left: auto;
+    margin-right: auto;
     border: 2px solid #3E5087;
     border-radius: 25px;
     background-color: #3E5087;

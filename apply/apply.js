@@ -25,7 +25,11 @@ function submitHacker(){
     var learningInterests = "";
     for (i=0; i<learningInterestBoxes.length; i++){
         if (learningInterestBoxes[i].checked){
-            learningInterests += ("," + learningInterestBoxes[i].value);
+            if (i > 0){
+                learningInterests += (", " + learningInterestBoxes[i].value);
+            } else {
+                learningInterests += learningInterestBoxes[i].value;
+            }
         }
     }
     
@@ -80,12 +84,17 @@ function submitHacker(){
 }
 
 function submitMentor(){
+    console.log("MENTOR");
     var priorExperience = document.getElementById("priorExperienceField").value;
     var learningInterestBoxes = document.getElementsByName("learning-interest");
     var learningInterests = "";
     for (i=0; i<learningInterestBoxes.length; i++){
         if (learningInterestBoxes[i].checked){
-            learningInterests += ("," + learningInterestBoxes[i].value);
+            if (i > 0){
+                learningInterests += (", " + learningInterestBoxes[i].value);
+            } else {
+                learningInterests += learningInterestBoxes[i].value;
+            }
         }
     }
 
@@ -183,7 +192,22 @@ function submitSponsor(){
     }
 }
 
+function checkLogin(){
+    axios({
+        method: 'get',
+        crossDomain: true,
+        withCredentials: true,
+        url: "http://hacktheheights.co.nf/api/status.php"
+    })
+    .then(function (response) {
+        console.log("Response: \n");
+        console.log(response.data);
+    });
+}
+
 function initializePage(){
+
+    checkLogin();
     // check for type in url
     var urlParams = new URLSearchParams(window.location.search);
 

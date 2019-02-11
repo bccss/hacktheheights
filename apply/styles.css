@@ -4,7 +4,7 @@ body{
     background: -moz-linear-gradient(right, #76b852, #8DC26F);
     background: -o-linear-gradient(right, #76b852, #8DC26F);
     background: linear-gradient(to left, #76b852, #8DC26F); */
-    background: url("../images/plain-background.svg") no-repeat;
+    background: url("../../images/plain-background.svg") no-repeat;
     background-size: cover;
     background-color: #263572;
     font-family: "Montserrat", sans-serif;

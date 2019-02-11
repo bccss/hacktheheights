@@ -225,6 +225,17 @@ body, html {
     cursor: pointer;
   }
 
+  .details-box-approveBtn{
+    /* float: left;
+    position: fixed;
+    bottom: 10px;
+    left: 25px; */
+  }
+  
+  .details-box-approveBtn:hover{
+    cursor: pointer;
+  }
+
   .details-container{
     display: flex;
     flex-wrap: wrap;

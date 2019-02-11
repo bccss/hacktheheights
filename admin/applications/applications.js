@@ -49,7 +49,7 @@ function getApplications(appID){
                         <td class="name-col text-left">${currentApplication["fullName"]}</td>
                         <td class="role-col text-left">${currentApplication["role"]}</td>
                         <td class="status-col text-left">${currentApplication["status"]}</td>
-                        <td class="btn-col text-left"><a class="view-button-filled" onclick="showDetails(applications[${i}])">VIEW DETAILS</a></td>
+                        <td class="btn-col text-center"><a class="view-button-filled" onclick="showDetails(applications[${i}])">VIEW INFO</a></td>
                     </tr>
                     `);
 
@@ -136,11 +136,22 @@ function showDetails(currentApplication){
         document.getElementById("sponsor-submissionDate").innerText = currentApplication["submissionDate"];
         document.getElementById("sponsor-comments").innerText = currentApplication["details"]["comments"];
     }
+    
+    
     document.getElementById("details-overlay").style = "display:block;"
+    if (currentApplication["status"] == "approved"){
+        document.getElementById(`${appType}-box-approveBtn`).display.style = "none";
+    } else {
+        document.getElementById(`${appType}-box-approveBtn`).display.style = "block";
+    }
 }
 
 function closeDetails(){
     document.getElementById("details-overlay").style = "display:none;"
+}
+
+function approveApp(){
+
 }
 
 function initializePage(){

@@ -2,16 +2,31 @@ var isLoading = true;
 
 function logout(){
     // axios.get("http://hacktheheights.co.nf/api/logout.php", {withCredentials:true});
+    // axios({
+    //     method: 'post',
+    //     crossDomain: true,
+    //     url: 'http://hacktheheights.co.nf/api/logout.php'
+    // })
+    // .then(function (response) {
+    //     console.log(response.data);
+    //     window.location.replace("/login/?mode=admin");
+    // });
+    // // window.location.replace("/login/?mode=admin");
+
     axios({
-        method: 'post',
+        method: 'get',
         crossDomain: true,
-        url: 'http://hacktheheights.co.nf/api/logout.php'
+        withCredentials: true,
+        url: "http://hacktheheights.co.nf/api/logout.php"
     })
     .then(function (response) {
+        console.log("Response: \n");
         console.log(response.data);
-        window.location.replace("/login/?mode=admin");
+        if(response.data["logout"] == "success"){
+            // window.location.href = (response.data["redirect"]);
+            window.location.replace("/login/?mode=admin");
+        }
     });
-    // window.location.replace("/login/?mode=admin");
 }
 
 function getAdminDetails(){

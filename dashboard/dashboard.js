@@ -1,8 +1,20 @@
 var isLoading = true;
 
 function logout(){
-    axios.get("http://hacktheheights.co.nf/api/logout.php", {withCredentials:true});
-    window.location.replace("/");
+    // axios.get("http://hacktheheights.co.nf/api/logout.php", {withCredentials:true});
+    axios({
+        method: 'get',
+        crossDomain: true,
+        withCredentials: true,
+        url: "http://hacktheheights.co.nf/api/logout.php"
+    })
+    .then(function (response) {
+        console.log("Response: \n");
+        console.log(response.data);
+        if(response.data["logout"] == "success"){
+            window.location.href = (response.data["redirect"]);
+        }
+    });
 }
 
 function getUserDetails(){
@@ -30,13 +42,14 @@ function getUserDetails(){
             document.getElementById("firstName").innerText = responseData["firstName"] + "!";
             
             if (responseData["hackerStatus"] == "no application submitted"){
-                document.getElementById("hackerBtn").style.display = "block";
+                document.getElementById("applyBtn").style.display = "inline-block";
+                document.getElementById("hacker-status-label").innerText = "no application\nsubmitted";
             } else {
                 document.getElementById("hacker-status-label").innerText = responseData["hackerStatus"];
             }
 
             if (responseData["mentorStatus"] == "no application submitted"){
-                document.getElementById("mentorBtn").style.display = "block";
+                document.getElementById("mentorBtn").style.display = "inline-block";
                 document.getElementById("mentor-status-label").innerText = "no application\nsubmitted";
             } else {
                 document.getElementById("mentor-status-label").innerText = responseData["mentorStatus"];
