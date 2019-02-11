@@ -60,7 +60,7 @@ function loginPressed(){
             withCredentials: true,
             url: 'http://www.hacktheheights.co.nf/api/login.php',
             data: bodyFormData,
-            headers: { 'Cache-Control': 'no-cache' }
+            headers: { 'Cache-Control': 'no-store' }
         })
         .then(function (response) {
             console.log("Response: \n");
@@ -126,7 +126,7 @@ function createPressed(){
             withCredentials: true,
             url: requestURL,
             data: bodyFormData,
-            headers: { 'Cache-Control': 'no-cache' }
+            headers: { 'Cache-Control': 'no-store' }
         })
         .then(function (response) {
             console.log("Response: \n");
@@ -176,7 +176,7 @@ function adminLoginPressed(){
             withCredentials: true,
             url: 'http://www.hacktheheights.co.nf/api/admin.php',
             data: bodyFormData,
-            headers: { 'Cache-Control': 'no-cache' }
+            headers: { 'Cache-Control': 'no-store' }
         })
         .then(function (response) {
             console.log("Response: \n");

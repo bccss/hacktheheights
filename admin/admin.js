@@ -18,7 +18,7 @@ function logout(){
         crossDomain: true,
         withCredentials: true,
         url: "http://hacktheheights.co.nf/api/logout.php",
-        headers: { 'Cache-Control': 'no-cache' }
+        headers: { 'Cache-Control': 'no-store' }
     })
     .then(function (response) {
         console.log("Response: \n");
@@ -42,7 +42,7 @@ function getAdminDetails(){
         withCredentials: true,
         url: 'http://www.hacktheheights.co.nf/api/admin.php',
         data: bodyFormData,
-        headers: { 'Cache-Control': 'no-cache' }
+        headers: { 'Cache-Control': 'no-store' }
     })
     .then(function (response) {
         console.log("Response: \n");
