@@ -25,7 +25,7 @@ function loginPressed(){
     var url = "http://hacktheheights.co.nf/api/login.php";
     var bodyFormData = new FormData();
     bodyFormData.set("email", userEmail);
-    bodyFormData.set("password", userPassword)
+    bodyFormData.set("password", userPassword);
 
     // fetch(url, {
     //     method: 'post',
@@ -68,7 +68,7 @@ function loginPressed(){
                 responseText.innerText = "login success!";
                 responseText.style.display = "block";
                 responseText.style.color = "#3E5087";
-                window.location.replace(response.data["redirect"]);
+                window.location.href = (response.data["redirect"]);
             } else {
                 //handle failed login
                 var reason = response.data["reason"];
@@ -77,7 +77,7 @@ function loginPressed(){
                     responseText.style.display = "block";
                     responseText.style.color = "darkred";
                 } else if (reason == "no account found"){
-                    responseText.innerText = "account with this email not found.";
+                    responseText.innerText = "account with this email not found. please register below!";
                     responseText.style.display = "block";
                     responseText.style.color = "darkred";
                 }
@@ -95,6 +95,7 @@ function createPressed(){
     var lastName = document.getElementById("lastNameField").value;
     var school = document.getElementById("schoolField").value;
     var major = document.getElementById("majorField").value;
+    var classYear = document.getElementById("classYearField").value;
     var email = document.getElementById("emailField").value;
     var password = document.getElementById("passwordField").value;
     var gender = document.getElementById("genderField").value;
@@ -113,6 +114,7 @@ function createPressed(){
         bodyFormData.set("lastName", lastName);
         bodyFormData.set("school", school);
         bodyFormData.set("major", major);
+        bodyFormData.set("classYear", classYear);
         bodyFormData.set("email", email);
         bodyFormData.set("password", password);
         bodyFormData.set("gender", gender);
@@ -131,7 +133,7 @@ function createPressed(){
                 responseText.innerText = "registration successful!";
                 responseText.style.display = "block";
                 responseText.style.color = "#3E5087";
-                window.location.replace(response.data["redirect"]);
+                window.location.href = (response.data["redirect"]);
             } else {
                 //handle failed login
                 var reason = response.data["reason"];
@@ -180,7 +182,7 @@ function adminLoginPressed(){
                 responseText.innerText = "login success!";
                 responseText.style.display = "block";
                 responseText.style.color = "#3E5087";
-                window.location.replace(response.data["redirect"]);
+                window.location.href = (response.data["redirect"]);
             } else {
                 //handle failed login
                 var reason = response.data["reason"];

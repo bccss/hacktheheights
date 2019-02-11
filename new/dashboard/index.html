@@ -33,18 +33,41 @@
     
     <!-- Page content -->
     <div class="content">
-        <h2 id="greeting">HI THERE, <strong id="firstName">ESTEVAN!</strong></h2>
+        <h2 id="greeting">HI THERE, <strong id="firstName"></strong></h2>
         <div id="promo-splash">
             <div id="promo-container">
                 <!-- <p>Want to compete at this hackathon or be a mentor, apply now!</p> -->
-                <a id="applyBtn"class="button-filled" style="margin-right: 25px; background-color:#DABFFF; border-color:#DABFFF;" href="/apply" role="button">
+                <a id="applyBtn"class="button-filled" style="margin-right: 25px; background-color:#DABFFF; border-color:#DABFFF;" href="/apply" role="button" hidden>
                     APPLY!
                 </a>
-                <a id="sponsorBtn"class="button-filled" style="background-color: #5B6DBC; border-color:#5B6DBC;" href="/apply?type=sponsor" role="button">
-                    SPONSOR!
+                <a id="mentorBtn"class="button-filled" style="background-color: #5B6DBC; border-color:#5B6DBC;" href="/apply/?type=mentor" role="button" hidden>
+                    MENTOR!
                 </a>
+            </div>    
+        </div>
+
+        <div id="actions-grid">
+            <div class="action-box">
+                <h2><i style="display: inline; margin-right: 1vw;"class="fas fa-laptop-code"></i>Hacker Status</h2>
+                <div class="action-box-content">
+                    <i class="fas fa-file-alt"></i>
+                    <h2 id="hacker-status-label"></h2>
+                </div>
             </div>
-            
+            <div class="action-box">
+                <h2><i style="display: inline; margin-right: 1vw;" class="fas fa-chalkboard-teacher"></i>Mentor Status</h2>
+                <div class="action-box-content">
+                    <i class="fas fa-file-alt"></i>
+                    <h2 id="mentor-status-label"></h2>
+                </div>
+                
+            </div>
+            <a href="/">
+                <div class="action-box" style="text-align: center;">
+                    <i style="position:relative; top:5vh; font-size: 3vw;" class="fas fa-info-circle"></i>
+                    <h2 style="position:relative; top:6vh;">View Event Details</h2>
+                </div>
+            </a>
         </div>
         <!-- <div id="user-events">
             <h2 class="pane-label">MY EVENTS</h2>

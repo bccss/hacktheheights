@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
 </head>
 <body>
-    <div class="form-container" id="hacker-form">
+    <div class="form-container" id="hacker-form" hidden>
         <h1 id="form-title">Hacker Application</h1>
         <p id="form-description">
             Due to space limitations, you will not be confirmed to participate in Hack The Heights after completing this form. We will be sending out a confirmation form on a rolling basis so please fill this form out as soon as possible to be considered. <br><br>
@@ -33,7 +33,7 @@
         <!-- Dietary Restrictions: "N/A" if not applicable -->
         <h2 class="form-section-title">Dietary Restrictions:</h2>
         <p class="form-section-description">Please enter "N/A" if not applicable.</p>
-        <input class="form-textbox" type="text" placeholder="ex. gluten, nuts, etc.">
+        <input id="dietaryField" class="form-textbox" type="text" placeholder="ex. gluten, nuts, etc.">
         <!-- FORM SECTION END -->
 
         <!-- Prior Hackathon Attendance: 0, 1-4, 5+ -->
@@ -46,7 +46,7 @@
         <!-- Prior coding/building experience: ideally under 200 words (textbox) -->
         <h2 class="form-section-title">Prior coding experience:</h2>
         <p class="form-section-description">Tell us about something you've built in the past! Please keep your response under 200 words.</p>
-        <textarea class="form-textarea" placeholder="ex. coding projects, electronics, or whatever! :)"></textarea>
+        <textarea id="hackerPriorExperienceField" class="form-textarea" placeholder="ex. coding projects, electronics, or whatever! :)"></textarea>
         <!-- FORM SECTION END -->
 
         <!-- Interested in learning: Machine Learning, Frontend Web, Backend Web, iOS Development, Android Development, UI/UX, Game Dev, AR/VR, Blockchain -->
@@ -65,10 +65,10 @@
         <!-- Resume Link: enter link to attach resume -->
         <h2 class="form-section-title">Resume:</h2>
         <p class="form-section-description">Please enter a link to your resume for review.</p>
-        <input class="form-textbox" type="text" placeholder="ex. shared PDF from Google Drive, OneDrive, etc.">
+        <input id="resumeLinkField" class="form-textbox" type="text" placeholder="ex. shared PDF from Google Drive, OneDrive, etc.">
         <!-- FORM SECTION END -->
 
-        <a class="form-button">submit</a>
+        <a class="form-button" onclick="submitHacker()">submit</a>
     </div>
 
     <div class="form-container" id="mentor-form" hidden>
@@ -83,7 +83,7 @@
         <!-- Prior Experience: single-line textbox -->
         <h2 class="form-section-title">Previous Mentor-Like Experience?</h2>
         <p class="form-section-description">If you have any previous experience in a tech-related mentor-like role, please describe it here.</p>
-        <input class="form-textbox" type="text" placeholder="ex. served as a team mentor, project management, etc.">
+        <input id="priorExperienceField" class="form-textbox" type="text" placeholder="ex. served as a team mentor, project management, etc.">
         <!-- FORM SECTION END -->
 
         <!-- Interested in mentoring: Machine Learning, Frontend Web, Backend Web, iOS Development, Android Development, UI/UX, Game Dev, AR/VR, Blockchain -->
@@ -99,7 +99,7 @@
         <input type="checkbox" name="learning-interest" value="Blockchain"> Blockchain<br>
         <!-- FORM SECTION END -->
 
-        <a class="form-button">submit</a>
+        <a class="form-button" onclick="submitMentor()">submit</a>
 
     </div>
 
@@ -114,22 +114,24 @@
 
             <!-- Full Name Field -->
             <h2 class="form-section-title">full name:</h2>
-            <input class="form-textbox" type="text" placeholder="ex. John Doe">
+            <input id="fullNameField" class="form-textbox" type="text" placeholder="ex. John Doe">
             <!-- FORM SECTION END -->
 
             <!-- Email Address: for contacting-->
             <h2 class="form-section-title">email address:</h2>
             <p class="form-section-description">Please enter your preferred email address, to ensure that we can reach you in a timely manner.</p>
-            <input class="form-textbox" type="text" placeholder="ex. john.doe@email.com">
+            <input id="emailField" class="form-textbox" type="text" placeholder="ex. john.doe@email.com">
             <!-- FORM SECTION END -->
 
             <!-- Additional Comments Box -->
             <h2 class="form-section-title">Additional Comments:</h2>
             <p class="form-section-description">Is there anything that you'd like to tell us? Any questions?</p>
-            <textarea class="form-textarea" placeholder="ex. hackathon info, company info, sponsor packages, etc."></textarea>
+            <textarea id="commentsField" class="form-textarea" placeholder="ex. hackathon info, company info, sponsor packages, etc."></textarea>
             <!-- FORM SECTION END -->
 
-            <a class="form-button">submit</a>
+            <a class="form-button" onclick="submitSponsor()">submit</a>
     </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="apply.js"></script>
 </body>
 </html>

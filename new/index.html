@@ -24,6 +24,18 @@
         </ul>
     </nav>
 
+    <div class="mobile-topnav" id="mobile-topnav" hidden>
+            <img src="images/logo.svg" style="margin:0; margin-top: 4px; margin-left: 12px; display: inline;" width="25"/>
+            <a href="#home" class="active">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#schedule">SCHEDULE</a>
+            <a href="#faq">FAQ</a>
+            <a href="#sponsors">SPONSORS</a>
+            <a href="javascript:void(0);" class="icon" onclick="mobileNav()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+
     <div id="home">
             <img src="./images/left-curve.svg" id="header-left-curve">
             <img src="./images/navbar.svg" id="nav-bg">
@@ -35,11 +47,33 @@
             <a id="loginBtn" class="button-outline" href="/login" role="button">
                 LOGIN
             </a>
-            <a id="registerBtn"class="button-filled" href="/login?mode=register" role="button">
-                REGISTER
+            <a id="sponsorBtn"class="button-filled" href="/apply/?type=sponsor" role="button">
+                SPONSOR
             </a>
         </div>
     </div>
+
+    <div id="home-splash-mobile" hidden>
+
+    </div>
+
+    <div class="section" id="home-mobile" hidden>
+        <div class="container-centered" id="about-text-container">
+            <div class="container" id="splash-text-container">
+                <h1>BOSTON COLLEGE</h1>
+                <h2>APRIL 2019</h2>
+                <p>Boston College's annual hackathon.<br>Be sure to join us for an unforgettable experience!</p>
+                <a id="loginBtn" class="button-outline" href="/login" role="button">
+                    LOGIN
+                </a>
+                <a id="sponsorBtn"class="button-filled" href="/apply/?type=sponsor" role="button">
+                    SPONSOR
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <hr class="divider-line"/ hidden>
 
     <div class="section" id="about">
         <div class="container-centered" id="about-text-container">
@@ -135,7 +169,7 @@
                     CURRENTLY GATHERING SPONSORS. PLEASE CHECK AGAIN LATER.
             </p>
             <p class="description" style="margin-top: 0;text-align: center;">
-                    If you'd like to sponsor this event, signup for an account above or contact us at: <a href="mailto:hacktheheights@gmail.com" style="color:#5B6DBC;">hacktheheights@gmail.com</a>
+                    If you'd like to sponsor this event, press the sponsor button above or contact us at: <a href="mailto:hacktheheights@gmail.com" style="color:#5B6DBC;">hacktheheights@gmail.com</a>
             </p>
         </div>
     </div>
@@ -159,6 +193,17 @@
             <h5 style="display:inline;">Copyright 2019 © BCCSS Hack the Heights</h5>
         </div>
     </div>
+
+    <script>
+        function mobileNav() {
+            var x = document.getElementById("mobile-topnav");
+            if (x.className === "mobile-topnav") {
+            x.className += " responsive";
+            } else {
+            x.className = "mobile-topnav";
+            }
+        }
+    </script>
 
 </body>
 </html>

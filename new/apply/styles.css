@@ -95,3 +95,50 @@ html{
     cursor: pointer;
     font-weight: 600;
 }
+
+/* RESPONSIVE SECTION */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .form-container{
+        top: 4%;
+        width: 70vw;
+        padding: 2vh 8vw;
+    }
+
+    #form-description{
+        font-size: 0.9em;
+    }
+
+    .form-section-title{
+        font-size: 1.5em;
+    }
+
+    .form-section-description{
+        font-size: 0.9em;
+    }
+
+    .form-textbox{
+        width: 100%;
+    }
+
+    .form-textarea{
+        width: 100%;
+    }
+
+    .form-button{
+        float:none;
+        text-align: center;
+        display: block;
+        position: static;
+    }
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 1112px) {} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1200) {} 
