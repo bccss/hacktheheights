@@ -197,6 +197,7 @@ function adminLoginPressed(){
 }
 
 function initializePage(){
+    viewport = document.querySelector("meta[name=viewport]");
     viewport.setAttribute('content', 'width=1024');
 
     // check for mode in url
