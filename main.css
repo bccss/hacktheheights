@@ -137,11 +137,16 @@ nav ul li a {
  }
 
 #loginBtn {
-    
+
 }
 
 #sponsorBtn {
     margin-left: 20px;
+}
+
+.inline a {
+  font-weight: 900;
+  color: #3E5087;
 }
 
 .section{
@@ -284,7 +289,7 @@ nav ul li a {
         overflow: hidden;
         background-color: #3E5087;
       }
-      
+
     .mobile-topnav a {
         float: left;
         display: block;
@@ -294,19 +299,19 @@ nav ul li a {
         text-decoration: none;
         font-size: 17px;
     }
-    
+
     .mobile-topnav a:hover {
         /* background-color: #fff; */
         /* color: black; */
         /* Removed due to hover persistence on iOS */
     }
-    
+
     .active {
         background-color: #DABFFF;
         color: white;
         font-weight: 600;
     }
-    
+
     .mobile-topnav .icon {
         display: none;
     }
@@ -360,21 +365,21 @@ nav ul li a {
         margin-right: auto;
         z-index: 100;
     }
-    
+
     #splash-text-container h1 {
         font-size: 1.5em;
         font-weight: 600;
         color: #3E5087;
         margin-bottom: 0;
     }
-    
+
     #splash-text-container h2 {
         font-size: 1.5em;
         color: #3E5087;
         font-weight: 300;
         margin-top:0;
     }
-    
+
     #splash-text-container p {
         color: #3E5087;
         width: 100%;
@@ -388,7 +393,7 @@ nav ul li a {
         margin-right: auto;
         margin-bottom: 2vh;
     }
-    
+
     #sponsorBtn {
         width: 75%;
         display: block;
@@ -420,10 +425,10 @@ nav ul li a {
         display:block;
         margin: 0 10vw;
     }
-} 
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) and (max-width: 767px) {} 
+@media only screen and (min-width: 600px) and (max-width: 767px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 1112px) {
@@ -439,7 +444,7 @@ nav ul li a {
         top: 0.75vh;
         right: 0vw;
     }
-    
+
     nav ul {
         list-style-type: none;
         float:right;
@@ -448,18 +453,18 @@ nav ul li a {
     nav ul li {
         float: left;
     }
-    
+
     nav ul li a:hover{
         color: #DABFFF;
         font-weight: 500;
     }
-    
+
     nav ul li a {
         color: #3E5087;
         padding: 0 30px;
     }
-} 
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 1200) {
-} 
+}
