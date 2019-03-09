@@ -19,7 +19,7 @@ function logout(){
     // });
 
     // NEW JWT IMPLEMENTATION: LOGOUT
-    Cookies.remove('token');
+    Cookies.remove('adminToken');
     window.location.href = "/login/?mode=admin";
 }
 
@@ -35,7 +35,7 @@ function getApplications(appID){
         withCredentials: true,
         url: 'http://www.hacktheheights.co.nf/api/admin.php',
         data: bodyFormData,
-        params: {token: Cookies.get('token')},
+        params: {token: Cookies.get('adminToken')},
         headers: { 'Cache-Control': 'no-store' }
     })
     .then(function (response) {
