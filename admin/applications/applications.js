@@ -3,17 +3,24 @@ var applications = [];
 
 function logout(){
     // axios.get("http://hacktheheights.co.nf/api/logout.php", {withCredentials:true});
-    axios({
-        method: 'post',
-        crossDomain: true,
-        url: 'http://hacktheheights.co.nf/api/logout.php',
-        headers: { 'Cache-Control': 'no-store' }
-    })
-    .then(function (response) {
-        console.log(response.data);
-        window.location.href = ("/login/?mode=admin");
-    });
-    // window.location.replace("/login/?mode=admin");
+    // axios({
+    //     method: 'get',
+    //     crossDomain: true,
+    //     withCredentials: true,
+    //     url: "http://hacktheheights.co.nf/api/logout.php",
+    //     headers: { 'Cache-Control': 'no-store' }
+    // })
+    // .then(function (response) {
+    //     console.log("Response: \n");
+    //     console.log(response.data);
+    //     if(response.data["logout"] == "success"){
+    //         window.location.href = (response.data["redirect"]);
+    //     }
+    // });
+
+    // NEW JWT IMPLEMENTATION: LOGOUT
+    Cookies.remove('token');
+    window.location.href = "/login/?mode=admin";
 }
 
 function getApplications(appID){
@@ -28,6 +35,7 @@ function getApplications(appID){
         withCredentials: true,
         url: 'http://www.hacktheheights.co.nf/api/admin.php',
         data: bodyFormData,
+        params: {token: Cookies.get('token')},
         headers: { 'Cache-Control': 'no-store' }
     })
     .then(function (response) {

@@ -69,6 +69,8 @@ function loginPressed(){
                 responseText.innerText = "login success!";
                 responseText.style.display = "block";
                 responseText.style.color = "#3E5087";
+                // time to set auth token cookie
+                Cookies.set('token', response.data["token"], {expires: (1/48)});
                 window.location.href = (response.data["redirect"]);
             } else {
                 //handle failed login
@@ -126,7 +128,7 @@ function createPressed(){
             withCredentials: true,
             url: requestURL,
             data: bodyFormData,
-            headers: { 'Cache-Control': 'no-store' }
+            // headers: { 'Cache-Control': 'no-store' }
         })
         .then(function (response) {
             console.log("Response: \n");
@@ -135,6 +137,8 @@ function createPressed(){
                 responseText.innerText = "registration successful!";
                 responseText.style.display = "block";
                 responseText.style.color = "#3E5087";
+                // time to set auth token cookie
+                Cookies.set('token', response.data["token"], {expires: (1/48)});
                 window.location.href = (response.data["redirect"]);
             } else {
                 //handle failed login
@@ -185,6 +189,8 @@ function adminLoginPressed(){
                 responseText.innerText = "login success!";
                 responseText.style.display = "block";
                 responseText.style.color = "#3E5087";
+                // time to set auth token cookie
+                Cookies.set('token', response.data["token"], {expires: (1/48)});
                 window.location.href = (response.data["redirect"]);
             } else {
                 //handle failed login
@@ -200,8 +206,8 @@ function adminLoginPressed(){
 }
 
 function initializePage(){
-    viewport = document.querySelector("meta[name=viewport]");
-    viewport.setAttribute('content', 'width=1024');
+    // viewport = document.querySelector("meta[name=viewport]");
+    // viewport.setAttribute('content', 'width=1024');
 
     // check for mode in url
     var urlParams = new URLSearchParams(window.location.search);

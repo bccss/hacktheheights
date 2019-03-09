@@ -33,7 +33,7 @@
         <!-- Dietary Restrictions: "N/A" if not applicable -->
         <h2 class="form-section-title">Dietary Restrictions:</h2>
         <p class="form-section-description">Please enter "N/A" if not applicable.</p>
-        <input id="dietaryField" class="form-textbox" type="text" placeholder="ex. gluten, nuts, etc.">
+        <input id="dietaryField" class="form-textbox" type="text" placeholder="ex. gluten, nuts, etc." maxlength="100">
         <!-- FORM SECTION END -->
 
         <!-- Prior Hackathon Attendance: 0, 1-4, 5+ -->
@@ -43,10 +43,10 @@
         <input type="radio" name="hackathon-attendance" value="5+"> (5+) Hackathon Veteran 😎<br>
         <!-- FORM SECTION END -->
 
-        <!-- Prior coding/building experience: ideally under 200 words (textbox) -->
+        <!-- Prior coding/building experience: ideally under 200 (max 500 chars) words (textbox) -->
         <h2 class="form-section-title">Prior coding experience:</h2>
-        <p class="form-section-description">Tell us about something you've built in the past! Please keep your response under 200 words.</p>
-        <textarea id="hackerPriorExperienceField" class="form-textarea" placeholder="ex. coding projects, electronics, or whatever! :)"></textarea>
+        <p class="form-section-description">Tell us about something you've built in the past! Please keep your response under 500 characters.</p>
+        <textarea id="hackerPriorExperienceField" class="form-textarea" placeholder="ex. coding projects, electronics, or whatever! :)" maxlength="500"></textarea>
         <!-- FORM SECTION END -->
 
         <!-- Interested in learning: Machine Learning, Frontend Web, Backend Web, iOS Development, Android Development, UI/UX, Game Dev, AR/VR, Blockchain -->
@@ -114,24 +114,25 @@
 
             <!-- Full Name Field -->
             <h2 class="form-section-title">full name:</h2>
-            <input id="fullNameField" class="form-textbox" type="text" placeholder="ex. John Doe">
+            <input id="fullNameField" class="form-textbox" type="text" placeholder="ex. John Doe" maxlength="100">
             <!-- FORM SECTION END -->
 
             <!-- Email Address: for contacting-->
             <h2 class="form-section-title">email address:</h2>
             <p class="form-section-description">Please enter your preferred email address, to ensure that we can reach you in a timely manner.</p>
-            <input id="emailField" class="form-textbox" type="text" placeholder="ex. john.doe@email.com">
+            <input id="emailField" class="form-textbox" type="text" placeholder="ex. john.doe@email.com" maxlength="100">
             <!-- FORM SECTION END -->
 
             <!-- Additional Comments Box -->
             <h2 class="form-section-title">Additional Comments:</h2>
             <p class="form-section-description">Is there anything that you'd like to tell us? Any questions?</p>
-            <textarea id="commentsField" class="form-textarea" placeholder="ex. hackathon info, company info, sponsor packages, etc."></textarea>
+            <textarea id="commentsField" class="form-textarea" placeholder="ex. hackathon info, company info, sponsor packages, etc." maxlength="1000"></textarea>
             <!-- FORM SECTION END -->
 
             <a class="form-button" onclick="submitSponsor()">submit</a>
     </div>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../scripts/js-cookie.js"></script>
     <script src="apply.js"></script>
 </body>
 </html>

@@ -2,20 +2,24 @@ var isLoading = true;
 
 function logout(){
     // axios.get("http://hacktheheights.co.nf/api/logout.php", {withCredentials:true});
-    axios({
-        method: 'get',
-        crossDomain: true,
-        withCredentials: true,
-        url: "http://hacktheheights.co.nf/api/logout.php",
-        headers: { 'Cache-Control': 'no-store' }
-    })
-    .then(function (response) {
-        console.log("Response: \n");
-        console.log(response.data);
-        if(response.data["logout"] == "success"){
-            window.location.href = (response.data["redirect"]);
-        }
-    });
+    // axios({
+    //     method: 'get',
+    //     crossDomain: true,
+    //     withCredentials: true,
+    //     url: "http://hacktheheights.co.nf/api/logout.php",
+    //     headers: { 'Cache-Control': 'no-store' }
+    // })
+    // .then(function (response) {
+    //     console.log("Response: \n");
+    //     console.log(response.data);
+    //     if(response.data["logout"] == "success"){
+    //         window.location.href = (response.data["redirect"]);
+    //     }
+    // });
+
+    // NEW JWT IMPLEMENTATION: LOGOUT
+    Cookies.remove('token');
+    window.location.href = "/login";
 }
 
 function getUserDetails(){
@@ -30,6 +34,7 @@ function getUserDetails(){
         withCredentials: true,
         url: 'http://www.hacktheheights.co.nf/api/user.php',
         data: bodyFormData,
+        params: {token: Cookies.get('token')},
         headers: { 'Cache-Control': 'no-store' }
     })
     .then(function (response) {

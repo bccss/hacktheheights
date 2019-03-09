@@ -33,7 +33,7 @@ function submitHacker(){
         }
     }
     
-    var resumeLink = document.getElementById("resumeLinkField");
+    var resumeLink = document.getElementById("resumeLinkField").value;
 
     if (shirtSize.length < 1 || dietaryRestrictions.length < 1 || numHackathons.length < 1 || priorExperience.length < 1 || learningInterests.length < 1 || resumeLink.length < 1){
         console.log("missing field!");
@@ -58,7 +58,8 @@ function submitHacker(){
             crossDomain: true,
             withCredentials: true,
             url: requestURL,
-            data: bodyFormData
+            data: bodyFormData,
+            params: {token: Cookies.get('token')}
         })
         .then(function (response) {
             console.log("Response: \n");
@@ -117,7 +118,8 @@ function submitMentor(){
             crossDomain: true,
             withCredentials: true,
             url: requestURL,
-            data: bodyFormData
+            data: bodyFormData,
+            params: {token: Cookies.get('token')}
         })
         .then(function (response) {
             console.log("Response: \n");
@@ -197,7 +199,8 @@ function checkLogin(){
         method: 'get',
         crossDomain: true,
         withCredentials: true,
-        url: "http://hacktheheights.co.nf/api/status.php"
+        url: "http://hacktheheights.co.nf/api/status.php",
+        params: {token: Cookies.get('token')}
     })
     .then(function (response) {
         console.log("Response: \n");
