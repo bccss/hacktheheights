@@ -70,7 +70,7 @@ function loginPressed(){
                 responseText.style.display = "block";
                 responseText.style.color = "#3E5087";
                 // time to set auth token cookie
-                Cookies.set('token', response.data["token"], {expires: (1/48), domain:'.hacktheheights.com'});
+                Cookies.set('token', response.data["token"], {expires: (1/48), domain: window.location.hostname});
                 window.location.href = (response.data["redirect"]);
             } else {
                 //handle failed login
@@ -138,7 +138,7 @@ function createPressed(){
                 responseText.style.display = "block";
                 responseText.style.color = "#3E5087";
                 // time to set auth token cookie
-                Cookies.set('token', response.data["token"], {expires: (1/48), domain:'.hacktheheights.com'});
+                Cookies.set('token', response.data["token"], {expires: (1/48), domain: window.location.hostname});
                 window.location.href = (response.data["redirect"]);
             } else {
                 //handle failed login
@@ -190,7 +190,7 @@ function adminLoginPressed(){
                 responseText.style.display = "block";
                 responseText.style.color = "#3E5087";
                 // time to set auth token cookie
-                Cookies.set('adminToken', response.data["token"], {expires: (1/48), domain:'.hacktheheights.com'});
+                Cookies.set('adminToken', response.data["token"], {expires: (1/48), domain: window.location.hostname});
                 window.location.href = (response.data["redirect"]);
             } else {
                 //handle failed login
