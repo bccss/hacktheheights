@@ -64,8 +64,8 @@ function getAdminDetails(){
 
 function initializePage(){
 
-    viewport = document.querySelector("meta[name=viewport]");
-    viewport.setAttribute('content', 'width=1024');
+    // viewport = document.querySelector("meta[name=viewport]");
+    // viewport.setAttribute('content', 'width=1024');
 
     var urlParams = new URLSearchParams(window.location.search);
     if (isLoading){

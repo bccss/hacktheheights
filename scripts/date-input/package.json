@@ -1,0 +1,66 @@
+{
+  "name": "date-input-polyfill",
+  "version": "2.14.0",
+  "description": "Automatically adds datepickers to input[type=date] on IE, Firefox, and OS X Safari.",
+  "main": "date-input-polyfill.dist.js",
+  "contributors": [
+    {
+      "name": "Brian Blakely",
+      "email": "anewpage.media@gmail.com"
+    },
+    {
+      "name": "Jonathan Gertig",
+      "email": "jcgertig@gmail.com",
+      "url": "https://github.com/jcgertig"
+    },
+    {
+      "name": "Pierre Klink"
+    },
+    {
+      "name": "Kyle Alwyn"
+    },
+    {
+      "name": "Joseph Victor Estolas",
+      "url": "https://github.com/jvestolas"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jcgertig/date-input-polyfill.git"
+  },
+  "bugs": "https://github.com/jcgertig/date-input-polyfill/issues",
+  "keywords": [
+    "html5",
+    "light",
+    "lightweight",
+    "input",
+    "type",
+    "date",
+    "datepicker",
+    "polyfill"
+  ],
+  "analyze": true,
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-stage-3": "^6.17.0",
+    "css-loader": "^0.25.0",
+    "eslint": "^3.7.1",
+    "node-sass": "^3.10.1",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.11.6"
+  },
+  "scripts": {
+    "start": "./node_modules/.bin/webpack-dev-server",
+    "start-c9": "./node_modules/.bin/webpack-dev-server --host $IP --port $PORT",
+    "build": "./node_modules/.bin/webpack --devtool=none --optimize-minimize --optimize-occurence-order --optimize-dedupe"
+  }
+}

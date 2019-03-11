@@ -20,6 +20,12 @@
             If you have any questions email: <a href="mailto:hacktheheights@gmail.com">hacktheheights@gmail.com</a>
         </p>
 
+         <!-- Current Level of Study: most current level of study -->
+         <h2 class="form-section-title">Current Level of Study:</h2>
+         <p class="form-section-description">Please enter your most current level of study.</p>
+         <input id="studyLevelField" class="form-textbox" type="text" placeholder="ex. Sophomore, Junior, etc." maxlength="100">
+         <!-- FORM SECTION END -->
+
         <!-- T-Shirt Size: XS, S, M, L, XL, XXL -->
         <h2 class="form-section-title">T-Shirt Size:</h2>
         <input type="radio" name="shirt-size" value="xs" checked> XS<br>
@@ -49,6 +55,11 @@
         <textarea id="hackerPriorExperienceField" class="form-textarea" placeholder="ex. coding projects, electronics, or whatever! :)" maxlength="500"></textarea>
         <!-- FORM SECTION END -->
 
+        <!-- Event Expectations: ideally under 200 (max 500 chars) words (textbox) -->
+        <h2 class="form-section-title">What do you hope to get out of Hack The Heights 3?</h2>
+        <textarea id="eventExpectationsField" class="form-textarea" placeholder="We'd love to hear what you're looking forward too! :)" maxlength="500"></textarea>
+        <!-- FORM SECTION END -->
+
         <!-- Interested in learning: Machine Learning, Frontend Web, Backend Web, iOS Development, Android Development, UI/UX, Game Dev, AR/VR, Blockchain -->
         <h2 class="form-section-title">What areas would you like to learn more about?</h2>
         <input type="checkbox" name="learning-interest" value="Machine Learning"> Machine Learning<br>
@@ -67,6 +78,20 @@
         <p class="form-section-description">Please enter a link to your resume for review.</p>
         <input id="resumeLinkField" class="form-textbox" type="text" placeholder="ex. shared PDF from Google Drive, OneDrive, etc.">
         <!-- FORM SECTION END -->
+
+        <!-- Additional Comments: ideally under 200 (max 500 chars) words (textbox) -->
+        <h2 class="form-section-title">Is there anything else you'd like us to know?</h2>
+        <textarea id="additionalCommentsField" class="form-textarea" placeholder="Anything at all! :)" maxlength="500"></textarea>
+        <!-- FORM SECTION END -->
+
+        <!-- MLH Required Checkboxes: basically agreeing to having read the code of conduct & acknowledging affiliation with MLH. -->
+        <br><br>
+        <input type="checkbox" name="mlh-checkbox" value="code-conduct"> I have read and agree to the MLH Code of Conduct.<br>
+        <input type="checkbox" name="mlh-checkbox" value="affiliation"> I authorize you to share my application/registration information for event administration, ranking, MLH administration, pre- and post-event informational emails, and occassional messages about hackathons in-line with the MLH Privacy Policy. I further agree to the terms of both the MLH Contest Terms and Conditions and the MLH Privacy Policy.<br>
+        <br><br><br>
+        
+        <!-- FORM SECTION END -->
+
 
         <a class="form-button" onclick="submitHacker()">submit</a>
     </div>

@@ -1,10 +1,14 @@
-.login-page {
+  .login-page {
     width: 360px;
     height: 100%;
     padding: 8% 0 0;
     /* margin: 20vh auto; */
     margin: 0 auto;
   }
+
+  /* #schools-list{
+    display: hidden;
+  } */
 
   #admin-login-form{
     min-height: 21vh;
@@ -182,6 +186,7 @@
     background: linear-gradient(to left, #76b852, #8DC26F); */
     background: url("../images/plain-background.svg") no-repeat;
     background-size: cover;
+    background-color: #263572;
     font-family: "Montserrat", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;      

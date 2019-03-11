@@ -8,7 +8,7 @@ function loginPressed(){
     var responseText = document.getElementById("response-text");
 
     // Form Vars //
-    var userEmail = document.getElementById("login-emailField").value;
+    var userEmail = (document.getElementById("login-emailField").value).toLowerCase();
     var userPassword = document.getElementById("login-passwordField").value;
 
     // var submissionBody = {"email":"laneo1232@gmail.com", "password":"test123"};
@@ -98,12 +98,21 @@ function createPressed(){
     var lastName = document.getElementById("lastNameField").value;
     var school = document.getElementById("schoolField").value;
     var major = document.getElementById("majorField").value;
-    var classYear = document.getElementById("classYearField").value;
+    var gradYear = document.getElementById("gradYearField").value;
+    var phoneNum = document.getElementById("phoneField").value;
+    var birthDate = document.getElementById("birthDateField").value;
     var email = document.getElementById("emailField").value;
     var password = document.getElementById("passwordField").value;
     var gender = document.getElementById("genderField").value;
+    if (gender == "other"){
+        gender = otherGenderField.value;
+    }
+    var ethnicity = document.getElementById("ethnicityField").value;
+    if (ethnicity == "other"){
+        ethnicity = document.getElementById("otherEthnicityField").value;
+    }
 
-    if (firstName.length < 1 || lastName.length < 1 || school.length < 1 || major.length < 1 || email.length < 1 || password.length < 1 || gender.length < 1){
+    if (firstName.length < 1 || lastName.length < 1 || school.length < 1 || major.length < 1 || gradYear.length < 1 || phoneNum.length < 1 || birthDate.length < 1 || email.length < 1 || password.length < 1 || gender.length < 1 || ethnicity.length < 1){
         console.log("missing field!");
         responseText.innerText = "please fill in all fields to continue.";
         responseText.style.display = "block";
@@ -117,10 +126,13 @@ function createPressed(){
         bodyFormData.set("lastName", lastName);
         bodyFormData.set("school", school);
         bodyFormData.set("major", major);
-        bodyFormData.set("classYear", classYear);
+        bodyFormData.set("gradYear", gradYear);
+        bodyFormData.set("phone", phoneNum);
+        bodyFormData.set("birthDate", birthDate);
         bodyFormData.set("email", email);
         bodyFormData.set("password", password);
         bodyFormData.set("gender", gender);
+        bodyFormData.set("ethnicity", ethnicity);
 
         axios({
             method: 'post',
@@ -205,9 +217,42 @@ function adminLoginPressed(){
     }
 }
 
+// function populateSchools(){
+//     var schoolList = document.getElementById("schools-list");
+//     fetch("./data/schools.json")
+//     .then(res => res.json())
+//     .then(data =>{
+//         // console.log(data);
+//         // schoolList.insertAdjacentHTML("afterbegin", '<!--[if lte IE 9]><select data-datalist="schools-list"><![endif]-->');
+//         for (i=0; i<10; i++){
+//             var school = '<option value="' + data[i].institution + '">';
+//             schoolList.insertAdjacentHTML('beforeend', school);
+//         }
+//     //    schoolList.insertAdjacentHTML("beforeend", "<!--[if lte IE 9]></select><![endif]-->");
+//     });
+// }
+
+function showGenderField(){
+    if(document.getElementById("genderField").value == "other"){
+        document.getElementById("otherGenderField").style.display = "block";
+    } else {
+        document.getElementById("otherGenderField").style.display = "none";
+    }
+}
+
+function showEthnicityField(){
+    if(document.getElementById("ethnicityField").value == "other"){
+        document.getElementById("otherEthnicityField").style.display = "block";
+    } else {
+        document.getElementById("otherEthnicityField").style.display = "none";
+    }
+}
+
 function initializePage(){
     // viewport = document.querySelector("meta[name=viewport]");
     // viewport.setAttribute('content', 'width=1024');
+
+    // populateSchools();
 
     // check for mode in url
     var urlParams = new URLSearchParams(window.location.search);

@@ -1,5 +1,6 @@
 var isLoading = true;
 var applications = [];
+var selectedApplication;
 
 function logout(){
     // axios.get("http://hacktheheights.co.nf/api/logout.php", {withCredentials:true});
@@ -59,7 +60,7 @@ function getApplications(appID){
                         <td class="name-col text-left">${currentApplication["fullName"]}</td>
                         <td class="role-col text-left">${currentApplication["role"]}</td>
                         <td class="status-col text-left">${currentApplication["status"]}</td>
-                        <td class="btn-col text-center"><a class="view-button-filled" onclick="showDetails(applications[${i}])">VIEW INFO</a></td>
+                        <td class="btn-col text-center"><a class="view-button-filled" onclick="showDetails(applications[${i}])">VIEW</a></td>
                     </tr>
                     `);
 
@@ -80,6 +81,7 @@ function getApplications(appID){
 
 function showDetails(currentApplication){
     console.log("LETS VIEW");
+    selectedApplication = currentApplication;
     var appType = currentApplication["role"];
     document.getElementById(`${appType}-details`).style = "display:block;";
 
@@ -150,9 +152,11 @@ function showDetails(currentApplication){
     
     document.getElementById("details-overlay").style = "display:block;"
     if (currentApplication["status"] == "approved"){
-        document.getElementById(`${appType}-box-approveBtn`).display.style = "none";
+        document.getElementById(`${appType}-box-approveBtn`).style.display = "none";
+        document.getElementById(`${appType}-box-declineBtn`).style.display = "none";
     } else {
-        document.getElementById(`${appType}-box-approveBtn`).display.style = "block";
+        document.getElementById(`${appType}-box-approveBtn`).style.display = "inline";
+        document.getElementById(`${appType}-box-declineBtn`).style.display = "inline";
     }
 }
 
@@ -161,13 +165,89 @@ function closeDetails(){
 }
 
 function approveApp(){
+    if (confirm("Are you sure you want to approve this user's application? They'll be notified of this update.")) {
+        // Save it!
+        // POST with selectedApplication
+        var bodyFormData = new FormData();
+        bodyFormData.set("type", "approve-application");
+        bodyFormData.set("app_type", selectedApplication["role"]);
+        bodyFormData.set("app_id", selectedApplication["id"]);
+        bodyFormData.set("name", selectedApplication["fullName"]);
+        bodyFormData.set("email", selectedApplication["email"]);
 
+        axios({
+            method: 'post',
+            crossDomain: true,
+            withCredentials: true,
+            url: 'http://www.hacktheheights.co.nf/api/admin.php',
+            data: bodyFormData,
+            params: {token: Cookies.get('adminToken')},
+            headers: { 'Cache-Control': 'no-store' }
+        })
+        .then(function (response) {
+            console.log("Response: \n");
+            console.log(response.data);
+            if(response.data.hasOwnProperty('failed')){
+                // not logged in
+                window.location.href = ('/login/?mode=admin');
+            } else {
+                // update values of elements on screen & display them
+                var responseData = response.data;
+                if (responseData["result"] == "success"){
+                    alert("Application successfully approved, the user's now being notified!");
+                    location.reload();
+                }
+            }
+        });
+    } else {
+        // Do nothing!
+    }
+}
+
+function declineApp(){
+    if (confirm("Are you sure you want to decline this user's application? They'll be notified of this status change.")) {
+        // Save it!
+         // POST with selectedApplication
+         var bodyFormData = new FormData();
+         bodyFormData.set("type", "decline-application");
+         bodyFormData.set("app_type", selectedApplication["role"]);
+         bodyFormData.set("app_id", selectedApplication["id"]);
+         bodyFormData.set("name", selectedApplication["fullName"]);
+         bodyFormData.set("email", selectedApplication["email"]);
+ 
+         axios({
+             method: 'post',
+             crossDomain: true,
+             withCredentials: true,
+             url: 'http://www.hacktheheights.co.nf/api/admin.php',
+             data: bodyFormData,
+             params: {token: Cookies.get('adminToken')},
+             headers: { 'Cache-Control': 'no-store' }
+         })
+         .then(function (response) {
+             // console.log("Response: \n");
+             // console.log(response.data);
+             if(response.data.hasOwnProperty('failed')){
+                 // not logged in
+                 window.location.href = ('/login/?mode=admin');
+             } else {
+                 // update values of elements on screen & display them
+                 var responseData = response.data;
+                 if (responseData["result"] == "success"){
+                     alert("Application successfully declined, the user's now being notified!");
+                     location.reload();
+                 }
+             }
+         });
+    } else {
+        // Do nothing!
+    }
 }
 
 function initializePage(){
 
-    viewport = document.querySelector("meta[name=viewport]");
-    viewport.setAttribute('content', 'width=1024');
+    // viewport = document.querySelector("meta[name=viewport]");
+    // viewport.setAttribute('content', 'width=1024');
 
     var urlParams = new URLSearchParams(window.location.search);
     if (isLoading){

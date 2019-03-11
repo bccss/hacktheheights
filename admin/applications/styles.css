@@ -236,6 +236,10 @@ body, html {
     cursor: pointer;
   }
 
+  .details-box-declineBtn:hover{
+    cursor: pointer;
+  }
+
   .details-container{
     display: flex;
     flex-wrap: wrap;

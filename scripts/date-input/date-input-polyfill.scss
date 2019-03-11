@@ -1,0 +1,112 @@
+@mixin reset() {
+  background: #fff;
+  color: #000;
+  text-shadow: none;
+  border: 0;
+  padding: 0;
+  height: auto;
+  width: auto;
+  line-height: normal;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+date-input-polyfill {
+  @include reset();
+  position: absolute !important;
+  text-align: center;
+  box-shadow: 0px 3px 10px 1px rgba(0,0,0,0.22);
+  cursor: default;
+  z-index: 1;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  overflow: hidden;
+  display: block;
+
+  &[data-open="false"] {
+    visibility: hidden;
+    z-index: -100 !important;
+    top: 0;
+  }
+  &[data-open="true"] {
+    visibility: visible;
+  }
+
+  select, table, th, td {
+    @include reset();
+    box-shadow: none;
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+  }
+
+  select, button {
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #DADFE1;
+    height: 24px;
+    vertical-align: top;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+  .monthSelect-wrapper {
+    width: 55%;
+    display: inline-block;
+  }
+
+  .yearSelect-wrapper {
+    width: 25%;
+    display: inline-block;
+  }
+
+  select {
+    width: 100%;
+
+    &:first-of-type {
+      border-right: 1px solid #DADFE1;
+      border-radius: 5px 0 0 0;
+      -moz-border-radius: 5px 0 0 0;
+      -webkit-border-radius: 5px 0 0 0;
+    }
+  }
+  button {
+    width: 20%;
+    background: #DADFE1;
+    border-radius: 0 5px 0 0;
+    -moz-border-radius: 0 5px 0 0;
+    -webkit-border-radius: 0 5px 0 0;
+
+    &:hover {
+      background: #eee;
+    }
+  }
+
+  table {
+    border-collapse: separate !important;
+    border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+    overflow: hidden;
+    max-width: 280px;
+    width: 280px;
+  }
+
+  th, td {
+    width: 32px;
+    padding: 4px;
+    text-align: center;
+    box-sizing: content-box;
+  }
+  td[data-day] {
+    cursor: pointer;
+
+
+    &:hover {
+      background: #DADFE1;
+    }
+  }
+  [data-selected] {
+    font-weight: bold;
+    background: #D8EAF6;
+  }
+}

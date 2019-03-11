@@ -1,5 +1,6 @@
 function submitHacker(){
-
+    
+    var studyLevel = document.getElementById("studyLevelField").value;
     var shirtSizeList = document.getElementsByName("shirt-size");
     var shirtSize = "";
     for (i=0; i<shirtSizeList.length; i++){
@@ -32,12 +33,21 @@ function submitHacker(){
             }
         }
     }
+
+    var eventExpectations = document.getElementById("eventExpectationsField").value;
+    var additionalComments = document.getElementById("additionalCommentsField").value;
+
+    var mlhBoxesMarked = false;
+    var mlhBoxes = document.getElementsByName("mlh-checkbox");
+    if ((mlhBoxes[0].checked == true) && (mlhBoxes[1].checked == true)){
+        mlhBoxesMarked = true;
+    }
     
     var resumeLink = document.getElementById("resumeLinkField").value;
 
-    if (shirtSize.length < 1 || dietaryRestrictions.length < 1 || numHackathons.length < 1 || priorExperience.length < 1 || learningInterests.length < 1 || resumeLink.length < 1){
+    if (studyLevel.length < 1 || shirtSize.length < 1 || dietaryRestrictions.length < 1 || numHackathons.length < 1 || priorExperience.length < 1 || learningInterests.length < 1 || eventExpectations.length < 1 || additionalComments.length < 1 || resumeLink.length < 1 || mlhBoxesMarked == false){
         console.log("missing field!");
-        alert("Please fill in all the missing fields to continue.");
+        alert("Please fill in all the missing fields & MLH checkboxes to continue.");
         // responseText.innerText = "please fill in all fields to continue.";
         // responseText.style.display = "block";
         // responseText.style.color = "darkred";
@@ -46,12 +56,15 @@ function submitHacker(){
         var requestURL = "http://hacktheheights.co.nf/api/apply.php";
         var bodyFormData = new FormData();
         bodyFormData.set("type", "hacker");
+        bodyFormData.set("studyLevel", studyLevel);
         bodyFormData.set("shirtSize", shirtSize);
         bodyFormData.set("dietary", dietaryRestrictions);
         bodyFormData.set("numHackathons", numHackathons);
         bodyFormData.set("priorExperience", priorExperience);
+        bodyFormData.set("eventExpectations", eventExpectations);
         bodyFormData.set("interests", learningInterests);
         bodyFormData.set("resume", resumeLink);
+        bodyFormData.set("comments", additionalComments);
 
         axios({
             method: 'post',
