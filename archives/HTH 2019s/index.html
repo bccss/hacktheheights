@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hack The Heights</title>
+
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="accordion.css">
+  <link rel="stylesheet" href="event-timeline.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/logo.png" />
+</head>
+<a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;left:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2019/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2019-season&utm_content=white"
+  target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg" alt="Major League Hacking 2019 Hackathon Season" style="width:100%"></a>
+
+<body>
+  <!-- <img src="/images/splash-background.svg" id="header-bg"> -->
+
+  <nav>
+    <ul>
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#schedule">SCHEDULE</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#sponsors">SPONSORS</a></li>
+    </ul>
+  </nav>
+
+  <div class="mobile-topnav" id="mobile-topnav" hidden>
+    <img src="images/logo.svg" style="margin:0; margin-top: 4px; margin-left: 12px; display: inline;" width="25" />
+    <a href="#home" class="active">HOME</a>
+    <a href="#about">ABOUT</a>
+    <a href="#schedule">SCHEDULE</a>
+    <a href="#faq">FAQ</a>
+    <a href="#sponsors">SPONSORS</a>
+    <a href="javascript:void(0);" class="icon" onclick="mobileNav()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <div id="home">
+    <img src="./images/left-curve.svg" id="header-left-curve">
+    <img src="./images/navbar.svg" id="nav-bg">
+
+    <div class="container" id="splash-text-container">
+      <h1>BOSTON COLLEGE</h1>
+      <h2>APRIL 13-14, 2019
+      </h2>
+
+      <p>Boston College's annual hackathon.<br>Be sure to join us for an unforgettable experience!</p>
+      <a id="loginBtn" class="button-outline" href="/login" role="button">
+        APPLY
+      </a>
+      <a id="sponsorBtn" class="button-filled" href="/apply/?type=sponsor" role="button">
+        SPONSOR
+      </a>
+    </div>
+  </div>
+
+  <div id="home-splash-mobile" hidden>
+
+  </div>
+
+  <div class="section" id="home-mobile" hidden>
+    <div class="container-centered" id="about-text-container">
+      <div class="container" id="splash-text-container">
+        <h1>BOSTON COLLEGE</h1>
+        <h2>APRIL 13-14 2019</h2>
+        <p>Boston College's annual hackathon.<br>Be sure to join us for an unforgettable experience!</p>
+        <a id="loginBtn" class="button-outline" href="/login" role="button">
+          LOGIN
+        </a>
+        <a id="sponsorBtn" class="button-filled" href="/apply/?type=sponsor" role="button">
+          SPONSOR
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider-line"/ hidden>
+
+  <div class="section" id="about">
+    <div class="container-centered" id="about-text-container">
+      <h1> JOIN US AT
+        <a style="color:#5B6DBC;" href="https://goo.gl/maps/LtaNDLoSTvH2" target="_blank">
+          <strong>CUSHING HALL</strong>
+        </a> | 24 HOURS</h1>
+      <p id="event-description">
+        We are excited to introduce Boston College's third full-scale hackathon! Hack the Heights will feature corporate sponsors, tech talks, and prizes for beginners and seasoned hackers alike. The event kicks off at 12:00 PM on Saturday, April 13
+        and concludes on Sunday, April 14
+        at 3:00 PM.
+      </p>
+      <div class="grid">
+        <div class="grid-item">
+          <i class="fa fa-star fa-3x"></i>
+          <h4>Win Prizes</h4>
+        </div>
+        <div class="grid-item">
+          <i class="fa fa-code fa-3x"></i>
+          <h4>Build Awesome Projects</h4>
+        </div>
+        <div class="grid-item">
+          <i class="fa fa-users fa-3x"></i>
+          <h4>Meet Sponsors</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider-line" />
+
+  <div class="section" id="schedule">
+    <div class="container-centered" id="schedule-container">
+      <h1>EVENT SCHEDULE</h1>
+      <h3 style="text-align: left; font-weight: 500;">
+        <br>Saturday April 13th
+      </h3>
+      <table class="description" ; style="width:100%">
+        <tr>
+          <td style="width: 90px; text-align: right;">11:30 AM</td>
+          <td style="width: 300px"> </td>
+          <td>🎉 Sign-in</td>
+        </tr>
+        <tr>
+          <td style="width: 90px; text-align: right;">12:00 PM</td>
+          <td style="width: 300px"> </td>
+          <td> 🏆 Welcome & Lunch</td>
+        </tr>
+        <tr>
+          <td style="width: 90px; text-align: right;">1:00 PM</td>
+          <td style="width: 300px"> </td>
+          <td> 😊 Hacking Begins</td>
+        </tr>
+        <tr>
+          <td style="width: 90px; text-align: right;">1:00 PM</td>
+          <td style="width: 300px"> </td>
+          <td> 💻 Hacker 101: Team-building</td>
+        </tr>
+        <tr>
+          <td style="width: 90px; text-align: right;">2:00 PM</td>
+          <td style="width: 300px"> </td>
+          <td> 🎉 Intro to React JS</td>
+        </tr>
+        <tr>
+          <td style="width: 90px; text-align: right;">3:45 PM</td>
+          <td style="width: 300px"> </td>
+          <td> 💻 Getting Started with iOS</td>
+        </tr>
+        <tr>
+          <td style="width: 90px; text-align: right;">5:00 PM</td>
+          <td style="width: 300px"> </td>
+          <td> 💻 Women's Meetup</td>
+        </tr>
+        <tr>
+          <td style="width: 90px; text-align: right;">6:00 PM</td>
+          <td style="width: 300px"> </td>
+          <td>🎉 Dinner</td>
+        </tr>
+        <tr>
+          <td style="width: 90px; text-align: right;">6:15 PM</td>
+          <td style="width: 300px"> </td>
+          <td> 💻 Cup Stacking w/ MLH</td>
+        </tr>
+        <tr>
+          <td style="width: 90px; text-align: right;">7:00 PM</td>
+          <td style="width: 300px"> </td>
+          <td> 💻 How to Pitch Workshop</td>
+        </tr>
+        <tr>
+          <td style="width: 90px; text-align: right;">8:15 PM</td>
+          <td style="width: 300px"> </td>
+          <td> 🏆 Fortnite Tournament</td>
+        </tr>
+        <tr>
+          <td style="width: 90px; text-align: right;"> </td>
+          <td style="width: 300px"> </td>
+          <td>💻 Zumba</td>
+        </tr>
+        <tr>
+          <td style="width: 90px; text-align: right;">9:45 PM</td>
+          <td style="width: 300px"> </td>
+          <td>😊 Organizers Check-In</td>
+        <tr>
+          <td style="width: 90px; text-align: right;">10:00 PM</td>
+          <td style="width: 300px"> </td>
+          <td> 🏆 Movie Screening</td>
+        </tr>
+      </table>
+
+      <hr>
+
+      <h3 style="text-align: left; font-weight: 500;">
+        Sunday April 14th
+      </h3>
+
+      <table class="description" ; style="width:100%">
+        <tr>
+          <td style="width: 90px; text-align: right;">12:00 AM</td>
+          <td style="width: 300px"> </td>
+          <td>🎉 Midnight Snack</td>
+        </tr>
+        <tr>
+          <td style="width: 90px; text-align: right;">7:30 AM</td>
+          <td style="width: 300px"> </td>
+          <td> 🎉 Coffee and Donuts </td>
+        </tr>
+        <tr>
+          <td style="width: 90px; text-align: right;">11:30 AM</td>
+          <td style="width: 300px"> </td>
+          <td> 😊 Project Submissions Due</td>
+        </tr>
+        <tr>
+          <td style="width: 90px; text-align: right;">11:30 AM</td>
+          <td style="width: 300px"> </td>
+          <td> 🎉 Brunch</td>
+        </tr>
+        <tr>
+          <td style="width: 90px; text-align: right;">12:30 PM</td>
+          <td style="width: 300px"> </td>
+          <td> 🏆 Project Demos</td>
+        </tr>
+        <tr>
+          <td style="width: 90px; text-align: right;">2:15 PM</td>
+          <td style="width: 300px"> </td>
+          <td> 🏆 Closing</td>
+        </tr>
+      </table>
+      <h3 style="text-align: left; font-weight: 500;">
+        Key
+      </h3>
+      <p class="description">
+        🎉 2nd Floor
+        <br>😊 Room 001
+        <br>💻 Room 210
+      </p>
+    </div>
+
+    <!-- This is the timeline system... will be finalized with actual dates. -->
+    <div id="schedule-system" hidden>
+      <ul class="timeline">
+        <li class="event" data-date="65Million B.C.">
+          <h3>Dinosaurs Roamed the Earth</h3>
+          <p>RAWWWWWWRRR 🐢🦂</p>
+        </li>
+        <li class="event" data-date="2005">
+          <h3>Creative Component Launched</h3>
+          <p>"We can be all things to all people!" 📣</p>
+        </li>
+        <li class="event" data-date="2009">
+          <h3>Squareflair was Born</h3>
+          <p></p>
+          <p>"We can be all things to Squarespace users!" 📣</p>
+        </li>
+        <li class="event" data-date="November 15, 2018">
+          <h3>Squareflair Today</h3>
+
+          <p>"We design and build from scratch!" 📣
+            <p />
+            <p>When we say <em><strong>100% custom</strong></em> we mean it— and we build all sites on the Squarespace Developer platform.
+              <p />
+              <p>Did you know that all of our pixels are hand-forged from the rarest of subpixels grown and harvested in the <em>Nerd Forest</em>? <br>🤜💥🤛</p>
+
+              <p><strong>Our success can be measured by lives and brands enhanced by 9+ years of 100% Squarespace-focused service!</strong></p>
+
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="divider-line" />
+
+  <div class="section" id="faq">
+    <div class="container-centered" id="faq-container">
+      <h1>FREQUENTLY ASKED QUESTIONS</h1>
+      <ul class="accordion">
+        <li class="accordion-item">
+          <input id="s1" class="hide" type="checkbox">
+          <label for="s1" class="accordion-label">What is a hackathon?</label>
+          <p class="accordion-child">A hackathon is an invention marathon. Programmers, designers, builders and more come together to learn, build, and share their creations over the course of a few days. Hackathons are not limited to computer
+            science majors — anyone who has an interest in technology and is eager to learn can participate in a hackathon. Not to be confused with illegal and unauthorized programming, "hacking" in this context means quickly and intelligently
+            creating a real application that others can use.</p>
+        </li>
+        <li class="accordion-item">
+          <input id="s2" class="hide" type="checkbox">
+          <label for="s2" class="accordion-label">Does it cost anything?</label>
+          <p class="accordion-child">A hackathon is completely free! In fact, all meals will be provided, and you'll be sure to walk out of the weekend with plenty of swag from our sponsors.</p>
+        </li>
+        <li class="accordion-item">
+          <input id="s3" class="hide" type="checkbox">
+          <label for="s3" class="accordion-label">Do I have to stay overnight?</label>
+          <p class="accordion-child">Carney will be open overnight for hacking, but you are not required to stay overnight. Feel free to ask a BC student for accommodation!</p>
+        </li>
+        <li class="accordion-item">
+          <input id="s4" class="hide" type="checkbox">
+          <label for="s4" class="accordion-label">I'm new to hackathons, can I still come?</label>
+          <p class="accordion-child">Yes! This event is open to students of all levels and backgrounds. Students new to programming are encouraged to come, hone their skills, and learn something new.</p>
+        </li>
+        <li class="accordion-item">
+          <input id="s5" class="hide" type="checkbox">
+          <label for="s5" class="accordion-label">I've never seen a computer in my life... what can I even do at a hackathon?</label>
+          <p class="accordion-child">While most participants will have some level of programming ability, people of all backgrounds can contribute. This includes designers, entrepreneurs, and beginners looking to learn.</p>
+        </li>
+        <li class="accordion-item">
+          <input id="s6" class="hide" type="checkbox">
+          <label for="s6" class="accordion-label">Am I allowed to work on a pre-existing project?</label>
+          <p class="accordion-child">While you are allowed to work on an existing project, you are encouraged to begin something new the day of the event. Rapid innovation is in the spirit of a hackathon, and only new hacks will be considrered for
+            prizes.</p>
+        </li>
+        <li class="accordion-item">
+          <input id="s7" class="hide" type="checkbox">
+          <label for="s7" class="accordion-label">Sooo... who decides the winners?</label>
+          <p class="accordion-child">Three judges from BC and our sponsors will determine prize winners based on the criteria of creativity, complexity, and utility.</p>
+        </li>
+        <li class="accordion-item">
+          <input id="s8" class="hide" type="checkbox">
+          <label for="s8" class="accordion-label">Oh yeah... I don't go to BC, do I need to be a Boston College student to attend?</label>
+          <p class="accordion-child">Nope! We welcome students from all universities. Unfortunately, we will not be able to accomodate high school students this year.</p>
+        </li>
+        <li class="accordion-item">
+          <input id="s9" class="hide" type="checkbox">
+          <label for="s9" class="accordion-label">Are there any rules?</label>
+          <p class="accordion-child">We want to ensure a positive experience for all participants. We encourage you to read the <a href="http://mlh.io/code-of-conduct" target="_blank" class="inline" style="color:#5B6DBC;">Code of Conduct</a>.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="divider-line" />
+
+  <div class="section" id="sponsors">
+    <div class="container-centered" id="sponsors-container">
+      <h1>SPONSORS</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg" style="margin-left:auto; margin-right:auto; display:block; text-align: center;">
+            <!-- Diamond Sponsor Logos -->
+            <h3 style="color:#9FA0A4; text-align: left;">DIAMOND SPONSOR</h3>
+            <a href="https://www.takedajobs.com/" target="_blank">
+              <img src="images/takeda-logo.svg" style="margin: 30px; display: inline;" height="125vmax" />
+            </a>
+            <!-- Platinum Sponsor Logos -->
+            </br>
+            <h3 style="color:#9FA0A4; text-align: left;">PLATINUM SPONSORS</h3>
+            <a href="https://mlh.io/" target="_blank">
+              <img src="images/mlh-logo-color.svg" style="margin:30px; display: inline;" height="60vmax" />
+            </a>
+            <a href="https://github.com/" target="_blank">
+              <img src="images/github-logo.svg" style="margin:30px; display: inline;" height="60vmax" />
+            </a>
+            <a href="https://home.kpmg/us/en/home/careers.html" target="_blank">
+              <img src="images/kpmg-logo.svg" style="margin:30px; display: inline;" height="60vmax" />
+            </a>
+            <!-- Gold Sponsor Logos -->
+            </br>
+            <h3 style="color:#9FA0A4; text-align: left;">GOLD SPONSORS</h3>
+            <a href=" http://hackp.ac/mlh-stickermule-hackathons" target="_blank">
+              <img src="images/sticker-mule-logo.svg" style="margin:30px; display: inline;" height="35vmax" />
+            </a>
+            <a href="https://n26.com/en-us/" target="_blank">
+              <img src="images/n26-logo.svg" style="margin:30px; display: inline;" height="40vmax" />
+            </a>
+            <a href="https://thebeehive.bumble.com/careers" target="_blank">
+              <img src="images/bumble-logo.svg" style="margin:30px; display: inline;" height="35vmax" />
+            </a>
+            <a href="https://www.ey.com/us/en/careers/experienced/ey---us---careers---experienced---job-search" target="_blank">
+              <img src="images/ey-logo.svg" style="margin:30px; display: inline;" height="50vmax" />
+            </a>
+            <a href="https://www.amazon.com/Amazon-Student/b?ie=UTF8&node=668781011" target="_blank">
+              <img src="images/prime-logo.svg" style="margin:30px; display: inline;" height="50vmax" />
+            </a>
+            <a href="https://www.coca-colacompany.com/careers/career-opportunities-job-search" target="_blank">
+              <img src="images/coca-cola-logo.svg" style="margin:30px; display: inline;" height="40vmax" />
+            </a>
+            <a href="https://www.kindsnacks.com/careers.html" target="_blank">
+              <img src="images/kind-logo.svg" style="margin:30px; display: inline;" height="50vmax" />
+            </a>
+          </div>
+          <div class="col-sm">
+          </div>
+        </div>
+      </div>
+      <p class="description" style="margin-top: 0;text-align: center;">
+        If you'd like to sponsor this event, please contact our Sponsorship Coordinator, Talia Kaplanian: <a href="mailto:kaplania@bc.edu" style="color:#5B6DBC;">kaplania@bc.edu</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div id="footer-grid">
+      <div class="footer-grid-item">
+        <a href="https://www.facebook.com/hacktheheightsBC/" target="_blank"><i class="fa fa-facebook-f"></i></a>
+      </div>
+      <div class="footer-grid-item">
+        <a href="https://twitter.com/HackTheHeights" target="_blank"><i class="fa fa-twitter"></i></a>
+      </div>
+      <div class="footer-grid-item">
+        <a href="https://www.linkedin.com/company/hack-the-heights/" target="_blank"><i class="fa fa-linkedin"></i></a>
+      </div>
+      <div class="footer-grid-item">
+        <a href="https://www.instagram.com/hacktheheights/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a>
+      </div>
+    </div>
+    <div id="footer-copyright">
+      <h5 style="display:inline;">Copyright 2019 © BCCSS Hack the Heights</h5>
+    </div>
+  </div>
+
+  <script>
+    function mobileNav() {
+      var x = document.getElementById("mobile-topnav");
+      if (x.className === "mobile-topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "mobile-topnav";
+      }
+    }
+  </script>
+
+</body>
+
+</html>
