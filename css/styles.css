@@ -24,6 +24,26 @@ a {
   padding-bottom: 200px;
 } */
 
+.FAQ {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.col-11 {
+  max-width: 33.3%;
+}
+
+.col-md-6 {
+  max-width: 50%
+}
+
+.col-lg-4 {
+  max-width: 90%
+}
+
 #home {
   background: url("./images/splash-background.svg") no-repeat;
   background-size: cover;
