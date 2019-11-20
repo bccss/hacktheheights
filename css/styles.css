@@ -30,6 +30,8 @@ a {
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: space-around;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
 .col-11 {
