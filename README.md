@@ -1,4 +1,4 @@
-# Boston College Hackathon (HTH3): TBD Spring 2019
+# Boston College Hackathon (HTH4): TBD Spring 2020
 
 
 * Kickoff event: TBD
