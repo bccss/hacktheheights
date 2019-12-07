@@ -255,3 +255,15 @@ nav {
 #footer-copyright h5 {
   font-weight: 300;
 }
+
+.play {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 90;
+}
+
+.circle {
+  background: url("/img/circle.svg") no-repeat center center;
+  background-size: cover;
+}

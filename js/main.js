@@ -10,7 +10,7 @@ function moveBackground() {
 
     translate = 'translate(' + x + 'px, ' + y + 'px) scale(1.2)';
 
-    $('.bg').css({
+    $('.move').css({
         '-webit-transform': translate,
         '-moz-transform': translate,
         'transform': translate
@@ -20,7 +20,6 @@ function moveBackground() {
 }
 
 $(window).on('mousemove', function (e) {
-    console.log("yolo");
     var lMouseX = Math.max(-100, Math.min(100, $(window).width() / 2 - e.clientX));
     var lMouseY = Math.max(-100, Math.min(100, $(window).height() / 2 - e.clientY));
     lFollowX = (30 * lMouseX) / 100; // 100 : 12 = lMouxeX : lFollow
@@ -51,3 +50,44 @@ $(window).on("load", function () {
         });
     }).scroll(); //invoke scroll-handler on page-load
 });
+
+
+// var circles = [];
+// let numCirc = 50;
+
+// for (let i = 0; i < numCirc; i++) {
+//     let c = document.createElement("div");
+//     c.classList.add("circle");
+//     c.style.left = `${Math.floor(Math.random() * 100)}vw`;
+//     c.style.top = `${Math.floor(Math.random() * 100)}vh`;
+//     c.style.transform = `scale(${Math.random()})`;
+//     c.style.width = `${Math.random()}em`;
+//     c.style.height = c.style.width;
+
+//     circles.push(c);
+//     $(".play").append(c);
+// }
+
+// // Keyframes
+// circles.forEach((el, i, ra) => {
+//     let to = {
+//         x: Math.random() * 100,
+//         y: Math.random() * 100
+//     };
+
+//     let anim = el.animate(
+//         [{
+//                 transform: "translate(0, 0)"
+//             },
+//             {
+//                 transform: `translate(${to.x}rem, ${to.y}rem)`
+//             }
+//         ], {
+//             duration: (Math.random() + 1) * 10000, // random duration
+//             direction: "alternate",
+//             fill: "both",
+//             iterations: Infinity,
+//             easing: "ease-in-out"
+//         }
+//     );
+// });
