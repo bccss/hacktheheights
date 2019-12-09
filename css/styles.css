@@ -49,7 +49,7 @@ a:hover {
 #nav-bg {
   z-index: 1;
   position: absolute;
-  top: 25%;
+  top: 20%;
   right: 10%;
   width: 750px;
   max-width: 80%;
@@ -99,14 +99,14 @@ nav {
 #splash-text-container {
   position: absolute;
   left: 50px;
-  bottom: 50px;
+  bottom: 5vmin;
   text-align: left;
-  width: 500px;
+  width: 400px;
   max-width: 90%;
 }
 
-#splash-text-container p {
-  margin-bottom: 40px;
+#splash-text-container {
+  margin-bottom: 20px;
 }
 
 .button-outline {
@@ -121,7 +121,7 @@ nav {
 .bn {
   font-weight: 800;
   padding: 8px 40px;
-  margin-right: 20px;
+  margin: 25px 0 25px 0;
   border: 2px solid #29abe2;
   border-radius: 25px;
   transition: 0.3s ease-in-out;
