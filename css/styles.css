@@ -170,7 +170,10 @@ nav {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-start;
+  height: 800px;
   width: 90%;
+
+  margin-top: 75px;
 }
 
 .faq-element {
@@ -182,12 +185,14 @@ nav {
 
 @media (max-width: 450px) {
   #faq-container {
-    margin-top: 25px;
+    display: flex;
     margin-left: 10vw;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
     width: 90%;
+
+    margin-top: 25px;
   }
   .faq-element {
     width: 100%;
