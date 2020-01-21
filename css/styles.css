@@ -190,6 +190,7 @@ nav {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
+    height: inherit;
     width: 90%;
 
     margin-top: 25px;
