@@ -338,7 +338,7 @@ nav {
 
 .container-liveHead {
   padding-top: 125px;
-  margin-left: 7%;
+  margin-left: 10%;
 }
 
 .liveLogo {
@@ -365,10 +365,10 @@ nav {
 }
 
 .blueCircle {
-  margin-left: 27px;
+  margin-left: 20px;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   opacity: .25;
   background-color: #ffc65f;
   display: inline-block;
@@ -376,4 +376,73 @@ nav {
   -moz-animation: blinks 1.7s infinite;
   -o-animation: blinks 1.7s infinite;
   animation: blinks 1.7s infinite;
+}
+
+.liveSection {
+  width: 86%;
+  margin-left: 7%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.liveSectionHeader {
+  margin-top: 50px;
+  width: 86%;
+  margin-left: 7%;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.liveSubsection {
+  text-align: center;
+  min-width: 40%;
+  font-size: 2em;
+  font-weight: bold;
+  color: #29abe2;
+}
+
+.schedule {
+  height: 400px;
+  width: 70%;
+  margin-left: 15%;
+  background-color: #ffffff66;
+  padding-top: 0.1px;
+  border: #555555 3px solid;
+}
+
+.event {
+  color: rgb(54, 54, 54);
+  font-weight: normal;
+  font-size: 0.6em;
+  background-color: #88888822;
+  margin: 10px 0;
+}
+
+.time {
+  font-weight: bold;
+  margin-right: auto;
+  display: inline-block;
+  float: left;
+  margin-left: 20px;
+}
+
+.eventName {
+  margin-left: 10px;
+  display: inline-block;
+
+}
+
+.announcements ul{
+  font-size: 0.6em;
+  text-align: left;
+  color: rgb(54, 54, 54);
+  font-weight: normal;
+  margin-bottom: 100px;
+}
+
+.hapnow {
+  color: rgb(54, 54, 54);
+  font-size: 0.8em;
+  font-weight: normal;
 }
