@@ -335,3 +335,45 @@ nav {
   background: url("../img/circle.svg") no-repeat center center;
   background-size: cover;
 }
+
+.container-liveHead {
+  padding-top: 125px;
+  margin-left: 7%;
+}
+
+.liveLogo {
+  height: 150px;
+  width: 150px;
+}
+
+.liveTxt {
+  font-weight: 800 !important;
+  font-size: 3.4em;
+  margin-left: 35px
+}
+
+@keyframes blinks {
+  0% {
+  opacity: .25
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .25;
+  }
+}
+
+.blueCircle {
+  margin-left: 27px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  opacity: .25;
+  background-color: #ffc65f;
+  display: inline-block;
+  -webkit-animation: blinks 1.7s infinite;
+  -moz-animation: blinks 1.7s infinite;
+  -o-animation: blinks 1.7s infinite;
+  animation: blinks 1.7s infinite;
+}
