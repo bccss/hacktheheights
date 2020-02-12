@@ -403,13 +403,14 @@ nav {
 }
 
 .schedule {
-  height: 400px;
   width: 70%;
+  height: 500px;
   margin-left: 15%;
   background-color: #ffffff66;
   padding-top: 0.1px;
   border: #555555 3px solid;
   border-radius: 3px;
+  overflow: scroll;
 }
 
 .event {
@@ -421,17 +422,16 @@ nav {
 }
 
 .time {
-  font-weight: bold;
-  margin-right: auto;
+  width: 49%;
   display: inline-block;
-  float: left;
-  margin-left: 20px;
+  font-weight: bold;
+  vertical-align: top;
 }
 
 .eventName {
-  margin-left: 10px;
   display: inline-block;
-
+  width: 49%;
+  text-align: left;
 }
 
 .announcements ul{
@@ -446,4 +446,15 @@ nav {
   color: rgb(54, 54, 54);
   font-size: 0.8em;
   font-weight: normal;
+}
+
+.wifi ol{
+  color: rgb(54, 54, 54);
+  text-align: left;
+  font-size: 0.5em;
+  font-weight: normal;
+}
+
+.wifi a:hover {
+  color: #ffc65f;
 }
