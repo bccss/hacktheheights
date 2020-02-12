@@ -409,6 +409,7 @@ nav {
   background-color: #ffffff66;
   padding-top: 0.1px;
   border: #555555 3px solid;
+  border-radius: 3px;
 }
 
 .event {
