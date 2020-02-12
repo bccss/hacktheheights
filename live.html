@@ -1,191 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Hack The Heights | Live</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Hack The Heights | Live</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="./img/logo.png" />
+  </head>
 
-  <link rel="stylesheet" href="./css/styles.css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800&display=swap" rel="stylesheet" />
-  <link rel="icon" type="image/png" href="./img/logo.png" />
-</head>
+  <body>
+    <div class="bg move"></div>
 
-<body>
-<div class="bg move"></div>
+    <div class="container-liveHead fade">
+      <img src="img/hth4-gasson.svg" class="liveLogo" />
+      <span class="liveTxt">Live</span>
+      <span class="blueCircle"></span>
+    </div>
 
-<div class="container-liveHead fade">
-  <img src="img/hth4-gasson.svg" class="liveLogo">
-  <span class="liveTxt">Live</span>
-  <span class="blueCircle"></span>
-</div>
-
-
-<div class="liveSectionHeader">Run of Show:</div>
-<div class="liveSection">
-  <div class="liveSubsection">
-    Schedule:
-    <div class="schedule">
-      <div class="event">
-        <span class="time">Saturday</span>
+    <div class="liveSectionHeader">Run of Show:</div>
+    <div class="liveSection">
+      <div class="liveSubsection">
+        Schedule:
+        <div class="schedule">
+          <div class="event">
+            <span class="time">Saturday</span>
+          </div>
+          <div class="event">
+            <span class="time">11:30 - 12:00</span>
+            <span class="eventName">Sign-In</span>
+          </div>
+          <div class="event">
+            <span class="time">12:00 - 12:30</span>
+            <span class="eventName">Welcome</span>
+          </div>
+          <div class="event">
+            <span class="time">12:30</span>
+            <span class="eventName">Hacking Starts</span>
+          </div>
+          <div class="event">
+            <span class="time">12:30 - 1:00</span>
+            <span class="eventName">Lunch</span>
+          </div>
+          <div class="event">
+            <span class="time">1:00 - 1:30</span>
+            <span class="eventName">Getting Started Event</span>
+          </div>
+          <div class="event">
+            <span class="time">2:00 - 3:30</span>
+            <span class="eventName">React Workshop</span>
+          </div>
+          <div class="event">
+            <span class="time">3:30 - 5:00</span>
+            <span class="eventName">iOS Workshop</span>
+          </div>
+          <div class="event">
+            <span class="time">5:00 - 6:00</span>
+            <span class="eventName">Women's Meetup</span>
+          </div>
+          <div class="event">
+            <span class="time">6:00 - 7:00</span>
+            <span class="eventName">Git Workshop</span>
+          </div>
+          <div class="event">
+            <span class="time">7:00 - 8:00</span>
+            <span class="eventName">Dinner</span>
+          </div>
+          <div class="event">
+            <span class="time">10:00 - 12:00</span>
+            <span class="eventName">The Internship Screening</span>
+          </div>
+          <div class="event">
+            <span class="time">Sunday</span>
+          </div>
+          <div class="event">
+            <span class="time">12:00 - 12:45</span>
+            <span class="eventName">Midnight Snack</span>
+          </div>
+          <div class="event">
+            <span class="time">6:30 - 7:15</span>
+            <span class="eventName">Sunrise Yoga</span>
+          </div>
+          <div class="event">
+            <span class="time">8:00 - 9:00</span>
+            <span class="eventName">Coffee</span>
+          </div>
+          <div class="event">
+            <span class="time">11:30</span>
+            <span class="eventName">Projects Due!</span>
+          </div>
+          <div class="event">
+            <span class="time">1:30 - 3:00</span>
+            <span class="eventName">Demonstrations</span>
+          </div>
+          <div class="event">
+            <span class="time">3:00 - 3:30</span>
+            <span class="eventName">Closing Ceremony</span>
+          </div>
+        </div>
       </div>
-      <div class="event">
-        <span class="time">11:30 - 12:00</span>
-        <span class="eventName">Sign-In</span>
-      </div>
-      <div class="event">
-        <span class="time">12:00 - 12:30</span>
-        <span class="eventName">Welcome</span>
-      </div>
-      <div class="event">
-        <span class="time">12:30</span>
-        <span class="eventName">Hacking Starts</span>
-      </div>
-      <div class="event">
-        <span class="time">12:30 - 1:00</span>
-        <span class="eventName">Lunch</span>
-      </div>
-      <div class="event">
-        <span class="time">1:00 - 1:30</span>
-        <span class="eventName">Getting Started Event</span>
-      </div>
-      <div class="event">
-        <span class="time">2:00 - 3:30</span>
-        <span class="eventName">React Workshop</span>
-      </div>
-      <div class="event">
-        <span class="time">3:30 - 5:00</span>
-        <span class="eventName">iOS Workshop</span>
-      </div>
-      <div class="event">
-        <span class="time">5:00 - 6:00</span>
-        <span class="eventName">Women's Meetup</span>
-      </div>
-      <div class="event">
-        <span class="time">6:00 - 7:00</span>
-        <span class="eventName">Git Workshop</span>
-      </div>
-      <div class="event">
-        <span class="time">7:00 - 8:00</span>
-        <span class="eventName">Dinner</span>
-      </div>
-      <div class="event">
-        <span class="time">10:00 - 12:00</span>
-        <span class="eventName">The Internship Screening</span>
-      </div>
-      <div class="event">
-        <span class="time">Sunday</span>
-      </div>
-      <div class="event">
-        <span class="time">12:00 - 12:45</span>
-        <span class="eventName">Midnight Snack</span>
-      </div>
-      <div class="event">
-        <span class="time">6:30 - 7:15</span>
-        <span class="eventName">Sunrise Yoga</span>
-      </div>
-      <div class="event">
-        <span class="time">8:00 - 9:00</span>
-        <span class="eventName">Coffee</span>
-      </div>
-      <div class="event">
-        <span class="time">11:30</span>
-        <span class="eventName">Projects Due!</span>
-      </div>
-      <div class="event">
-        <span class="time">1:30 - 3:00</span>
-        <span class="eventName">Demonstrations</span>
-      </div>
-      <div class="event">
-        <span class="time">3:00 - 3:30</span>
-        <span class="eventName">Closing Ceremony</span>
+      <div class="liveSubsection">
+        <div class="happening-now">
+          Announcements:
+          <div class="announcements">
+            <ul id="announcements"></ul>
+          </div>
+        </div>
+        <div>
+          Happening Now:
+          <div class="hapnow">Applications open!</div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="liveSubsection">
-    <div class="happening-now">
-      Announcements:
-      <div class="announcements">
-        <ul>
-          <li>13:32 [John]: Welcome to Hack the Heights 4!</li>
-        </ul>
+
+    <div class="liveSectionHeader">Getting Started:</div>
+    <div class="liveSection">
+      <div class="liveSubsection">
+        Wi-Fi:
+        <div class="wifi">
+          <ol>
+            <li>Connect to the “BostonCollege” wireless network.</li>
+            <li>
+              Go to
+              <a href="https://helix.bc.edu/" target="_blank">helix.bc.edu</a>
+              and select “Guest Registration.”
+            </li>
+            <li>Complete the registration form.</li>
+          </ol>
+        </div>
+      </div>
+      <div class="liveSubsection">
+        Resources:
       </div>
     </div>
-    <div>
-      Happening Now:
-      <div class="hapnow">Applications open!</div>
+
+    <div class="liveSectionHeader">Project Submission:</div>
+
+    <div class="liveSectionHeader">Prizes:</div>
+
+    <div class="footer">
+      <div id="footer-grid">
+        <div class="footer-grid-item">
+          <a href="https://www.facebook.com/hacktheheightsBC/" target="_blank"
+            ><i class="fa fa-facebook-f"></i
+          ></a>
+        </div>
+        <div class="footer-grid-item">
+          <a href="https://twitter.com/HackTheHeights" target="_blank"
+            ><i class="fa fa-twitter"></i
+          ></a>
+        </div>
+        <div class="footer-grid-item">
+          <a
+            href="https://www.linkedin.com/company/hack-the-heights/"
+            target="_blank"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+        </div>
+        <div class="footer-grid-item">
+          <a
+            href="https://www.instagram.com/hacktheheights/?hl=en"
+            target="_blank"
+            ><i class="fa fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+      <div id="footer-copyright">
+        <h5 style="display:inline;">Copyright 2019 © Hack the Heights</h5>
+      </div>
     </div>
-  </div>
-</div>
 
-<div class="liveSectionHeader">Getting Started:</div>
-<div class="liveSection">
-  <div class="liveSubsection">
-    Wi-Fi:
-    <div class="wifi">
-      <ol>
-        <li>Connect to the “BostonCollege” wireless network.</li>
-        <li>Go to <a href="https://helix.bc.edu/" target="_blank">helix.bc.edu</a> and select “Guest Registration.”</li>
-        <li>Complete the registration form.</li>
-      </ol>
-    </div>
-  </div>
-  <div class="liveSubsection">
-    Resources:
-  </div>
-</div>
+    <script>
+      function mobileNav() {
+        var x = document.getElementById("mobile-topnav");
+        if (x.className === "mobile-topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "mobile-topnav";
+        }
+      }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-<div class="liveSectionHeader">Project Submission:</div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css"
+    />
 
-<div class="liveSectionHeader">Prizes:</div>
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.css"
+    />
 
-
-<div class="footer">
-  <div id="footer-grid">
-    <div class="footer-grid-item">
-      <a href="https://www.facebook.com/hacktheheightsBC/" target="_blank"><i class="fa fa-facebook-f"></i></a>
-    </div>
-    <div class="footer-grid-item">
-      <a href="https://twitter.com/HackTheHeights" target="_blank"><i class="fa fa-twitter"></i></a>
-    </div>
-    <div class="footer-grid-item">
-      <a href="https://www.linkedin.com/company/hack-the-heights/" target="_blank"><i class="fa fa-linkedin"></i></a>
-    </div>
-    <div class="footer-grid-item">
-      <a href="https://www.instagram.com/hacktheheights/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a>
-    </div>
-  </div>
-  <div id="footer-copyright">
-    <h5 style="display:inline;">Copyright 2019 © Hack the Heights</h5>
-  </div>
-</div>
-
-<script>
-  function mobileNav() {
-    var x = document.getElementById("mobile-topnav");
-    if (x.className === "mobile-topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "mobile-topnav";
-    }
-  }
-</script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-</script>
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
-
-
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.css">
-
-<script src="./js/main.js"></script>
-
-</body>
-
+    <script src="./js/main.js"></script>
+  </body>
 </html>
