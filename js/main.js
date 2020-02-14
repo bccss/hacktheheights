@@ -35,7 +35,7 @@ $(window).on("mousemove", function(e) {
 });
 
 $(window).on("load", function() {
-  updateHapNow();
+ // updateHapNow();
   let websiteData =
     "https://spreadsheets.google.com/feeds/cells/18nBSXeKWQJMeaQ6TlUxtGQHrhtY-KwKrWTRuhaHSWy0/1/public/full?alt=json";
   fetch(websiteData)
@@ -82,7 +82,7 @@ $(window).on("load", function() {
     })
     .scroll(); //invoke scroll-handler on page-load
 });
-
+/*
 function updateHapNow() {
   const hapNow = document.getElementById("hapnow");
   const time = new Date();
@@ -143,6 +143,8 @@ function updateHapNow() {
 setInterval(function() {
   updateHapNow();
 }, 60 * 1000);
+*/
+
 
 // var circles = [];
 // let numCirc = 50;
