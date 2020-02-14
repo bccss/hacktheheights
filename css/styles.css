@@ -451,13 +451,9 @@ nav {
   font-weight: normal;
 }
 
-.wifi ol{
+.liveText {
   color: rgb(54, 54, 54);
   text-align: left;
   font-size: 0.5em;
   font-weight: normal;
-}
-
-.wifi a:hover {
-  color: #ffc65f;
 }
