@@ -339,6 +339,7 @@ nav {
 .container-liveHead {
   padding-top: 75px;
   margin-left: 5%;
+  white-space: nowrap;
 }
 
 .liveLogo {
@@ -349,7 +350,6 @@ nav {
 .liveTxt {
   font-weight: 800 !important;
   font-size: 3.4em;
-  margin-left: 35px
 }
 
 @keyframes blinks {
@@ -365,7 +365,7 @@ nav {
 }
 
 .blueCircle {
-  margin-left: 20px;
+  margin-left: 7px;
   border-radius: 50%;
   width: 35px;
   height: 35px;
