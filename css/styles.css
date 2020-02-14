@@ -337,8 +337,8 @@ nav {
 }
 
 .container-liveHead {
-  padding-top: 125px;
-  margin-left: 10%;
+  padding-top: 75px;
+  margin-left: 5%;
 }
 
 .liveLogo {
@@ -382,8 +382,8 @@ nav {
   width: 86%;
   margin-left: 7%;
   display: flex;
-  justify-content: space-between;
-
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .liveSectionHeader {
@@ -396,21 +396,23 @@ nav {
 
 .liveSubsection {
   text-align: center;
-  min-width: 40%;
   font-size: 2em;
   font-weight: bold;
   color: #29abe2;
+  width: 43%;
+  margin-left: 5%;
+  margin-top: 25px;
+  min-width: 350px;
 }
 
 .schedule {
-  width: 70%;
-  height: 500px;
-  margin-left: 15%;
+  max-height: 500px;
   background-color: #ffffff66;
   padding-top: 0.1px;
   border: #555555 3px solid;
   border-radius: 3px;
   overflow: scroll;
+  white-space: noWrap;
 }
 
 .event {
@@ -432,6 +434,7 @@ nav {
   display: inline-block;
   width: 49%;
   text-align: left;
+  white-space: normal;
 }
 
 .announcements ul{
@@ -442,7 +445,7 @@ nav {
   margin-bottom: 100px;
 }
 
-.hapnow {
+#hapnow {
   color: rgb(54, 54, 54);
   font-size: 0.8em;
   font-weight: normal;
