@@ -120,8 +120,7 @@ function loadAnnouncements() {
           let contents = message.content.$t.split(";");
           let li = document.createElement("li");
           li.innerHTML = "[" + contents[0] + "] ";
-          li.innerHTML += contents[1] + ": ";
-          li.innerHTML += contents[2];
+          li.innerHTML += contents[1];
           an.appendChild(li);
           // console.log(contents);
         }
