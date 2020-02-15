@@ -110,22 +110,75 @@ function loadAnnouncements() {
       return response.json();
     })
     .then(myJson => {
-      let announcements = myJson.feed.entry;
+      let cells = myJson.feed.entry;
+
+      let announcements = cells.filter(function(cell) {
+        return cell.gs$cell.col === "1";
+      });
       let announcementsRev = announcements.reverse();
 
-      let an = document.getElementById("announcements");
-      announcementsRev.forEach(function(message) {
-        // only check values in the first column
-        if (message.gs$cell.col === "1") {
-          let contents = message.content.$t.split(";");
-          let li = document.createElement("li");
-          li.innerHTML = "[" + contents[0] + "] ";
-          li.innerHTML += contents[1];
-          an.appendChild(li);
-          // console.log(contents);
-        }
+      let scheduleSat = cells.filter(function(cell) {
+        return cell.gs$cell.col === "2";
       });
-      //   console.log(announcements);
+
+      let scheduleSun = cells.filter(function(cell) {
+        return cell.gs$cell.col === "3";
+      });
+
+      let happeningNow = cells.filter(function(cell) {
+        return cell.gs$cell.col === "4";
+      });
+      //   console.log(announcementsRev);
+      //   console.log(scheduleSat);
+      //   console.log(scheduleSun);
+      //   console.log(happeningNow);
+
+      let an = document.getElementById("announcements");
+      let scSat = document.getElementById("scheduleSat");
+      let scSun = document.getElementById("scheduleSun");
+      let hap = document.getElementById("hapNow");
+
+      announcementsRev.forEach(function(message) {
+        let contents = message.content.$t.split(";");
+        let li = document.createElement("li");
+        li.innerHTML = "[" + contents[0] + "] ";
+        li.innerHTML += contents[1];
+        an.appendChild(li);
+      });
+
+      scheduleSat.forEach(function(cell) {
+        let contents = cell.content.$t.split(";");
+        let event = document.createRange().createContextualFragment(
+          `
+            <div class="event">
+                <span class="time">` +
+            contents[0] +
+            `</span>
+                <span class="eventName">` +
+            contents[1] +
+            `</span>
+            </div>
+         `
+        );
+        scSat.appendChild(event);
+      });
+
+      scheduleSun.forEach(function(cell) {
+        let contents = cell.content.$t.split(";");
+        let event = document.createRange().createContextualFragment(
+          `
+            <div class="event">
+                <span class="time">` +
+            contents[0] +
+            `</span>
+                <span class="eventName">` +
+            contents[1] +
+            `</span>
+            </div>
+         `
+        );
+        scSun.appendChild(event);
+      });
     });
 }
 
