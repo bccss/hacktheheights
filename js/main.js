@@ -35,29 +35,6 @@ $(window).on("mousemove", function(e) {
 });
 
 $(window).on("load", function() {
-  let websiteData =
-    "https://spreadsheets.google.com/feeds/cells/18nBSXeKWQJMeaQ6TlUxtGQHrhtY-KwKrWTRuhaHSWy0/1/public/full?alt=json";
-  fetch(websiteData)
-    .then(response => {
-      return response.json();
-    })
-    .then(myJson => {
-      let announcements = myJson.feed.entry;
-
-      let an = document.getElementById("announcements");
-      announcements.forEach(function(message) {
-        let contents = message.content.$t.split(";");
-
-        let li = document.createElement("li");
-        li.innerHTML = "[" + contents[0] + "] ";
-        li.innerHTML += contents[1] + ": ";
-        li.innerHTML += contents[2];
-        an.appendChild(li);
-        // console.log(contents);
-      });
-      //   console.log(announcements);
-    });
-
   $(window)
     .scroll(function() {
       var windowBottom = $(this).scrollTop() + $(this).innerHeight();
@@ -81,7 +58,6 @@ $(window).on("load", function() {
     })
     .scroll(); //invoke scroll-handler on page-load
 });
-
 
 // var circles = [];
 // let numCirc = 50;
