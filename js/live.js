@@ -125,7 +125,7 @@ function loadAnnouncements() {
           // console.log(contents);
         }
       });
-      console.log(announcements);
+      //   console.log(announcements);
     });
 }
 
