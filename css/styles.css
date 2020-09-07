@@ -39,11 +39,11 @@ a:hover {
 }
 
 #inline-text {
-  color: #29abe2 !important;
+  color: #31b414 !important;
 }
 
 #inline-text:hover {
-  color: #ffc65f;
+  color: #20730e;
 }
 
 #nav-bg {
@@ -71,14 +71,14 @@ nav {
 }
 
 .nav-container a {
-  color: #29abe2;
+  color: #31b414;
   padding-top: 10px;
   padding-bottom: 15px;
   transition: 0.3s ease-in-out;
 }
 
 .nav-container a:hover {
-  color: #ffc65f;
+  color: #20730e;
   transition: 0.3s ease-in-out;
 }
 
@@ -110,11 +110,11 @@ nav {
 }
 
 .button-outline {
-  color: #29abe2;
+  color: #31b414;
 }
 
 .button-filled {
-  background-color: #29abe2;
+  background-color: #31b414;
   color: white;
 }
 
@@ -122,7 +122,7 @@ nav {
   font-weight: 800;
   padding: 8px 40px;
   margin: 25px 0 25px 0;
-  border: 2px solid #29abe2;
+  border: 2px solid #31b414;
   border-radius: 25px;
   transition: 0.3s ease-in-out;
 }
@@ -130,14 +130,14 @@ nav {
 .bn:hover {
   text-decoration: none;
   color: white;
-  border-color: #ffc65f;
-  background-color: #ffc65f;
+  border-color: #20730e;
+  background-color: #20730e;
   transition: 0.3s ease-in-out;
 }
 
 .inline a {
   font-weight: 900;
-  color: #29abe2;
+  color: #31b414;
 }
 
 .header-section {
@@ -224,7 +224,7 @@ nav {
 .grid-item i {
   margin-bottom: 15px;
   font-size: 65px;
-  color: #29abe2;
+  color: #31b414;
 }
 
 @media (max-width: 450px) {
@@ -249,7 +249,7 @@ nav {
   .grid-item i {
     margin-bottom: 15px;
     font-size: 65px;
-    color: #29abe2;
+    color: #31b414;
   }
 }
 
@@ -281,7 +281,7 @@ nav {
 }
 
 .footer {
-  background-color: #29abe2;
+  background-color: #31b414;
   height: 60px;
 }
 
@@ -310,12 +310,12 @@ nav {
 }
 
 .footer-grid-item i:hover {
-  color: #ffc65f;
+  color: #20730e;
 }
 
 #footer-copyright {
   color: white;
-  background-color: #29abe2;
+  background-color: #31b414;
   text-align: center;
   padding-bottom: 15px;
 }
@@ -370,7 +370,7 @@ nav {
   width: 35px;
   height: 35px;
   opacity: .25;
-  background-color: #ffc65f;
+  background-color: #20730e;
   display: inline-block;
   -webkit-animation: blinks 1.7s infinite;
   -moz-animation: blinks 1.7s infinite;
@@ -399,7 +399,7 @@ nav {
   text-align: center;
   font-size: 2em;
   font-weight: bold;
-  color: #29abe2;
+  color: #31b414;
   width: 43%;
   margin-left: 5%;
   margin-top: 25px;
