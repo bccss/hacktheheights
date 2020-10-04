@@ -416,6 +416,15 @@ nav {
   white-space: noWrap;
 }
 
+.schedule::-webkit-scrollbar {
+  display: none;
+}
+
+.schedule {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 .event {
   color: rgb(54, 54, 54);
   font-weight: normal;
