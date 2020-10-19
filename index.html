@@ -1,235 +1,301 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Hack The Heights</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Hack The Heights</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="./img/logo.png" />
+  </head>
 
-  <link rel="stylesheet" href="./css/styles.css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800&display=swap" rel="stylesheet" />
-  <link rel="icon" type="image/png" href="./img/logo.png" />
-</head>
+  <body>
+    <div class="bg move"></div>
 
-<body>
-  <div class="bg move"></div>
-
-  <nav>
-    <div class="nav-container">
-      <a href="#home" id="home-btn"></a>
-      <a href="#about">ABOUT</a>
-	    <a href="live.html">SCHEDULE</a>
-      <a href="#faq">FAQ</a>
-      <a href="#sponsors">SPONSORS</a>
-    </div>
-  </nav>
-
-
-  <!-- <img src="/img/circle.svg" id="circle-1"> -->
-  <img src="./img/hth5-full-logo.png" id="nav-bg" />
-
-
-  <div class="header-section fade" id="home">
-
-    <div id="splash-text-container">
-      <h2>November 14-15, 2020</h2>
-      <b>Chestnut Hill, MA</b>
-
-      <p>
-        The Liberal Arts hackathon, hosted by Boston College.<br />Join us for an
-        unforgettable experience!
-      </p>
-      <a id="loginBtn" class="bn button-outline" href="https://forms.gle/5e9UrEkpPExs718S9" target="_blank">
-        APPLY NOW
-      </a>
-      <br>
-      <br>
-      <a id="sponsorBtn" class="bn button-filled" href="#sponsors">
-        SPONSOR
-      </a>
-    </div>
-  </div>
-
-
-  <div class="section fade">
-    <div class="container" id="about">
-      <div class="row">
-        <div class="column column-67 column-offset-33" id="about-text-container">
-          <h1>
-            JOIN US (VIRTUALLY) AT
-            <a href="https://goo.gl/maps/kFUJbRFAiKEbDjDw9" target="_blank" id="inline-text">
-              <strong>BOSTON COLLEGE</strong>
-            </a>
-            | 24 HOURS
-          </h1>
-          <p id="event-description">
-              We are excited to introduce Boston College's fifth 24-hour hackathon, Hack the Heights 5! Due to COVID-19, Hack the Heights is going completely virtual this year.
-              It will feature virtual technical workshops, tech talks, and prizes for beginners and seasoned hackers alike.
-              The event kicks off on Saturday, November 14 and concludes on Sunday, November 15.
-          </p>
-          <div class="grid">
-            <div class="grid-item">
-              <i class="fa fa-star fa-3x"></i>
-              <h4>Win Prizes</h4>
-            </div>
-            <div class="grid-item">
-              <i class="fa fa-code fa-3x"></i>
-              <h4>Build Awesome Projects</h4>
-            </div>
-            <div class="grid-item">
-              <i class="fa fa-users fa-3x"></i>
-              <h4>Meet Sponsors</h4>
-            </div>
-          </div>
-        </div>
+    <nav>
+      <div class="nav-container">
+        <a href="#home" id="home-btn"></a>
+        <a href="#about">ABOUT</a>
+        <a href="live.html">SCHEDULE</a>
+        <a href="mentors.html">MENTORS</a>
+        <a href="#faq">FAQ</a>
+        <a href="#sponsors">SPONSORS</a>
       </div>
-    </div>
-  </div>
+    </nav>
 
-  <div class="section fade" id="faq">
-    <div class="container">
-      <div class="row">
-        <div class="column">
-          <h1>FREQUENTLY ASKED QUESTIONS</h1>
-          <div id="faq-container">
-            <div class="faq-element">
-              <h3>What is a hackathon?</h3>
-              <p>
-                A hackathon is an invention marathon. Programmers, designers,
-                builders and more come together to learn, build, and share their
-                creations throughout the weekend. Hackathons are not
-                limited to computer science majors — anyone who has an interest
-                in technology and is eager to learn can participate in a
-                hackathon. Not to be confused with illegal and unauthorized
-                programming, "hacking" in this context means quickly and
-                intelligently creating a real application that others can use.
-              </p>
-            </div>
+    <!-- <img src="/img/circle.svg" id="circle-1"> -->
+    <img src="./img/hth5-full-logo.png" id="nav-bg" />
 
-            <div class="faq-element">
-              <h3>Does it cost anything?</h3>
-              <p>
-                  Our virtual hackathon is completely free! You will have the opportunity to win prizes and attend free workshops over Zoom.
-              </p>
-            </div>
+    <div class="header-section fade" id="home">
+      <div id="splash-text-container">
+        <h2>November 14-15, 2020</h2>
+        <b>Chestnut Hill, MA</b>
 
-            <div class="faq-element">
-              <h3>I'm new to hackathons, can I still come?</h3>
-              <p>Yes! This event is open to students of all levels and backgrounds. Students new to programming are
-                encouraged to attend virtually, hone their skills, and learn something new.</p>
-            </div>
-
-            <div class="faq-element">
-              <h3>I've never seen a computer in my life... what can I even do at a
-                hackathon?</h3>
-              <p>While most participants will have some level of programming ability, people of all
-                backgrounds can contribute. This includes designers, entrepreneurs, and beginners looking to learn.</p>
-            </div>
-
-            <div class="faq-element">
-              <h3>Am I allowed to work on a pre-existing project?</h3>
-              <p>While you are allowed to work on an existing project, you are encouraged to begin
-                something new the day of the event. Rapid innovation is in the spirit of a hackathon, and only new hacks
-                will be considered for prizes.</p>
-            </div>
-
-            <div class="faq-element">
-              <h3>Sooo... who decides the winners?</h3>
-              <p>Judges from BC and our sponsors will determine prize winners based on the
-                criteria of creativity, complexity, and utility of your hack.</p>
-            </div>
-
-            <div class="faq-element">
-              <h3>Oh yeah... I don't go to BC, do I need to be a Boston College student to
-                attend?</h3>
-              <p>Nope! We welcome students from all universities. Our virtual format also allows us
-                to accomodate high school students this year.</p>
-            </div>
-
-            <div class="faq-element">
-              <h3>Are there any rules?</h3>
-              <p>We want to ensure a positive experience for all participants. We encourage you to
-                read the <a href="http://mlh.io/code-of-conduct" target="_blank" class="inline"
-                  style="color:#5B6DBC;">MLH Code of
-                  Conduct</a>.</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-
-  <div class="section fade" id="sponsors">
-    <div class="container" id="sponsors-container">
-      <div class="row">
-        <h1>SPONSORS</h1>
-        <div class="container">
-          <div id="sponsor-logos">
-            <div>
-              <img src="img/sponsors/EY_logo.png" alt="EY">
-            </div>
-            <div id="amazon">
-              <img src="img/sponsors/smartsheet-logo.png" alt="Smartsheet">
-            </div>
-          </div>
-        </div>
-        <p class="description" style="margin-top: 0;text-align: center;">
-          If you'd like to sponsor this event, please contact us at
-          <a href="mailto:hacktheheights@gmail.com" style="color:#5B6DBC;">hacktheheights@gmail.com</a>
+        <p>
+          The Liberal Arts hackathon, hosted by Boston College.<br />Join us for
+          an unforgettable experience!
         </p>
+        <a
+          id="loginBtn"
+          class="bn button-outline"
+          href="https://forms.gle/5e9UrEkpPExs718S9"
+          target="_blank"
+        >
+          APPLY NOW
+        </a>
+        <br />
+        <br />
+        <a id="sponsorBtn" class="bn button-filled" href="#sponsors">
+          SPONSOR
+        </a>
       </div>
     </div>
-  </div>
 
-  <div class="footer">
-    <div id="footer-grid">
-      <div class="footer-grid-item">
-        <a href="https://www.facebook.com/hacktheheightsBC/" target="_blank"><i class="fa fa-facebook-f"></i></a>
-      </div>
-      <div class="footer-grid-item">
-        <a href="https://twitter.com/HackTheHeights" target="_blank"><i class="fa fa-twitter"></i></a>
-      </div>
-      <div class="footer-grid-item">
-        <a href="https://www.linkedin.com/company/hack-the-heights/" target="_blank"><i class="fa fa-linkedin"></i></a>
-      </div>
-      <div class="footer-grid-item">
-        <a href="https://www.instagram.com/hacktheheights/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a>
+    <div class="section fade">
+      <div class="container" id="about">
+        <div class="row">
+          <div
+            class="column column-67 column-offset-33"
+            id="about-text-container"
+          >
+            <h1>
+              JOIN US (VIRTUALLY) AT
+              <a
+                href="https://goo.gl/maps/kFUJbRFAiKEbDjDw9"
+                target="_blank"
+                id="inline-text"
+              >
+                <strong>BOSTON COLLEGE</strong>
+              </a>
+              | 24 HOURS
+            </h1>
+            <p id="event-description">
+              We are excited to introduce Boston College's fifth 24-hour
+              hackathon, Hack the Heights 5! Due to COVID-19, Hack the Heights
+              is going completely virtual this year. It will feature virtual
+              technical workshops, tech talks, and prizes for beginners and
+              seasoned hackers alike. The event kicks off on Saturday, November
+              14 and concludes on Sunday, November 15.
+            </p>
+            <div class="grid">
+              <div class="grid-item">
+                <i class="fa fa-star fa-3x"></i>
+                <h4>Win Prizes</h4>
+              </div>
+              <div class="grid-item">
+                <i class="fa fa-code fa-3x"></i>
+                <h4>Build Awesome Projects</h4>
+              </div>
+              <div class="grid-item">
+                <i class="fa fa-users fa-3x"></i>
+                <h4>Meet Sponsors</h4>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div id="footer-copyright">
-      <h5 style="display:inline;">Copyright 2020 © Hack the Heights</h5>
-    </div>
-  </div>
 
-  <script>
-    function mobileNav() {
-      var x = document.getElementById("mobile-topnav");
-      if (x.className === "mobile-topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "mobile-topnav";
+    <div class="section fade" id="faq">
+      <div class="container">
+        <div class="row">
+          <div class="column">
+            <h1>FREQUENTLY ASKED QUESTIONS</h1>
+            <div id="faq-container">
+              <div class="faq-element">
+                <h3>What is a hackathon?</h3>
+                <p>
+                  A hackathon is an invention marathon. Programmers, designers,
+                  builders and more come together to learn, build, and share
+                  their creations throughout the weekend. Hackathons are not
+                  limited to computer science majors — anyone who has an
+                  interest in technology and is eager to learn can participate
+                  in a hackathon. Not to be confused with illegal and
+                  unauthorized programming, "hacking" in this context means
+                  quickly and intelligently creating a real application that
+                  others can use.
+                </p>
+              </div>
+
+              <div class="faq-element">
+                <h3>Does it cost anything?</h3>
+                <p>
+                  Our virtual hackathon is completely free! You will have the
+                  opportunity to win prizes and attend free workshops over Zoom.
+                </p>
+              </div>
+
+              <div class="faq-element">
+                <h3>I'm new to hackathons, can I still come?</h3>
+                <p>
+                  Yes! This event is open to students of all levels and
+                  backgrounds. Students new to programming are encouraged to
+                  attend virtually, hone their skills, and learn something new.
+                </p>
+              </div>
+
+              <div class="faq-element">
+                <h3>
+                  I've never seen a computer in my life... what can I even do at
+                  a hackathon?
+                </h3>
+                <p>
+                  While most participants will have some level of programming
+                  ability, people of all backgrounds can contribute. This
+                  includes designers, entrepreneurs, and beginners looking to
+                  learn.
+                </p>
+              </div>
+
+              <div class="faq-element">
+                <h3>Am I allowed to work on a pre-existing project?</h3>
+                <p>
+                  While you are allowed to work on an existing project, you are
+                  encouraged to begin something new the day of the event. Rapid
+                  innovation is in the spirit of a hackathon, and only new hacks
+                  will be considered for prizes.
+                </p>
+              </div>
+
+              <div class="faq-element">
+                <h3>Sooo... who decides the winners?</h3>
+                <p>
+                  Judges from BC and our sponsors will determine prize winners
+                  based on the criteria of creativity, complexity, and utility
+                  of your hack.
+                </p>
+              </div>
+
+              <div class="faq-element">
+                <h3>
+                  Oh yeah... I don't go to BC, do I need to be a Boston College
+                  student to attend?
+                </h3>
+                <p>
+                  Nope! We welcome students from all universities. Our virtual
+                  format also allows us to accomodate high school students this
+                  year.
+                </p>
+              </div>
+
+              <div class="faq-element">
+                <h3>Are there any rules?</h3>
+                <p>
+                  We want to ensure a positive experience for all participants.
+                  We encourage you to read the
+                  <a
+                    href="http://mlh.io/code-of-conduct"
+                    target="_blank"
+                    class="inline"
+                    style="color: #5b6dbc"
+                    >MLH Code of Conduct</a
+                  >.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section fade" id="sponsors">
+      <div class="container" id="sponsors-container">
+        <div class="row">
+          <h1>SPONSORS</h1>
+          <div class="container">
+            <div id="sponsor-logos">
+              <div>
+                <img src="img/sponsors/EY_logo.png" alt="EY" />
+              </div>
+              <div id="amazon">
+                <img src="img/sponsors/smartsheet-logo.png" alt="Smartsheet" />
+              </div>
+            </div>
+          </div>
+          <p class="description" style="margin-top: 0; text-align: center">
+            If you'd like to sponsor this event, please contact us at
+            <a href="mailto:hacktheheights@gmail.com" style="color: #5b6dbc"
+              >hacktheheights@gmail.com</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div id="footer-grid">
+        <div class="footer-grid-item">
+          <a href="https://www.facebook.com/hacktheheightsBC/" target="_blank"
+            ><i class="fa fa-facebook-f"></i
+          ></a>
+        </div>
+        <div class="footer-grid-item">
+          <a href="https://twitter.com/HackTheHeights" target="_blank"
+            ><i class="fa fa-twitter"></i
+          ></a>
+        </div>
+        <div class="footer-grid-item">
+          <a
+            href="https://www.linkedin.com/company/hack-the-heights/"
+            target="_blank"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+        </div>
+        <div class="footer-grid-item">
+          <a
+            href="https://www.instagram.com/hacktheheights/?hl=en"
+            target="_blank"
+            ><i class="fa fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+      <div id="footer-copyright">
+        <h5 style="display: inline">Copyright 2020 © Hack the Heights</h5>
+      </div>
+    </div>
+
+    <script>
+      function mobileNav() {
+        var x = document.getElementById("mobile-topnav");
+        if (x.className === "mobile-topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "mobile-topnav";
+        }
       }
-    }
-  </script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-  </script>
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css"
+    />
 
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.css"
+    />
 
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.css">
-
-  <script src="./js/main.js"></script>
-
-</body>
-
+    <script src="./js/main.js"></script>
+  </body>
 </html>

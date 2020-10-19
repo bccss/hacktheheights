@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Hack The Heights | Schedule</title>
+    <title>Hack The Heights | Mentors</title>
 
     <link rel="stylesheet" href="./css/styles.css" />
     <link
@@ -22,6 +22,7 @@
       rel="stylesheet"
     />
     <link rel="icon" type="image/png" href="./img/logo.png" />
+    <script src="js/jquery-3.5.1.min.js"></script>
   </head>
 
   <body>
@@ -42,93 +43,62 @@
     <div id="content-wrap">
       <div class="container-liveHead fade">
         <a href="index.html"><img src="img/logo.png" class="liveLogo" /></a>
-        <span class="liveTxt">Schedule</span>
-        <!-- <span class="blueCircle"></span> -->
+        <span class="liveTxt">Mentors</span>
       </div>
 
-      <div class="liveSectionHeader">Run of Show:</div>
-      <div class="liveSection">
-        <div class="liveSubsection">
-          Schedule:
-          <div class="schedule">
-            <div class="event">
-              <span class="time">Saturday</span>
-            </div>
-            <div id="scheduleSat"></div>
-            <div class="event">
-              <span class="time">Sunday</span>
-            </div>
-            <div id="scheduleSun"></div>
-          </div>
+      <div class="team-group">
+        <div class="member" member-id="1">
+          <img class="member-img" src="img/people/robert.png" />
+          <h3>Robert Smithers</h3>
         </div>
-        <div class="liveSubsection">
-          <div id="hapNow" class="happening-now">
-            Announcements:
-            <div class="announcements">
-              <ul id="announcements"></ul>
-            </div>
-          </div>
-          <div>
-            Happening Now:
-            <div id="hapnow"></div>
-          </div>
+        <div class="member" member-id="2">
+          <img class="member-img" src="img/people/roger.png" />
+          <h3>Roger Wang</h3>
+        </div>
+        <div class="member" member-id="3">
+          <img class="member-img" src="img/people/sean.png" />
+          <h3>Sean Chiang</h3>
+        </div>
+        <div class="member" member-id="4">
+          <img class="member-img" src="img/people/talia.png" />
+          <h3>Talia Kaplanian</h3>
         </div>
       </div>
-      <br />
-      <br />
-
-      <!-- <div class="liveSectionHeader">Getting Started:</div>
-    <div class="liveSection">
-      <div class="liveSubsection">
-        Wi-Fi:
-        <div class="liveText">
-          <ol>
-            <li>Connect to the “BostonCollege” wireless network.</li>
-            <li>
-              Go to
-              <a href="https://helix.bc.edu/" target="_blank">helix.bc.edu</a>
-              and select “Guest Registration.”
-            </li>
-            <li>Complete the registration form.</li>
-          </ol>
+      <div id="team-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h1 id="modal-name"></h1>
+          <img id="modal-img" class="member-img modal-img" />
+          <h3 id="modal-subtitle"></h3>
+          <p id="modal-text"></p>
+          <br />
+          <hr />
+          <div class="modal-social">
+            <div>
+              <a class="social" href="#" target="_blank" id="modal-email">
+                <img src="/img/gmail.png" />
+                <div class="bubble">
+                  <p>Email</p>
+                </div>
+              </a>
+              <a class="social" href="#" target="_blank" id="modal-zoom">
+                <img src="/img/zoom.png" />
+                <div class="bubble">
+                  <p>Zoom</p>
+                </div>
+              </a>
+              <a class="social" href="#" target="_blank" id="modal-linkedin">
+                <img src="/img/linkedin.png" />
+                <div class="bubble">
+                  <p>LinkedIn</p>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="liveSubsection">
-        Resources:
-      </div>
-    </div>
 
-    <div class="liveSectionHeader">
-      Project Submission:
-      <div class="liveSubsection liveText">
-        When you are finished with your project, you can submit it to the
-        <a href="https://hth4.devpost.com" target="_blank">devpost</a>.
-      </div>
-    </div>
-
-    <div class="liveSectionHeader">Prizes:</div>
-    <div class="liveSection">
-      <div class="prize">
-        <div class="prizeType">Grand Prize</div>
-        <img src="img/echo.jpg" />
-        <div class="prizeName">Amazon Echo</div>
-      </div>
-      <div class="prize">
-        <div class="prizeType">Best Hack for the Social Good</div>
-        <img src="img/bottle.jpg" />
-        <div class="prizeName">Larq Bottle</div>
-      </div>
-      <div class="prize">
-        <div class="prizeType">Beginner Prize</div>
-        <img src="img/uber.jpg" />
-        <div class="prizeName">Uber Gift Card</div>
-      </div>
-      <div class="prize">
-        <div class="prizeType">Most Innovative Concept</div>
-        <img src="img/robot.jpg" />
-        <div class="prizeName">Vector Robot</div>
-      </div>
-    </div> -->
+      <script src="/js/teammodal.js"></script>
     </div>
     <div class="footer-short">
       <div id="footer-grid">
@@ -190,6 +160,5 @@
     />
 
     <script src="./js/main.js"></script>
-    <script src="./js/live.js"></script>
   </body>
 </html>
