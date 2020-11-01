@@ -63,6 +63,52 @@ $(".member").click(function () {
         "https://www.linkedin.com/in/talia-kaplanian/"
       );
       break;
+    case "5":
+      $("#modal-name").html("Caroline Sheldon");
+      $("#modal-subtitle").html(
+        "Available Saturday 4 PM - 11 PM and Sunday 9 AM - 12 PM"
+      );
+      $("#modal-img").attr("src", "img/people/caroline.png");
+      $("#modal-text").html(
+        "I am a product manager at Smartsheet with a focus on customer usability, meeting customer needs, and UX design experiences. "
+      );
+      $("#modal-email").attr("href", "");
+      $("#modal-zoom").attr("href", "#");
+      $("#modal-linkedin").attr(
+        "href",
+        "https://www.linkedin.com/in/carolinesheldon/"
+      );
+      break;
+    case "6":
+      $("#modal-name").html("Megan Costello");
+      $("#modal-subtitle").html(
+        "Available Saturday 7 AM - Sunday 1 AM and Sunday 8 AM - 12 PM"
+      );
+      $("#modal-img").attr("src", "img/people/talia.png");
+      $("#modal-text").html(
+        "I took my first official coding class freshman year of high school, and I've been pursuing computer science ever since! I'm a computer science and economics major at Boston College, with multiple years of coding experience. I've attended Hack the Heights both as a participant and an organizer as well. "
+      );
+      $("#modal-email").attr("href", "mailto:costelmx@bc.edu");
+      $("#modal-zoom").attr("href", "#");
+      $("#modal-linkedin").attr(
+        "href",
+        "https://www.linkedin.com/in/megankcostello"
+      );
+      break;
+    case "7":
+      $("#modal-name").html("Nathan Rankin");
+      $("#modal-subtitle").html("");
+      $("#modal-img").attr("src", "img/people/nathan.png");
+      $("#modal-text").html(
+        "Object Oriented Design, Java, Full Stack Web, React, PHP"
+      );
+      $("#modal-email").attr("href", "mailto:rankinna@bc.edu");
+      $("#modal-zoom").attr("href", "#");
+      $("#modal-linkedin").attr(
+        "href",
+        "https://www.linkedin.com/in/nathanrankin/"
+      );
+      break;
   }
 });
 
