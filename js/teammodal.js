@@ -84,7 +84,7 @@ $(".member").click(function () {
       $("#modal-subtitle").html(
         "Available Saturday 7 AM - Sunday 1 AM and Sunday 8 AM - 12 PM"
       );
-      $("#modal-img").attr("src", "img/people/talia.png");
+      $("#modal-img").attr("src", "img/people/megan.png");
       $("#modal-text").html(
         "I took my first official coding class freshman year of high school, and I've been pursuing computer science ever since! I'm a computer science and economics major at Boston College, with multiple years of coding experience. I've attended Hack the Heights both as a participant and an organizer as well. "
       );
