@@ -371,13 +371,13 @@ nav {
   }
 }
 
-.blueCircle {
+.blinking {
   margin-left: 7px;
   border-radius: 50%;
   width: 35px;
   height: 35px;
   opacity: 0.25;
-  background-color: #20730e;
+  background-color: #31b414;
   display: inline-block;
   -webkit-animation: blinks 1.7s infinite;
   -moz-animation: blinks 1.7s infinite;
@@ -510,6 +510,10 @@ nav {
   margin: 25px;
   text-align: center;
   cursor: pointer;
+}
+
+.static {
+  cursor: default !important;
 }
 
 .member-img {

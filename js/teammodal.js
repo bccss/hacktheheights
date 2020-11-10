@@ -1,4 +1,4 @@
-$(".member").click(function () {
+$(".member:not(.static)").click(function () {
   $("#team-modal").show();
   let memberID = $(this).attr("member-id");
   console.log(memberID);
