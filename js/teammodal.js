@@ -109,6 +109,20 @@ $(".member:not(.static)").click(function () {
         "https://www.linkedin.com/in/nathanrankin/"
       );
       break;
+    case "8":
+      $("#modal-name").html("John Abreu");
+      $("#modal-subtitle").html("");
+      $("#modal-img").attr("src", "img/people/john.png");
+      $("#modal-text").html(
+        "iOS Development (Swift & Objective-C), Python, Web Development, React.js, Next.js, Ideation, Product Design, Hackathon hacking :) "
+      );
+      $("#modal-email").attr("href", "mailto:abreuja@bc.edu");
+      $("#modal-zoom").attr("href", "#");
+      $("#modal-linkedin").attr(
+        "href",
+        "https://www.linkedin.com/in/abbbbreu/"
+      );
+      break;
   }
 });
 
