@@ -32,18 +32,21 @@ a:hover {
   left: 0;
   z-index: -1;
 
-  background: url("../img/bg-vertical.png") no-repeat center center;
-  background-size: cover;
+  background: linear-gradient(
+    270deg,
+    rgb(245, 137, 178),
+    rgb(233, 204, 153) 60%
+  );
 
   transform: scale(1.1);
 }
 
 #inline-text {
-  color: #31b414 !important;
+  color: rgb(237, 76, 139) !important;
 }
 
 #inline-text:hover {
-  color: #20730e;
+  color: rgb(237, 76, 139);
 }
 
 #nav-bg {
@@ -71,21 +74,21 @@ nav {
 }
 
 .nav-container a {
-  color: #31b414;
+  color: rgb(237, 76, 139);
   padding-top: 10px;
   padding-bottom: 15px;
   transition: 0.3s ease-in-out;
 }
 
 .nav-container a:hover {
-  color: #20730e;
+  color: rgb(239, 190, 104);
   transition: 0.3s ease-in-out;
 }
 
 #home-btn {
   width: 50px;
   height: 50px;
-  background: url("../img/minimal.png") no-repeat center center;
+  background: url("../img/logo.png") no-repeat center center;
   background-size: contain;
   margin-bottom: 15px;
 }
@@ -110,11 +113,11 @@ nav {
 }
 
 .button-outline {
-  color: #31b414;
+  color: rgb(237, 76, 139);
 }
 
 .button-filled {
-  background-color: #31b414;
+  background-color: rgb(237, 76, 139);
   color: white;
 }
 
@@ -122,7 +125,7 @@ nav {
   font-weight: 800;
   padding: 8px 40px;
   margin: 25px 0 25px 0;
-  border: 2px solid #31b414;
+  border: 2px solid rgb(237, 76, 139);
   border-radius: 25px;
   transition: 0.3s ease-in-out;
 }
@@ -130,8 +133,8 @@ nav {
 .bn:hover {
   text-decoration: none;
   color: white;
-  border-color: #20730e;
-  background-color: #20730e;
+  border-color: rgb(245, 137, 178);
+  background-color: rgb(245, 137, 178);
   transition: 0.3s ease-in-out;
 }
 
@@ -224,7 +227,7 @@ nav {
 .grid-item i {
   margin-bottom: 15px;
   font-size: 65px;
-  color: #31b414;
+  color: rgb(237, 76, 139);
 }
 
 @media (max-width: 450px) {
@@ -249,7 +252,7 @@ nav {
   .grid-item i {
     margin-bottom: 15px;
     font-size: 65px;
-    color: #31b414;
+    color: rgb(237, 76, 139);
   }
 }
 
@@ -280,12 +283,12 @@ nav {
 }
 
 .footer {
-  background-color: #31b414;
+  background-color: rgb(237, 76, 139);
   height: 60px;
 }
 
 .footer-short {
-  background-color: #31b414;
+  background-color: rgb(237, 76, 139);
   height: 60px;
   position: absolute !important;
   bottom: 0;
@@ -317,12 +320,12 @@ nav {
 }
 
 .footer-grid-item i:hover {
-  color: #20730e;
+  color: rgb(239, 190, 104);
 }
 
 #footer-copyright {
   color: white;
-  background-color: #31b414;
+  background-color: rgb(237, 76, 139);
   text-align: center;
   padding-bottom: 15px;
 }
@@ -377,7 +380,7 @@ nav {
   width: 35px;
   height: 35px;
   opacity: 0.25;
-  background-color: #31b414;
+  background-color: rgb(237, 76, 139);
   display: inline-block;
   -webkit-animation: blinks 1.7s infinite;
   -moz-animation: blinks 1.7s infinite;
@@ -406,7 +409,7 @@ nav {
   text-align: center;
   font-size: 2em;
   font-weight: bold;
-  color: #31b414;
+  color: rgb(237, 76, 139);
   width: 43%;
   margin-left: 5%;
   margin-top: 25px;
@@ -520,7 +523,7 @@ nav {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid #31b414;
+  border: 3px solid rgb(237, 76, 139);
   object-fit: cover;
 }
 
@@ -638,7 +641,7 @@ nav {
 
 .button-icon {
   position: relative;
-  background-color: #31b414;
+  background-color: rgb(237, 76, 139);
   border-radius: 50%;
   width: 100px;
   height: 100px;
