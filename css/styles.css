@@ -52,9 +52,9 @@ a:hover {
 #nav-bg {
   z-index: 1;
   position: absolute;
-  top: 20%;
+  top: 15%;
   right: 10%;
-  width: 750px;
+  width: 1000px;
   max-width: 80%;
 }
 
