@@ -1,6 +1,6 @@
 function updateHapNow() {
   const hapNow = document.getElementById("hapnow");
-  hapNow.innerHTML = "Counting down the days until Hack the Heights 5!";
+  hapNow.innerHTML = "Counting down the days until Hack the Heights!";
 }
 
 function loadAnnouncements() {
