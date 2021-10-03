@@ -58,6 +58,17 @@ a:hover {
   max-width: 80%;
 }
 
+@media (max-width: 450px) {
+  #nav-bg{
+    z-index: -1; 
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    width: 1000px;
+    max-width: 80%;
+  }
+}
+
 nav {
   display: block;
   position: fixed;
