@@ -50,9 +50,9 @@ a:hover {
 }
 
 #nav-bg {
-  z-index: 1;
+  z-index: -1; 
   position: absolute;
-  top: 15%;
+  top: 0%;
   right: 10%;
   width: 1000px;
   max-width: 80%;
@@ -99,6 +99,7 @@ nav {
 
 #splash-text-container {
   position: absolute;
+  top:70%;
   left: 50px;
   bottom: 5vmin;
   text-align: left;
@@ -173,7 +174,7 @@ nav {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-start;
-  height: 800px;
+  height: 825px;
   width: 90%;
 
   margin-top: 75px;
