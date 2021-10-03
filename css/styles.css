@@ -59,18 +59,6 @@ a:hover {
   max-width: 80%;
 }
 
-@media (max-width: 450px) {
-  #nav-bg {
-    z-index: -1; 
-    position: relative;
-    top: 0%;
-    right: 10%;
-    left: 15%;
-    width: 1000px;
-    max-width: 80%;
-  }
-}
-
 
 
 nav {
