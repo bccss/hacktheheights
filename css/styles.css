@@ -112,7 +112,13 @@ nav {
 
 @media (max-width: 450px) {
   #splash-text-container {
-    left: 15px;
+    position: absolute;
+    top:70%;
+    left: 50px;
+    bottom: 5vmin;
+    text-align: left;
+    width: 400px;
+    max-width: 90%;
   }
 }
 
