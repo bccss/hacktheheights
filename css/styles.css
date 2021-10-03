@@ -51,23 +51,14 @@ a:hover {
 
 #nav-bg {
   z-index: -1; 
-  position: absolute;
+  position: relative;
   top: 0%;
   right: 10%;
+  left: 15%;
   width: 1000px;
   max-width: 80%;
 }
 
-@media (max-width: 450px) {
-  #nav-bg{
-    z-index: -1; 
-    position: absolute;
-    top: 30%;
-    right: 10%;
-    width: 1000px;
-    max-width: 80%;
-  }
-}
 
 nav {
   display: block;
@@ -156,7 +147,7 @@ nav {
 }
 
 .header-section {
-  height: 90%;
+  height: 30%;
 }
 
 .section {
@@ -173,7 +164,7 @@ nav {
 }
 
 #about {
-  padding-top: 100px;
+  padding-top: 10px;
 }
 
 #faq {
@@ -188,6 +179,8 @@ nav {
   height: 825px;
   width: 90%;
 
+  margin-left: -2.5%;
+  
   margin-top: 75px;
 }
 
