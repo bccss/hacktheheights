@@ -112,13 +112,7 @@ nav {
 
 @media (max-width: 450px) {
   #splash-text-container {
-    position: absolute;
-    top:70%;
-    left: 50px;
-    bottom: 5vmin;
-    text-align: left;
-    width: 400px;
-    max-width: 90%;
+    left: 15px;
   }
 }
 
@@ -183,10 +177,10 @@ nav {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-start;
-  height: 825px;
-  width: 90%;
+  height:825px;
+  width: 1000px;
 
-  margin-left: -2.5%;
+  margin-left: -5%;
   
   margin-top: 75px;
 }
