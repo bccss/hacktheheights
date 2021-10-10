@@ -1,5 +1,6 @@
 import gspread 
 import json
+import os.path
 from oauth2client.service_account import ServiceAccountCredentials
 from pprint import pprint
 
@@ -28,13 +29,11 @@ schedule_sheet = client.open("HTH6_Announcements").worksheet('sheet2')
 announcement_data = accouncement_sheet.get_all_records()  # Get a list of all records
 schedule_data = schedule_sheet.get_all_records()
 
-with open('announcements.json', 'w') as fout:
-    pprint(announcement_data)
-    json.dump(announcement_data , fout)
+with open(os.path.join("sheets/announcements.json"), 'w') as fout:
+    json.dump(announcement_data, fout)
 
-with open('schedule.json', 'w') as fout:
-    pprint(schedule_data)
-    json.dump(schedule_data , fout)
+with open(os.path.join("sheets/schedule.json"), 'w') as fout:
+    json.dump(schedule_data, fout)
 
 #pprint(announcement_data)
 #pprint(schedule_data)
