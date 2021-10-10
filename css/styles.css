@@ -406,7 +406,6 @@ nav {
   height: 35px;
   opacity: 0.25;
   background-color: rgb(237, 76, 139);
-  display: inline-block;
   -webkit-animation: blinks 1.7s infinite;
   -moz-animation: blinks 1.7s infinite;
   -o-animation: blinks 1.7s infinite;
@@ -510,6 +509,14 @@ nav {
   max-width: 22%;
   text-align: center;
   margin-bottom: 80px;
+  border-radius: 3em;
+  transition: 0.3s ease-in-out;
+}
+
+.prize:hover {
+  background-color: white;
+  transition: 0.3s ease-in-out;
+  border: 3px solid rgb(237, 76, 139);
 }
 
 .prizeType {
@@ -671,4 +678,17 @@ nav {
   width: 100px;
   height: 100px;
   text-align: center;
+}
+
+#countdown {
+  margin-left: 3vw;
+  font-weight: 800 !important;
+  font-size: 3.4em;
+}
+
+
+#countdown-bottom {
+  margin-left: 3vw;
+  font-weight: 800 !important;
+  font-size: 3.4em;
 }
