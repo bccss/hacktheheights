@@ -683,12 +683,17 @@ nav {
 #countdown {
   margin-left: 3vw;
   font-weight: 800 !important;
-  font-size: 3.4em;
+  font-size: 4vw;
 }
 
 
 #countdown-bottom {
   margin-left: 3vw;
   font-weight: 800 !important;
-  font-size: 3.4em;
+  font-size: 4vw;
+}
+
+#EY-logo-container {
+  width: 50%;
+  margin: 0 auto;
 }
