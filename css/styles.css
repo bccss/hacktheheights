@@ -697,3 +697,10 @@ nav {
   width: 50%;
   margin: 0 auto;
 }
+
+.announcement-item {
+  width: 40%;
+  margin: 0 auto;
+  font-size: 2vw;
+}
+
