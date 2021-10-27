@@ -22,6 +22,8 @@
       rel="stylesheet"
     />
     <link rel="icon" type="image/png" href="./img/logo.png" />
+
+    <script type="text/javascript" src="js/countdown.js"></script>
   </head>
 
   <body>
@@ -39,12 +41,15 @@
       </div>
     </nav>
 
-    <img src="./img/full-logo.png" id="nav-bg" />
+    <img src="./img/hthlogo.png" id="nav-bg" />
 
     <div class="header-section fade" id="home">
+
       <div id="splash-text-container">
         <h2>November 6-7, 2021</h2>
         <b>Chestnut Hill, MA</b>
+
+        <p id="countdown" style="font-size: 1em; margin-left:0;"></p>
 
         <p>
           The Liberal Arts hackathon, hosted by Boston College.<br />Join us for
@@ -151,10 +156,7 @@
               <div class="faq-element">
                 <h3>Will it be in-person or online?</h3>
                 <p>
-                  This year, Hack the Heights will be in-person but also open
-                  for virtual submissions. We just ask any virtual teams
-                  submitting for a prize to be available to pick up their prizes
-                  in-person if they win.
+                  Hack the Heights will be held in-person for BC students only at Stokes South!
                 </p>
               </div>
 
@@ -191,17 +193,6 @@
               </div>
 
               <div class="faq-element">
-                <h3>
-                  Oh yeah... I don't go to BC, do I need to be a Boston College
-                  student to attend?
-                </h3>
-                <p>
-                  Nope! We welcome students from all universities and even high
-                  schools.
-                </p>
-              </div>
-
-              <div class="faq-element">
                 <h3>Are there any rules?</h3>
                 <p>
                   We want to ensure a positive experience for all participants.
@@ -226,7 +217,11 @@
         <div class="row">
           <h1>SPONSORS</h1>
           <div class="container">
-            <div id="sponsor-logos"></div>
+            <div id="sponsor-logos">
+              <div id="EY-logo-container">
+                <img src="img/ey_logo.png" class="EY-logo">
+              </div>
+            </div>
           </div>
           <p class="description" style="margin-top: 0; text-align: center">
             If you'd like to sponsor this event, please contact us at
@@ -235,6 +230,12 @@
             >
           </p>
         </div>
+      </div>
+    </div>
+
+    <div class="section fade">
+      <div id="countdown-container">
+        <center id="countdown-bottom"></center>
       </div>
     </div>
 

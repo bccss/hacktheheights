@@ -52,10 +52,10 @@ a:hover {
 #nav-bg {
   z-index: -1; 
   position: relative;
-  top: 0%;
+  top: 10vh;
   right: 10%;
   left: 15%;
-  width: 1000px;
+  width: 67.5vw;
   max-width: 80%;
 }
 
@@ -406,7 +406,6 @@ nav {
   height: 35px;
   opacity: 0.25;
   background-color: rgb(237, 76, 139);
-  display: inline-block;
   -webkit-animation: blinks 1.7s infinite;
   -moz-animation: blinks 1.7s infinite;
   -o-animation: blinks 1.7s infinite;
@@ -510,6 +509,14 @@ nav {
   max-width: 22%;
   text-align: center;
   margin-bottom: 80px;
+  border-radius: 3em;
+  transition: 0.3s ease-in-out;
+}
+
+.prize:hover {
+  background-color: white;
+  transition: 0.3s ease-in-out;
+  border: 3px solid rgb(237, 76, 139);
 }
 
 .prizeType {
@@ -672,3 +679,29 @@ nav {
   height: 100px;
   text-align: center;
 }
+
+#countdown {
+  margin-left: 3vw;
+  font-weight: 800 !important;
+  font-size: 4vw;
+}
+
+
+#countdown-bottom {
+  margin-left: 3vw;
+  font-weight: 800 !important;
+  font-size: 4vw;
+}
+
+#EY-logo-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.announcement-item {
+  width: 40%;
+  margin: 0 auto;
+  font-size: 2vw;
+}
+
+
