@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;900&display=swap');
+
+:root {
+    --background: #ffffff;
+    --text-primary: #33396F;
+    --text-secondary: #33396F;
+    --white: #C7C5D5;
+    --special: #F0D8B0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--background);
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 42px;
+    color: var(--text-primary);
+    margin: 0px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.accordion-simple > .active {
+    display: block;
+}
+
+.accordion__faq .inactive {
+    display: none;
+}
+
+.accordion__faq > div {
+    background-color: var(--white);
+    margin-bottom: 30px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+
+.accordion__title {
+    color: var(--text-secondary);
+    padding-bottom: 40px;
+    text-align: center; /* Center the text horizontally */
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.accordion__faq-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion__faq-heading .active {
+    color: var(--text-primary);
+}
+
+.accordion__faq-heading h3 {
+    color: var(--text-secondary);
+    font-weight: 600;
+    transition: font-weight 0.3s ease; /* smooth transition */
+}
+
+.accordion__faq-heading h3:hover {
+    font-weight: 800; /* bold on hover */
+}
+
+.accordion__faq-heading .horizental,
+.accordion__faq-heading .verticle {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.accordion__faq p {
+    margin: 0px;
+    padding: 15px 0px 30px 0px;
+    color: var(--text-secondary);
+    line-height: 1.4;
+    font-weight: 300;
+}

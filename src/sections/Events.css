@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+
+}
+
+
+h3{
+    color:#ffffff;
+    font-weight: 600;
+}
+
+.card-content p {
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 30px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 1360px;
+    width: 100%;
+    margin: auto;
+    padding: 0px 20px;
+  
+}
+
+
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-size: 40px;
+    color: #37378b;
+    line-height: 40px;
+    margin: 0px;
+    margin-bottom: 50px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    flex: 0 0 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+    width: 100%;
+    border-radius: 10px;
+    background: #33396F;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-left:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.btn:hover {
+    background: #F2EBDD;
+    font-weight: 700;
+    color: #0a103e;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    background: #0a103e;
+    max-width: 120px;
+    border-radius: 10px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Align text vertically in the center */
+    align-self: flex-end; /* Align button to the right */
+    margin-top: 20px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 500;
+}
+
+@media(max-width: 969px) {
+    section{
+        padding: 20px 0px;
+    }
+    h1{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .card {
+        flex: 0 0 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width: 768px) {
+    .card {
+        flex: 0 0 calc(100% - 20px);
+        max-width: calc(100% - 20px);
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+    
