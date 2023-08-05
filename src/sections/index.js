@@ -5,6 +5,7 @@ import Sponsors from "./Sponsors";
 import PhotoCarousel from "./PhotoCarousel";
 import FAQ from "./FAQ";
 import Footer from "./Footer";
+import Events from "./Events";
 
 export {
     LandingSplash,
@@ -13,5 +14,6 @@ export {
     Sponsors,
     PhotoCarousel,
     FAQ,
+    Events,
     Footer,
 }
