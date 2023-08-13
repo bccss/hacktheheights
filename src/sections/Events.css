@@ -67,11 +67,16 @@ h1{
     flex-direction: column;
     justify-content: space-between;
 }
+.card:hover {
+    transform: translateY(-10px);
+
+}
 
 .btn:hover {
     background: #F2EBDD;
     font-weight: 700;
     color: #0a103e;
+
 }
 
 .btn {
