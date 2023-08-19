@@ -22,7 +22,7 @@ function Events() {
       <div>
         <section>
           <div className="container">
-            <h1>Upcoming Events</h1>
+            <h1>EVENTS</h1>
             <div className="cards">
               {cards.map((card, index) => (
                 <div key={index} className="card">
