@@ -1,11 +1,9 @@
-import React from 'react'
+import React from "react";
+import { FaCode, FaCoffee, FaLaptopCode } from "react-icons/fa";
+import "./About.css";
 
-const About = () => {
+function About() {
   return (
-<<<<<<< Updated upstream
-    <div>About</div>
-  )
-=======
     <div className="about-container">
       <h1 className="about-heading">ABOUT</h1>
       <p className="about-description">
@@ -28,7 +26,6 @@ const About = () => {
       </div>
     </div>
   );
->>>>>>> Stashed changes
 }
 
-export default About
+export default About;
