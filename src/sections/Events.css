@@ -48,21 +48,24 @@ h1{
     text-align: center;
 }
 
+
 .cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between; /* This will evenly distribute the cards */
+    align-items: stretch; /* This will ensure that the cards start at the top */
 }
 
 .card {
-    flex: 0 0 calc(33.33% - 20px);
-    max-width: calc(33.33% - 20px);
+    flex: 0 0 calc(33.33% - 40px); /* Updated the percentage calculation */
+    max-width: calc(33.33% - 40px); /* Updated the percentage calculation */
     width: 100%;
-    border-radius: 10px;
+    border-radius: 25px;
     background: #33396F;
     padding: 20px;
     margin-bottom: 20px;
-    margin-left:20px;
+    margin-left: 20px; /* Left margin remains, but it'll be overwritten in media queries */
+    margin-right: 20px; /* Added right margin for symmetry */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -71,6 +74,7 @@ h1{
     transform: translateY(-10px);
 
 }
+
 
 .btn:hover {
     background: #F2EBDD;
@@ -98,27 +102,20 @@ h1{
 }
 
 @media(max-width: 969px) {
-    section{
-        padding: 20px 0px;
-    }
-    h1{
-        font-size: 30px;
-        line-height: 40px;
-    }
     .card {
-        flex: 0 0 calc(50% - 20px);
-        max-width: calc(50% - 20px);
-        width: 100%;
-        margin-bottom: 20px;
+        flex: 0 0 calc(50% - 40px); /* Updated the percentage calculation */
+        max-width: calc(50% - 40px); /* Updated the percentage calculation */
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }
 
 @media(max-width: 768px) {
     .card {
-        flex: 0 0 calc(100% - 20px);
-        max-width: calc(100% - 20px);
-        width: 100%;
-        margin-bottom: 20px;
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-left: 0; /* Removing the left margin on smaller screens */
+        margin-right: 0; /* Removing the right margin on smaller screens */
     }
 }
     

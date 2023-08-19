@@ -1,6 +1,6 @@
 import React from "react";
 import { FaCode, FaCoffee, FaLaptopCode } from "react-icons/fa";
-import "./About.css"; // assuming styles.css is in the same directory
+import "./About.css";
 
 function About() {
   return (
@@ -12,15 +12,15 @@ function About() {
       </p>
       <div className="icon-container">
         <div className="icon-card">
-          <FaCode size={50} />
+          <FaCode size={50} color="white" />
           <p className="icon-text">Code Challenges</p>
         </div>
         <div className="icon-card">
-          <FaCoffee size={50} />
+          <FaCoffee size={50} color="white" />
           <p className="icon-text">Endless Coffee</p>
         </div>
         <div className="icon-card">
-          <FaLaptopCode size={50} />
+          <FaLaptopCode size={50} color="white" />
           <p className="icon-text">Collaborative Environment</p>
         </div>
       </div>
