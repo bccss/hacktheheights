@@ -1,4 +1,5 @@
 import React from "react";
+import slides  from './data/photoCarouselData.json'
 // import Button from '@mui/material/Button';
 import { AppBar, Container } from "@mui/material";
 import Header from "./Header";
@@ -24,7 +25,7 @@ export const Home = () => {
         <FAQ />
         <Events />
         <Sponsors />
-        <PhotoCarousel />
+        <PhotoCarousel data={slides} />
       </Container>
       <Footer />
     </div>
