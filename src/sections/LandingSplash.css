@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,900&family=Poppins:wght@400;600;700;900&display=swap');
+
+@media only screen and (min-width: 768px) {
+    /* for tablet PC and desktop */
+    .year {
+        padding-top: 15%;
+        font-size: 24px;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .title {
+        font-size: 96px;
+        font-style: italic;
+        font-weight: 900;
+        font-family: 'Playfair Display', serif;
+    }
+
+    .hack {
+        display: inline;
+        margin: 0;
+    }
+
+    .the {
+        display: inline;
+        margin: 0;
+    }
+    
+    .heights {
+        display: inline;
+        margin: 0;
+    }
+
+    .info {
+        font-size: 24px;
+        font-weight: 700;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .bc {
+        display: inline;
+        margin: 0 0 5% 0;
+        float: left;
+        padding-left: 31%;
+    }
+
+    .desktop-date {
+        display: inline;
+        margin: 0 0 5% 0;
+        float: right;
+        padding-right: 25%;
+    }
+
+    .mobile-date {
+        display: none;
+    }
+
+    .register {
+        display: block;
+        margin: auto;
+        background-color: #F2EBDD;
+        font-size: 18px;
+        padding: 10px 15px;
+        border-radius: 24px;
+        border-color: #33396F;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .register:hover {
+        background-color: #33396F;
+        color: #F2EBDD;
+        font-weight: 700;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    /* for mobile devices */
+    .year {
+        padding-top: 30%;
+        font-size: 18px;
+        font-weight: 700;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .title {
+        font-size: 72px;
+        font-weight: 900;
+        font-family: 'Playfair Display', serif;
+    }
+
+    .hack {
+        font-style: italic;
+        display: inline;
+        margin: 0;
+    }
+
+    .the {
+        font-style: normal;
+        font-size: 36px;
+        display: inline;
+        margin: 0;
+    }
+    
+    .heights {
+        font-style: italic;
+    }
+
+    .info {
+        font-weight: 700;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .bc {
+        margin-top: 5%;
+    }
+
+    .desktop-date {
+        display: none;
+    }
+
+    .mobile-date {
+        display: initial;
+    }
+
+    .register {
+        display: block;
+        margin: 5% auto auto auto;
+        background-color: #F2EBDD;
+        font-size: 18px;
+        padding: 10px 15px;
+        border-radius: 24px;
+        border-color: #33396F;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .register:hover {
+        background-color: #33396F;
+        color: #F2EBDD;
+        font-weight: 700;
+    }
+}
+
+/* for both */
+.landing-splash-container {
+    height: 100vh;
+    width: 100%;
+    color: #33396F;
+    text-align: center;
+}
