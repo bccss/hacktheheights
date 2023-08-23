@@ -1,4 +1,4 @@
-import { Home } from './sections/Container'
+import { Home } from './sections/components'
 import './App.css';
 
 function App() {

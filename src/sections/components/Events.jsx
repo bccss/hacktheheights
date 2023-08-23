@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Events.css";
+import "../stylesheets/Events.css";
 
 function Events() {
   const [cards] = useState([
@@ -21,7 +21,7 @@ function Events() {
     <>
       <div>
         <section>
-          <div className="container">
+          <div className="container" id="Events">
             <h1>EVENTS</h1>
             <div className="cards">
               {cards.map((card, index) => (
