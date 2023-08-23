@@ -1,10 +1,10 @@
 import React from "react";
 import { FaCode, FaCoffee, FaLaptopCode } from "react-icons/fa";
-import "./About.css";
+import "../stylesheets/About.css";
 
 function About() {
   return (
-    <div className="about-container">
+    <div className="about-container" id="About">
       <h1 className="about-heading">ABOUT</h1>
       <p className="about-description">
         Dive into a weekend of code, innovation, and creativity! Join us for an

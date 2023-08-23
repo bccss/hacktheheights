@@ -1,6 +1,6 @@
 import React from 'react'
 
-import "./LandingSplash.css"
+import "../stylesheets/LandingSplash.css"
 
 const LandingSplash = () => {
   return (
@@ -16,8 +16,8 @@ const LandingSplash = () => {
       </div>
       <div className="info">
         <p className="bc">Boston College </p>
-        <p className="desktop-date">11.00.2023 ~ 11.00.2023</p>
-        <p className="mobile-date">November 00-00</p>
+        <p className="desktop-date">11/4/2023 - 11/5/2023</p>
+        <p className="mobile-date">November 4-5</p>
         <button className="register">Register</button>
       </div>
       </div>

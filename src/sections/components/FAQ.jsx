@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./FAQ.css";
+import "../stylesheets/FAQ.css";
 
 const dataCollection = [
   {
@@ -42,7 +42,7 @@ function FAQ() {
 
   return (
     <>
-      <div className="container">
+      <div className="container" id="FAQ">
         <div>
           <div className="accordion__title">FAQ</div>
         </div>
