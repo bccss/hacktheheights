@@ -1,28 +1,33 @@
-import React from 'react'
-
-import "../stylesheets/LandingSplash.css"
+import React from 'react';
+import '../stylesheets/LandingSplash.css';
 
 const LandingSplash = () => {
+
+  const handleRegisterClick = () => {
+    // Redirects the user to the Google Form
+    window.open("https://forms.gle/ZFvwb5QGFTmh6Rf29", "_blank");
+  };
+
   return (
     <div className="landing-splash-container">
-      <div className="landing-splash-content">
-      <div className="year">
-        <p>2023</p>
-      </div>
-      <div className="title">
-        <p className="hack">Hack</p>
-        <p className="the"> the </p>
-        <p className="heights">Heights</p>
-      </div>
-      <div className="info">
-        <p className="bc">Boston College </p>
-        <p className="desktop-date">11/4/2023 - 11/5/2023</p>
-        <p className="mobile-date">November 4-5</p>
-        <button className="register">Register</button>
-      </div>
+      <div className="content-wrapper">
+        <div className="year">2023</div>
+        <div className="title">
+          <span className="hack">Hack</span>
+          <span className="the"> the </span>
+          <span className="heights">Heights</span>
+        </div>
+        <div className="info">
+          <span className="bc">Boston College</span>
+          <span className="date">
+            <span className="desktop-date">November 4-5</span>
+            <span className="mobile-date">November 4-5</span>
+          </span>
+        </div>
+        <button className="register" onClick={handleRegisterClick}>Register</button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default LandingSplash
+export default LandingSplash;
