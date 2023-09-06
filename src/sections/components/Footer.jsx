@@ -1,7 +1,7 @@
 // Footer.js
 import React from 'react';
 import { Box, Grid, Link, Typography } from '@mui/material';
-import { Facebook, Twitter, Instagram } from '@mui/icons-material';
+import { Facebook, Twitter, Instagram} from '@mui/icons-material';
 
 export default function Footer() {
   return (
@@ -21,7 +21,7 @@ export default function Footer() {
           </Typography>
         </Grid>
         <Grid item>
-        <Link href="#" color="inherit" sx={{ mx: 1 }}>
+        <Link href="https://www.facebook.com/bostoncollegecss/" color="inherit" sx={{ mx: 1 }}>
             <Facebook 
                 color="inherit"
                 sx={{
@@ -33,7 +33,7 @@ export default function Footer() {
                 }}
             />
         </Link>
-        <Link href="#" color="inherit" sx={{ mx: 1 }}>
+        <Link href="https://twitter.com/bccssociety/" color="inherit" sx={{ mx: 1 }}>
             <Twitter 
                 color="inherit"
                 sx={{
@@ -45,7 +45,7 @@ export default function Footer() {
                 }}
             />
         </Link>
-        <Link href="#" color="inherit" sx={{ mx: 1 }}>
+        <Link href="https://www.instagram.com/bccssociety/" color="inherit" sx={{ mx: 1 }}>
             <Instagram 
                 color="inherit"
                 sx={{
