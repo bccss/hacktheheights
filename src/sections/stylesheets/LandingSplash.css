@@ -45,6 +45,7 @@
   }
   
   .hack, .the, .heights {
+    font-size: calc(25px + 4vw);
     display: inline;
     text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
     transform: rotateX(30deg) rotateY(-30deg);

@@ -1,24 +1,37 @@
 {
     "slides": [
         {
-            "src": "https://picsum.photos/id/235/600/400",
-            "alt": "Image 1 for carousel"
+            "src": "/images/IMG_5243.jpg",
+            "alt": ""
         },
         {
-            "src": "https://picsum.photos/id/236/600/400",
-            "alt": "Image 2 for carousel"
+            "src": "/images/IMG_5240.jpg",
+            "alt": ""
         },
         {
-            "src": "https://picsum.photos/id/237/600/400",
-            "alt": "Image 3 for carousel"
+            "src": "/images/IMG_5235.jpg",
+            "alt": ""
         },
         {
-            "src": "https://picsum.photos/id/238/600/400",
-            "alt": "Image 4 for carousel"
+            "src": "/images/IMG_5251.jpg",
+            "alt": ""
         },
         {
-            "src": "https://picsum.photos/id/239/600/400",
-            "alt": "Image 5 for carousel"
+            "src": "/images/IMG_5258.jpg",
+            "alt": ""
+        },
+        {
+            "src": "/images/IMG_5259.jpg",
+            "alt": ""
+        },
+        {
+            "src": "/images/IMG_5270.jpg",
+            "alt": ""
+        },
+        {
+            "src": "/images/IMG_5279.jpg",
+            "alt": ""
         }
+
     ]
 }

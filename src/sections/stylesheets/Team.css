@@ -1,0 +1,59 @@
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px; /* Add padding to the container */
+}
+
+.team-card {
+  width: calc(100% / 3 - 20px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  margin: 10px;
+  color: #ffffff;
+  background-color: #33396F;
+  text-align: center;
+  border-radius: 12px; /* Make the cards rounded */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.team-card:hover {
+  background-color: #F2EBDD; /* Change color when hovered over */
+}
+
+.team-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%; /* Optional: Make the images rounded */
+}
+
+/* Medium screens */
+@media (max-width: 1024px) {
+  .team-card {
+    width: calc(50% - 20px);
+  }
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+  .team-card {
+    width: calc(80% - 20px);  /* Adjust width here */
+  }
+}
+
+.linkedin-icon {
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+  margin-top: 20px;
+}
+
+
+.title {
+  color: var(--text-secondary);
+  padding-bottom: 40px;
+  text-align: center; /* Center the text horizontally */
+  font-size: 40px;
+  font-weight: 700;
+}

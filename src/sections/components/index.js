@@ -9,9 +9,9 @@ import Events from "./Events";
 import Home from './Home';
 
 export {
-    LandingSplash,
-    About,   
+    LandingSplash,   
     Team,
+    About,
     Sponsors,
     PhotoCarousel,
     FAQ,
