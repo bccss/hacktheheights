@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/hacktheheights/static/css/main.ae09f150.css",
+    "main.js": "/hacktheheights/static/js/main.5b1191f5.js",
+    "index.html": "/hacktheheights/index.html",
+    "main.ae09f150.css.map": "/hacktheheights/static/css/main.ae09f150.css.map",
+    "main.5b1191f5.js.map": "/hacktheheights/static/js/main.5b1191f5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ae09f150.css",
+    "static/js/main.5b1191f5.js"
+  ]
+}
