@@ -13,6 +13,7 @@ export default function Footer() {
       sx={{
         color: 'white'
       }}
+      id="Contact"
     >
       <Grid container justifyContent="space-between" alignItems="center">
         <Grid item>

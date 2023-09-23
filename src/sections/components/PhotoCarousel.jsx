@@ -15,7 +15,7 @@ const PhotoCarousel = ({ data }) => {
   };
 
   return (
-    <div className="carousel-container">
+    <div className="carousel-container" id="Past Events">
       <h2 className="title">PAST EVENTS</h2> 
       <div className="carousel">
         <BsArrowLeftCircleFill className="arrow arrow-left" onClick={prevSlide} />

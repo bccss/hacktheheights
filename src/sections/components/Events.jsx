@@ -3,18 +3,22 @@ import "../stylesheets/Events.css";
 
 function Events() {
   const [cards] = useState([
+    // {
+    //   title: "Student Invovlement Fair",
+    //   text: "Come find our table at the student involvement fair to start getting involved with BCCSS!",
+    // },
+    // {
+    //   title: "First General Meeting",
+    //   text: "Join us for our first general meeting! Meet the executive board and other prospective club members. Pizza and good times will be provided",
+    // },
+    // {
+    //   title: "Chat-GPT Webdesign",
+    //   text: "Learn how to functional websites and webapps by harnessing the power of ChatGPT! no prior experience necessary",
+    // },
     {
-      title: "Student Invovlement Fair",
-      text: "Come find our table at the student involvement fair to start getting involved with BCCSS!",
-    },
-    {
-      title: "First General Meeting",
-      text: "Join us for our first general meeting! Meet the executive board and other prospective club members. Pizza and good times will be provided",
-    },
-    {
-      title: "Chat-GPT Webdesign",
-      text: "Learn how to functional websites and webapps by harnessing the power of ChatGPT! no prior experience necessary",
-    },
+      title: "To be announced",
+      text: "Stay tuned for the awesome events we have planned during Hack-the-Heights!"
+    }
   ]);
 
   return (
@@ -30,7 +34,7 @@ function Events() {
                     <h3>{card.title}</h3>
                     <p>{card.text}</p>
                   </div>
-                  <button className="btn">Learn More</button>
+                  {/* <button className="btn">Learn More</button> */}
                 </div>
               ))}
             </div>

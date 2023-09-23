@@ -54,6 +54,8 @@ h1{
     flex-wrap: wrap;
     justify-content: space-between; /* This will evenly distribute the cards */
     align-items: stretch; /* This will ensure that the cards start at the top */
+    /* go back to space between once we have event cards with contnet */
+    justify-content: center;
 }
 
 .card {

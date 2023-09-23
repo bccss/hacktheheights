@@ -23,7 +23,7 @@ const Home = () => {
           <About />
           <Events />
           <FAQ />
-          <Team />
+          {/* <Team /> */}
           {/*<Sponsors />*/}
           <PhotoCarousel data={slides} />
         </Container>

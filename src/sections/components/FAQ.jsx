@@ -3,9 +3,9 @@ import "../stylesheets/FAQ.css";
 
 const dataCollection = [
   {
-    question: "What is Hack The Heights (HTH)?",
+    question: "Do I need to know how to code?",
     answer:
-      "HTH will be a thrilling 24-hour event held on November 13th, 2023 at Boston College.  Admission is free and includes mentors, workshops, merch, food, and a fun experience!",
+      "Nope! Hack-the-Heights welcomes participants with all levels of experience, from complete beginners to experienced coders. There will be workshops and mentors available throughout the weekend to help you learn and build.",
   },
   {
     question: "How do I and or my team qualify?",
@@ -13,19 +13,24 @@ const dataCollection = [
       "Any student at Boston College or the Boston area is welcome to join us! Teams can have a maximum of four people. You can either register with your team using the form or create one during the event!",
   },
   {
-    question: "Where do I sleep?",
+    question: "Will there be food provided?",
     answer:
-      "While coding can be fun, we want you to get some rest when needed! Sleeping bags will be provided by our HTH students. ",
+      "Absolutely! Meals and snacks will be provided throughout the weekend to keep you energized and ready to hack!",
   },
   {
-    question: "Can I volunteer to be a mentor?",
+    question: "Where do I sleep?",
     answer:
-      "Yes! We are always looking for mentors to help our hackers. If you are interested, please fill out the form on our website. ",
+      "While coding can be fun, we want you to get some rest when needed! Feel free to go back to your dorm/apartment to sleep or you have can stay overnight in Schiller if you're feeling hardcore.",
   },
   {
     question: "What project should I make?",
     answer:
       "We have exciting themes for your projects, and the top three teams will win a prize. Don't feel any pressure to make a perfect project, submission is totally optional!",
+  },
+  {
+    question: "Are there going to be prizes?",
+    answer:
+      "You bet!",
   },
 ];
 
