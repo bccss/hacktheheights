@@ -7,7 +7,7 @@ const PhotoCarousel = () => {
 
   const slides = [
     { "src": "/images/IMG_5235.jpg", "alt": "Image 1" },
-    { "src": "/images/IMG_5235.jpg", "alt": "Image 2" },
+    { "src": "/images/IMG_5240.jpg", "alt": "Image 2" },
     { "src": "/images/IMG_5251.jpg", "alt": "Image 3" },
     { "src": "/images/IMG_5258.jpg", "alt": "Image 4" },
     { "src": "/images/IMG_5270.jpg", "alt": "Image 5" },
