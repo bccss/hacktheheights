@@ -10,6 +10,7 @@
 
 
 h3{
+    font-size: 25px;
     color:#ffffff;
     font-weight: 600;
 }
@@ -22,6 +23,13 @@ h3{
     margin-bottom: 20px;
 }
 
+.card-details p {
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 30px;
+    font-weight: 400;
+}
+
 .container {
     max-width: 1360px;
     width: 100%;
@@ -29,7 +37,6 @@ h3{
     padding: 0px 20px;
   
 }
-
 
 section {
     min-height: 100vh;
@@ -48,7 +55,6 @@ h1{
     text-align: center;
 }
 
-
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -59,8 +65,8 @@ h1{
 }
 
 .card {
-    flex: 0 0 calc(33.33% - 40px); /* Updated the percentage calculation */
-    max-width: calc(33.33% - 40px); /* Updated the percentage calculation */
+    flex: 0 0 calc(50% - 40px); /* Updated the percentage calculation */
+    max-width: calc(50% - 40px); /* Updated the percentage calculation */
     width: 100%;
     border-radius: 25px;
     background: #33396F;
@@ -70,18 +76,10 @@ h1{
     margin-right: 20px; /* Added right margin for symmetry */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 .card:hover {
     transform: translateY(-10px);
-
-}
-
-
-.btn:hover {
-    background: #F2EBDD;
-    font-weight: 700;
-    color: #0a103e;
 
 }
 
@@ -103,12 +101,21 @@ h1{
     font-weight: 500;
 }
 
+.btn:hover {
+    background: #F2EBDD;
+    font-weight: 700;
+    color: #0a103e;
+
+}
+
 @media(max-width: 969px) {
     .card {
         flex: 0 0 calc(50% - 40px); /* Updated the percentage calculation */
         max-width: calc(50% - 40px); /* Updated the percentage calculation */
         margin-left: 20px;
         margin-right: 20px;
+        flex-direction: column;
+        justify-content: flex-start;
     }
 }
 
@@ -118,6 +125,31 @@ h1{
         max-width: 100%;
         margin-left: 0; /* Removing the left margin on smaller screens */
         margin-right: 0; /* Removing the right margin on smaller screens */
+        flex-direction: column;
+        justify-content: flex-start;
     }
 }
-    
+
+.card-image {
+    width: 70px;  /* Adjust this value based on your preferred icon size */
+    height: 70px;
+    margin-left: 0px; /* Add some spacing between the details and the image */
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

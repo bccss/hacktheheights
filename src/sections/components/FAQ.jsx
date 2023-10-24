@@ -8,7 +8,7 @@ const dataCollection = [
       "Nope! Hack-the-Heights welcomes participants with all levels of experience, from complete beginners to experienced coders. There will be workshops and mentors available throughout the weekend to help you learn and build.",
   },
   {
-    question: "How do I and or my team qualify?",
+    question: "How do I, or my team qualify?",
     answer:
       "Any student at Boston College or the Boston area is welcome to join us! Teams can have a maximum of four people. You can either register with your team using the form or create one during the event!",
   },
