@@ -17,8 +17,8 @@ export default function Footer() {
     >
       <Grid container justifyContent="space-between" alignItems="center">
         <Grid item>
-          <Typography variant="h6">
-            &copy; {new Date().getFullYear()} Hack-the-Heights
+          <Typography variant="p">
+            &copy; {new Date().getFullYear()} Hack-the-Heights. All rights reserved. Hack the Heights is organized under Boston College.
           </Typography>
         </Grid>
         <Grid item>

@@ -4,6 +4,8 @@ import {
 import MenuIcon from '@mui/icons-material/Menu';
 import { useState } from 'react';
 
+import hthLogo from '../../assets/icons/hth-logo.svg';
+
 export default function Header() {
   const [openMenu, setOpenMenu] = useState(null);
 
@@ -17,7 +19,7 @@ export default function Header() {
 
   // const menuItems = ["About", "Events", "FAQ", "Team", "Sponsors", "Past Events", "Contact"];
   //when we add the "team" and "sponsors" section, use the top array
-  const menuItems = ["About", "Events", "FAQ", "Past Events", "Contact"];
+  const menuItems = ["About", "Events", "FAQ", "Affiliations"];
 
   return (
     <>
@@ -25,7 +27,7 @@ export default function Header() {
         <Toolbar>
           {/* Logo */}
           <Box sx={{ flexGrow: 1 }}>
-            <img src="hth-logo.svg" alt="Your Logo" style={{ maxHeight: '40px' }} />
+            <img src={hthLogo} alt="HTH Logo" style={{ maxHeight: '40px' }} />
           </Box>
 
           {/* Desktop Menu */}

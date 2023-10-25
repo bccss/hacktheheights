@@ -9,7 +9,7 @@ import {
   Team,
   FAQ,
   Events,
-  Sponsors,
+  Affiliations,
   PhotoCarousel,
   Footer,
 } from "./index.js";
@@ -24,7 +24,7 @@ const Home = () => {
           <Events />
           <FAQ />
           {/* <Team /> */}
-          {/*<Sponsors />*/}
+          {<Affiliations/>}
           <PhotoCarousel data={slides} />
         </Container>
         <Footer />

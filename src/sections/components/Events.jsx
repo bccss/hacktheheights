@@ -1,23 +1,37 @@
 import React, { useState } from "react";
 import "../stylesheets/Events.css";
 
+import googleIcon from '../../assets/icons/google.png';
+import amazonIcon from '../../assets/icons/amazon.png';
+import githubIcon from '../../assets/icons/github.png';
+import swiftIcon from '../../assets/icons/swift.png';
+
 function Events() {
+
   const [cards] = useState([
-    // {
-    //   title: "Student Invovlement Fair",
-    //   text: "Come find our table at the student involvement fair to start getting involved with BCCSS!",
-    // },
-    // {
-    //   title: "First General Meeting",
-    //   text: "Join us for our first general meeting! Meet the executive board and other prospective club members. Pizza and good times will be provided",
-    // },
-    // {
-    //   title: "Chat-GPT Webdesign",
-    //   text: "Learn how to functional websites and webapps by harnessing the power of ChatGPT! no prior experience necessary",
-    // },
     {
-      title: "To be announced",
-      text: "Stay tuned for the awesome events we have planned during Hack-the-Heights!"
+      title: "Speaker: Amazon",
+      time: "Nov 4, 00:00 A.M.",
+      text: "Join the speaker event with Ellen Jue, recruiter at Amazon Music on job opportunities and how to prepare for internships!",
+      imgSrc: amazonIcon
+    },
+    {
+      title: "Speaker Event: Google",
+      time: "Nov 4, 00:00 A.M.",
+      text: "Join the speaker event with the representative from Google!",
+      imgSrc: googleIcon
+    },
+    {
+      title: "Workshop: GitHub",
+      time: "Nov 4, 00:00 A.M.",
+      text: "Learn how to use GitHub to collaborate with others with examples. This workshop is aimed for beginners programmers but everyone is welcome.",
+      imgSrc: githubIcon
+    },
+    {
+      title: "Workshop: Swift",
+      time: "Nov 4, 00:00 A.M.",
+      text: "Learn how to develop iOS applications with Swift. This workshop is aimed for advanced programmers but everyone is welcome.",
+      imgSrc: swiftIcon
     }
   ]);
 
@@ -30,11 +44,20 @@ function Events() {
             <div className="cards">
               {cards.map((card, index) => (
                 <div key={index} className="card">
+                  <div className="card-header">
+                    <div className="card-details">
+                      <h3>{card.title}</h3>
+                      <p>{card.time}</p>
+                    </div>
+                    <div className="card-image">
+                      <img src={card.imgSrc} alt={card.title} />
+                    </div>
+                  </div>
                   <div className="card-content">
-                    <h3>{card.title}</h3>
+                    <p></p>
                     <p>{card.text}</p>
                   </div>
-                  {/* <button className="btn">Learn More</button> */}
+                  {/*{<button className="btn">Learn More</button>}*/}
                 </div>
               ))}
             </div>

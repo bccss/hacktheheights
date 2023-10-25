@@ -1,7 +1,7 @@
 import LandingSplash from "./LandingSplash";
 import About from "./About";
 import Team from "./Team";
-import Sponsors from "./Sponsors";
+import Affiliations from "./Affiliations";
 import PhotoCarousel from "./PhotoCarousel";
 import FAQ from "./FAQ";
 import Footer from "./Footer";
@@ -12,7 +12,7 @@ export {
     LandingSplash,   
     Team,
     About,
-    Sponsors,
+    Affiliations,
     PhotoCarousel,
     FAQ,
     Events,
