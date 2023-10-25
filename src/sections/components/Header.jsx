@@ -19,7 +19,7 @@ export default function Header() {
 
   // const menuItems = ["About", "Events", "FAQ", "Team", "Sponsors", "Past Events", "Contact"];
   //when we add the "team" and "sponsors" section, use the top array
-  const menuItems = ["About", "Events", "FAQ", "Affiliations", "Past Events"];
+  const menuItems = ["About", "Events", "FAQ", "Affiliations"];
 
   return (
     <>

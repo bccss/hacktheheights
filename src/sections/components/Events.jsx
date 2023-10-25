@@ -10,16 +10,16 @@ function Events() {
 
   const [cards] = useState([
     {
-      title: "Speaker Event: Google",
-      time: "Nov 4, 00:00 A.M.",
-      text: "Join the speaker event with the representative from Google!",
-      imgSrc: googleIcon
-    },
-    {
       title: "Speaker: Amazon",
       time: "Nov 4, 00:00 A.M.",
       text: "Join the speaker event with Ellen Jue, recruiter at Amazon Music on job opportunities and how to prepare for internships!",
       imgSrc: amazonIcon
+    },
+    {
+      title: "Speaker Event: Google",
+      time: "Nov 4, 00:00 A.M.",
+      text: "Join the speaker event with the representative from Google!",
+      imgSrc: googleIcon
     },
     {
       title: "Workshop: GitHub",
