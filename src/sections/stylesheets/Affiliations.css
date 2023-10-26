@@ -1,0 +1,97 @@
+/* Set overall section styling */
+.section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+/* Centered Container */
+.sponsors-container {
+    width: 80%; /* Adjust this based on your design requirements */
+    max-width: 1200px; /* You can adjust this value based on your design requirements */
+    margin: 0 auto;
+}
+
+/* Style for the header */
+#sponsor-header {
+    font-size: 2rem;
+    color: #33396F;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Container for all the logos */
+#sponsor-logos {
+    display: flex;
+    flex-wrap: wrap; /* This will allow logos to wrap to the next line when needed */
+    justify-content: center; /* Center the logos horizontally */
+    align-items: center;
+    gap: 1rem; /* This gives space between logos */
+}
+
+/* Each logo container */
+.sponsor-logo-container {
+    width: calc(33.33% - 1rem); /* One third of the container's width minus gap */
+    display: flex;
+    flex-direction: column; /* Stack the image and its name vertically */
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem; /* Space at the bottom */
+}
+
+.sponsor-logo-container img {
+    width: 70%; /* Adjust based on your design preference */
+    height: auto;
+}
+
+/* Styling for the description */
+.description {
+    font-size: 1rem;
+    margin-top: 2rem;
+    text-align: center;
+    color: #33396F;
+}
+
+/* Styling for the email link */
+.description a {
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.description a:hover {
+    color: #3b4c89; /* Adjust based on your color scheme */
+}
+
+/* Container for all the logos */
+#sponsor-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Each logo container - default two logos per line */
+.sponsor-logo-container {
+    width: calc(50% - 1rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.sponsor-names {
+    font-size: 30px;
+    color: #33396F;
+    font-weight: 600;
+}
+
+/* Narrow viewport */
+@media (max-width: 480px) {
+    .sponsor-logo-container {
+        width: 100%; /* One logo per line on very narrow screens */
+    }
+}
