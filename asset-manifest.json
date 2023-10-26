@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/hacktheheights/static/css/main.a84e74b5.css",
-    "main.js": "/hacktheheights/static/js/main.b05982b1.js",
-    "static/media/narrow-background.png": "/hacktheheights/static/media/narrow-background.c152bbb681b67998cd62.png",
-    "static/media/wide-background.png": "/hacktheheights/static/media/wide-background.62528c9afeb0e7ddc3a3.png",
-    "static/media/amazonLogo.png": "/hacktheheights/static/media/amazonLogo.5b833e22c79d7e482197.png",
-    "static/media/googleLogo.png": "/hacktheheights/static/media/googleLogo.0590aaf0fe36e23dcc8c.png",
-    "static/media/schillerLogo.png": "/hacktheheights/static/media/schillerLogo.7405e59e46dcdc0ba8d5.png",
-    "static/media/amazon.png": "/hacktheheights/static/media/amazon.2cba806ad0d491128470.png",
-    "static/media/swift.png": "/hacktheheights/static/media/swift.13d82fd58ebf84427765.png",
-    "static/media/google.png": "/hacktheheights/static/media/google.e12914ad8afda3f6f2e8.png",
-    "static/media/notionLogo.png": "/hacktheheights/static/media/notionLogo.7aa264a898951e791ee3.png",
-    "static/media/hth-logo.svg": "/hacktheheights/static/media/hth-logo.410cba99ee8da298f9733306a8bd005e.svg",
-    "index.html": "/hacktheheights/index.html",
-    "main.a84e74b5.css.map": "/hacktheheights/static/css/main.a84e74b5.css.map",
-    "main.b05982b1.js.map": "/hacktheheights/static/js/main.b05982b1.js.map"
+    "main.css": "/static/css/main.5ce62a78.css",
+    "main.js": "/static/js/main.c5b0a037.js",
+    "static/media/narrow-background.png": "/static/media/narrow-background.c152bbb681b67998cd62.png",
+    "static/media/wide-background.png": "/static/media/wide-background.62528c9afeb0e7ddc3a3.png",
+    "static/media/amazonLogo.png": "/static/media/amazonLogo.5b833e22c79d7e482197.png",
+    "static/media/googleLogo.png": "/static/media/googleLogo.0590aaf0fe36e23dcc8c.png",
+    "static/media/schillerLogo.png": "/static/media/schillerLogo.7405e59e46dcdc0ba8d5.png",
+    "static/media/amazon.png": "/static/media/amazon.2cba806ad0d491128470.png",
+    "static/media/swift.png": "/static/media/swift.13d82fd58ebf84427765.png",
+    "static/media/google.png": "/static/media/google.e12914ad8afda3f6f2e8.png",
+    "static/media/notionLogo.png": "/static/media/notionLogo.7aa264a898951e791ee3.png",
+    "static/media/hth-logo.svg": "/static/media/hth-logo.410cba99ee8da298f9733306a8bd005e.svg",
+    "index.html": "/index.html",
+    "main.5ce62a78.css.map": "/static/css/main.5ce62a78.css.map",
+    "main.c5b0a037.js.map": "/static/js/main.c5b0a037.js.map"
   },
   "entrypoints": [
-    "static/css/main.a84e74b5.css",
-    "static/js/main.b05982b1.js"
+    "static/css/main.5ce62a78.css",
+    "static/js/main.c5b0a037.js"
   ]
 }
