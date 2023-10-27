@@ -1,8 +1,8 @@
 {
   "name": "hacktheheights",
   "version": "0.1.0",
-  "homepage": "https://bccss.github.io/hacktheheights",
-  "private": true,
+  "homepage": "https://bccss.github.io",
+  "private": false,
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",

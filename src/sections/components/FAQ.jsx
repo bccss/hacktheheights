@@ -8,9 +8,9 @@ const dataCollection = [
       "Nope! Hack-the-Heights welcomes participants with all levels of experience, from complete beginners to experienced coders. There will be workshops and mentors available throughout the weekend to help you learn and build.",
   },
   {
-    question: "How do I, or my team qualify?",
+    question: "How do I, or my team, qualify?",
     answer:
-      "Any student at Boston College or the Boston area is welcome to join us! Teams can have a maximum of four people. You can either register with your team using the form or create one during the event!",
+      "Any student at Boston College is welcome to join us! Teams can have a maximum of four people. You can either register with your team using the form or create one during the event!",
   },
   {
     question: "Will there be food provided?",
@@ -21,6 +21,11 @@ const dataCollection = [
     question: "Where do I sleep?",
     answer:
       "While coding can be fun, we want you to get some rest when needed! Feel free to go back to your dorm/apartment to sleep or you have can stay overnight in Schiller if you're feeling hardcore.",
+  },
+  {
+    question: "Do I have to stay for the full 24 hours?",
+    answer:
+      "Not at all – come to hack for as long or as short as you want!",
   },
   {
     question: "What project should I make?",
