@@ -73,25 +73,12 @@
     gap: 1rem;
 }
 
-/* Each logo container - default two logos per line */
-.sponsor-logo-container {
-    width: calc(50% - 1rem);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1rem;
-}
-
 .sponsor-names {
     font-size: 30px;
     color: #33396F;
     font-weight: 600;
 }
 
-/* Narrow viewport */
-@media (max-width: 480px) {
-    .sponsor-logo-container {
-        width: 100%; /* One logo per line on very narrow screens */
-    }
+#sponsor-logos .sponsor-logo-container:last-child {
+    width: 250%;
 }
