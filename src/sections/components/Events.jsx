@@ -23,13 +23,13 @@ function Events() {
     },
     {
       title: "Workshop: GitHub",
-      time: "Nov 4, 00:00 A.M.",
+      time: "Nov 4, 1:45 P.M.",
       text: "Learn how to use GitHub to collaborate with others with examples. This workshop is aimed for beginners programmers but everyone is welcome.",
       imgSrc: githubIcon
     },
     {
       title: "Workshop: Swift",
-      time: "Nov 4, 00:00 A.M.",
+      time: "Nov 4, 3:45 P.M.",
       text: "Learn how to develop iOS applications with Swift. This workshop is aimed for advanced programmers but everyone is welcome.",
       imgSrc: swiftIcon
     }
