@@ -1,24 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.5ce62a78.css",
-    "main.js": "/static/js/main.91eace93.js",
+    "main.css": "/static/css/main.d066a568.css",
+    "main.js": "/static/js/main.3bed33c7.js",
     "static/media/narrow-background.png": "/static/media/narrow-background.c152bbb681b67998cd62.png",
     "static/media/wide-background.png": "/static/media/wide-background.62528c9afeb0e7ddc3a3.png",
-    "static/media/amazonLogo.png": "/static/media/amazonLogo.5b833e22c79d7e482197.png",
-    "static/media/googleLogo.png": "/static/media/googleLogo.0590aaf0fe36e23dcc8c.png",
-    "static/media/schillerLogo.png": "/static/media/schillerLogo.7405e59e46dcdc0ba8d5.png",
+    "static/media/givecard-logo.png": "/static/media/givecard-logo.a0ab33273e84897ac5ca.png",
+    "static/media/amazon-logo.png": "/static/media/amazon-logo.5b833e22c79d7e482197.png",
+    "static/media/google-logo.png": "/static/media/google-logo.0590aaf0fe36e23dcc8c.png",
+    "static/media/schiller-logo.png": "/static/media/schiller-logo.9e62c91632e5bf583d08.png",
     "static/media/loading.png": "/static/media/loading.94ba499a6e23baca3917.png",
     "static/media/amazon.png": "/static/media/amazon.2cba806ad0d491128470.png",
     "static/media/swift.png": "/static/media/swift.13d82fd58ebf84427765.png",
     "static/media/google.png": "/static/media/google.e12914ad8afda3f6f2e8.png",
-    "static/media/notionLogo.png": "/static/media/notionLogo.7aa264a898951e791ee3.png",
+    "static/media/notion-logo.png": "/static/media/notion-logo.7aa264a898951e791ee3.png",
     "static/media/hth-logo.svg": "/static/media/hth-logo.410cba99ee8da298f9733306a8bd005e.svg",
     "index.html": "/index.html",
-    "main.5ce62a78.css.map": "/static/css/main.5ce62a78.css.map",
-    "main.91eace93.js.map": "/static/js/main.91eace93.js.map"
+    "main.d066a568.css.map": "/static/css/main.d066a568.css.map",
+    "main.3bed33c7.js.map": "/static/js/main.3bed33c7.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ce62a78.css",
-    "static/js/main.91eace93.js"
+    "static/css/main.d066a568.css",
+    "static/js/main.3bed33c7.js"
   ]
 }
