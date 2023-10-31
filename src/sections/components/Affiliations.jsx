@@ -39,7 +39,7 @@ const Affiliations = () => {
           <p className="description">
             If you'd like to sponsor this event, please contact us at &nbsp;
             <a href="mailto:bccss@gmail.com">
-              hacktheheights@gmail.com
+              bccssociety@gmail.com
             </a>
           </p>
         </div>
