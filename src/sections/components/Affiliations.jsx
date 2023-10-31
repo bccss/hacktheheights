@@ -1,15 +1,21 @@
 import React from 'react';
 import "../stylesheets/Affiliations.css"
 
-import amazonLogo from '../../assets/images/amazonLogo.png';
-import googleLogo from '../../assets/images/googleLogo.png';
-import notionLogo from '../../assets/images/notionLogo.png';
-import schillerLogo from '../../assets/images/schillerLogo.png';
+import amazonLogo from '../../assets/images/amazon-logo.png';
+import givecardLogo from '../../assets/images/givecard-logo.png';
+import googleLogo from '../../assets/images/google-logo.png';
+import mlhLogo from '../../assets/images/mlh-logo.png';
+import mysteriousLogo from '../../assets/images/mysterious-logo.png';
+import notionLogo from '../../assets/images/notion-logo.png';
+import schillerLogo from '../../assets/images/schiller-logo.png';
 
 const Affiliations = () => {
   const sponsorList = [
     { name: 'Amazon', logoSrc: amazonLogo },
+    { name: 'Givecard', logoSrc: givecardLogo },
     { name: 'Google', logoSrc: googleLogo },
+    { name: 'Major League Hacking', logoSrc: mlhLogo },
+    { name: 'Mysterious', logoSrc: mysteriousLogo },
     { name: 'Notion', logoSrc: notionLogo},
     { name: 'Schiller Institute', logoSrc: schillerLogo },
     // ... add more sponsors when needed
@@ -25,7 +31,7 @@ const Affiliations = () => {
               {sponsorList.map(sponsor => (
                 <div key={sponsor.name} className="sponsor-logo-container">
                   <img src={sponsor.logoSrc} alt={`${sponsor.name} Logo`} />
-                  <span className="sponsor-names">{sponsor.name}</span> {/* Adding this line for the caption */}
+                  {/*<span className="sponsor-names">{sponsor.name}</span>*/}
                 </div>
               ))}
             </div>
