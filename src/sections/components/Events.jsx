@@ -43,6 +43,7 @@ function Events() {
   ]);
 
   const scheduleImagePath = "/images/schedule.png";
+  const devpostLink = "https://hack-the-heights-8.devpost.com/";
 
   return (
     <>
@@ -63,18 +64,25 @@ function Events() {
                     </div>
                   </div>
                   <div className="card-content">
-                    <p></p>
                     <p>{card.text}</p>
+                    {/* Here you can add a button if you want to link to something */}
                   </div>
-                  {/*{<button className="btn">Learn More</button>}*/}
                 </div>
               ))}
             </div>
             <div className='schedule-container'>
-              {/* Link that opens the schedule image in a new tab */}
-              <a href={scheduleImagePath} target="_blank" rel="noopener noreferrer" className='schedule-link'>
-                <h1>Schedule</h1>
-              </a>
+              <button className='btn schedule-btn'>
+                <a href={scheduleImagePath} target="_blank" rel="noopener noreferrer">
+                  Schedule
+                </a>
+              </button>
+            </div>
+            <div className='schedule-container'>
+              <button className='btn devpost-btn'>
+                <a href={devpostLink} target="_blank" rel="noopener noreferrer">
+                  Devpost
+                </a>
+              </button>
             </div>
           </div>
         </section>
@@ -84,3 +92,8 @@ function Events() {
 }
 
 export default Events;
+
+
+
+
+

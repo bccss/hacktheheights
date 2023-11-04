@@ -168,3 +168,50 @@ h1{
     text-align: center;
     margin: auto;
 }
+
+.schedule-btn a, .devpost-btn a {
+    color: #f3eccc; /* Set the text color for links inside buttons */
+    text-decoration: none; /* Remove underline from links */
+    display: block; /* Make the link fill the button */
+    height: 100%; /* Extend link area to the whole button height */
+    width: 100%; /* Extend link area to the whole button width */
+    line-height: 40px; /* Center text vertically */
+}
+
+.btn {
+    border: none;
+    outline: none;
+    background: #0a103e;
+    max-width: none; /* This allows the button to expand as needed */
+    border-radius: 10px;
+    width: auto; /* Adjust the width as needed */
+    padding: 30px 60px; /* Increase padding to provide more space around the text */
+    display: inline-flex; /* Use inline-flex to allow the button to shrink/grow with content */
+    justify-content: center;
+    align-items: center;
+    align-self: center; /* Center the button if it's not full width */
+    margin-top: 20px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 36px; /* Your desired font size */
+    font-weight: 500;
+    cursor: pointer; /* To indicate the element is clickable */
+    text-decoration: none; /* Remove underline from text */
+}
+
+/* Adjust the a tag inside the button to fill the button and center the text */
+.btn a {
+    color: inherit; /* Take the text color from the button */
+    text-decoration: none; /* Remove underline */
+    display: flex; /* Use flex to center the text inside the anchor */
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Full height of the button */
+    width: 100%; /* Full width of the button */
+}
+
+.btn:hover {
+    background: #F2EBDD;
+    color: #0a103e;
+    font-weight: 700;
+}
