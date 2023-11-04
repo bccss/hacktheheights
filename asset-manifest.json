@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.d066a568.css",
-    "main.js": "/static/js/main.3bed33c7.js",
+    "main.css": "/static/css/main.7f7f7a81.css",
+    "main.js": "/static/js/main.39aa5fe7.js",
     "static/media/narrow-background.png": "/static/media/narrow-background.c152bbb681b67998cd62.png",
     "static/media/wide-background.png": "/static/media/wide-background.62528c9afeb0e7ddc3a3.png",
-    "static/media/givecard-logo.png": "/static/media/givecard-logo.a0ab33273e84897ac5ca.png",
-    "static/media/amazon-logo.png": "/static/media/amazon-logo.5b833e22c79d7e482197.png",
-    "static/media/google-logo.png": "/static/media/google-logo.0590aaf0fe36e23dcc8c.png",
+    "static/media/fidelity-investments-logo.png": "/static/media/fidelity-investments-logo.6b5e0bda6d772816a2e1.png",
+    "static/media/kintone-logo.png": "/static/media/kintone-logo.553e87186c5e70fcc9ec.png",
+    "static/media/auth0-logo.png": "/static/media/auth0-logo.d9256486a87c51c19c4c.png",
     "static/media/schiller-logo.png": "/static/media/schiller-logo.9e62c91632e5bf583d08.png",
-    "static/media/loading.png": "/static/media/loading.94ba499a6e23baca3917.png",
-    "static/media/amazon.png": "/static/media/amazon.2cba806ad0d491128470.png",
+    "static/media/google-logo.png": "/static/media/google-logo.d7548f558d339de72821.png",
+    "static/media/zagaran.png": "/static/media/zagaran.213df7b915cf07069c84.png",
     "static/media/swift.png": "/static/media/swift.13d82fd58ebf84427765.png",
-    "static/media/google.png": "/static/media/google.e12914ad8afda3f6f2e8.png",
-    "static/media/notion-logo.png": "/static/media/notion-logo.7aa264a898951e791ee3.png",
+    "static/media/godaddy-registry-logo.png": "/static/media/godaddy-registry-logo.7c204977e2019e35c096.png",
+    "static/media/mongodb-logo.png": "/static/media/mongodb-logo.e9463805ae79bbf8bd39.png",
+    "static/media/starknet-logo.png": "/static/media/starknet-logo.1559cfcd9f9c2c258666.png",
     "static/media/hth-logo.svg": "/static/media/hth-logo.410cba99ee8da298f9733306a8bd005e.svg",
     "index.html": "/index.html",
-    "main.d066a568.css.map": "/static/css/main.d066a568.css.map",
-    "main.3bed33c7.js.map": "/static/js/main.3bed33c7.js.map"
+    "main.7f7f7a81.css.map": "/static/css/main.7f7f7a81.css.map",
+    "main.39aa5fe7.js.map": "/static/js/main.39aa5fe7.js.map"
   },
   "entrypoints": [
-    "static/css/main.d066a568.css",
-    "static/js/main.3bed33c7.js"
+    "static/css/main.7f7f7a81.css",
+    "static/js/main.39aa5fe7.js"
   ]
 }
