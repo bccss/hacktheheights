@@ -68,6 +68,11 @@ function Events() {
                 </div>
               ))}
             </div>
+            <div className='schedule-container'>
+              <a href="../../assets/schedule/HTHSchedule.png" className='schedule-download' download>
+                <img src="../../assets/schedule/HTHSchedule.png" alt='HTHSchedule' />
+              </a>
+            </div>
           </div>
         </section>
       </div>
