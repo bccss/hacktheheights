@@ -49,28 +49,12 @@ function Events() {
           <div className="container" id="Events">
             <h1>EVENTS</h1>
             <div className="cards">
-              {cards.map((card, index) => (
-                <div key={index} className="card">
-                  <div className="card-header">
-                    <div className="card-details">
-                      <h3>{card.title}</h3>
-                      <p>{card.time}</p>
-                    </div>
-                    <div className="card-image">
-                      <img src={card?.imgSrc} alt={card.title} />
-                    </div>
-                  </div>
-                  <div className="card-content">
-                    <p></p>
-                    <p>{card.text}</p>
-                  </div>
-                  {/*{<button className="btn">Learn More</button>}*/}
-                </div>
-              ))}
+              {/* ...card mapping */}
             </div>
             <div className='schedule-container'>
-              <a href="../../assets/schedule/HTHSchedule.png" className='schedule-download' download>
-                <img src="../../assets/schedule/HTHSchedule.png" alt='HTHSchedule' />
+              {/* Link to the Google Sheets document */}
+              <a href="https://docs.google.com/spreadsheets/d/1SGdaSd_EOvHjq_LrMRlpMnCiedcnTcd_mW0Z699jW1U/edit#gid=0" target="_blank" rel="noopener noreferrer" className='schedule-download'>
+                View Schedule
               </a>
             </div>
           </div>
