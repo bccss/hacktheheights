@@ -1,44 +1,44 @@
 import React, { useState } from "react";
 import "../stylesheets/Events.css";
 
-import googleIcon from '../../assets/icons/google.png';
-import amazonIcon from '../../assets/icons/amazon.png';
+import converseIcon from '../../assets/icons/converse.png';
+import zagaranIcon from '../../assets/icons/zagaran.png';
 import githubIcon from '../../assets/icons/github.png';
 import swiftIcon from '../../assets/icons/swift.png';
-import loadingIcon from '../../assets/icons/loading.png';
+import bobrossIcon from '../../assets/icons/bobross.png';
 
 function Events() {
 
   const [cards] = useState([
-    // {
-    //   title: "Speaker: Amazon",
-    //   time: "Nov 4, 00:00 A.M.",
-    //   text: "Join the speaker event with Ellen Jue, recruiter at Amazon Music on job opportunities and how to prepare for internships!",
-    //   imgSrc: amazonIcon
-    // },
-    // {
-    //   title: "Speaker Event: Google",
-    //   time: "Nov 4, 00:00 A.M.",
-    //   text: "Join the speaker event with the representative from Google!",
-    //   imgSrc: googleIcon
-    // },
     {
       title: "Workshop: GitHub",
-      time: "Nov 4, 1:45 P.M.",
-      text: "Learn how to use GitHub to collaborate with others with examples. This workshop is aimed for beginner programmers but everyone is welcome.",
+      time: "Nov 4, 1:30 P.M. - 2:45 P.M.",
+      text: "Discover how to collaborate on GitHub with hands-on examples; perfect for beginners, but open to all!",
       imgSrc: githubIcon
     },
     {
+      title: "Speaker Event: Converse",
+      time: "Nov 4, 2:45 P.M. - 3:30 P.M.",
+      text: "Hear BC Grad and Converse Product Manager, Talia Kaplanian, dive into her career journey, the ins and outs of product management, and navigating the tech landscape!",
+       imgSrc: converseIcon
+    },
+    {
+       title: "Speaker Event: Zagaran",
+       time: "Nov 4, 4:15 P.M. - 5:00 P.M.",
+       text: "Join senior software engineer Noah Houghton from Zagaran as he shares insights into startup life and the world of software engineering!",
+       imgSrc: zagaranIcon
+     },
+    {
       title: "Workshop: Swift",
-      time: "Nov 4, 3:45 P.M.",
-      text: "Learn how to develop iOS applications with Swift. This workshop is aimed for intermediate programmers but everyone is welcome.",
+      time: "Nov 4, 5:30 P.M. - 6:15 P.M.",
+      text: "Dive into iOS development with Swift; tailored for intermediates, but open to all – master your app game!",
       imgSrc: swiftIcon
     },
     {
-      title: "More Events To Be Announced!",
-      time: "",
-      text: "",
-      imgSrc: loadingIcon,
+      title: "Bob Ross Painting",
+      time: "Nov 4, 8:00 P.M. - 9:00 P.M.",
+      text: "Channel your inner Bob Ross through Windows Paint while watching Bob Ross on Twitch – a hilarious masterpiece in the making!",
+      imgSrc: bobrossIcon,
     }
   ]);
 

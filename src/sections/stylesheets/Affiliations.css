@@ -79,6 +79,11 @@
     font-weight: 600;
 }
 
+
+#sponsor-logos .sponsor-logo-container:nth-last-child(2) {
+    width: 45%;
+}
+
 #sponsor-logos .sponsor-logo-container:last-child {
-    width: 250%;
+    width: 45%;
 }
