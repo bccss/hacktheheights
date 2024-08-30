@@ -1,21 +1,18 @@
 {
   "files": {
-    "main.css": "/hacktheheights/static/css/main.99959807.css",
-    "main.js": "/hacktheheights/static/js/main.1500b66b.js",
+    "main.css": "/hacktheheights/static/css/main.91e791ab.css",
+    "main.js": "/hacktheheights/static/js/main.51c4298d.js",
     "static/media/background.svg": "/hacktheheights/static/media/background.8b53df382e2eb8ba1ee1b1cb688b906d.svg",
-    "static/media/flask.png": "/hacktheheights/static/media/flask.095f4004f090d90a4f0a.png",
-    "static/media/mysql.png": "/hacktheheights/static/media/mysql.effbe64c92c7f74706a2.png",
     "static/media/schiller-logo.png": "/hacktheheights/static/media/schiller-logo.9e62c91632e5bf583d08.png",
-    "static/media/html.png": "/hacktheheights/static/media/html.94972f53c025a8fb7e2b.png",
     "static/media/mlh.svg": "/hacktheheights/static/media/mlh.d48e27dc116c04b190deff5548dc549c.svg",
     "static/media/hth-logo.svg": "/hacktheheights/static/media/hth-logo.6f913a4d890e20fed72f6ec50d15f6d3.svg",
     "static/media/slack-logo.svg": "/hacktheheights/static/media/slack-logo.639319034d8c94e5878f689f39c9a16c.svg",
     "index.html": "/hacktheheights/index.html",
-    "main.99959807.css.map": "/hacktheheights/static/css/main.99959807.css.map",
-    "main.1500b66b.js.map": "/hacktheheights/static/js/main.1500b66b.js.map"
+    "main.91e791ab.css.map": "/hacktheheights/static/css/main.91e791ab.css.map",
+    "main.51c4298d.js.map": "/hacktheheights/static/js/main.51c4298d.js.map"
   },
   "entrypoints": [
-    "static/css/main.99959807.css",
-    "static/js/main.1500b66b.js"
+    "static/css/main.91e791ab.css",
+    "static/js/main.51c4298d.js"
   ]
 }
