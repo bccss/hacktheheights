@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.528eee79.css",
-    "main.js": "/static/js/main.41a8eaa8.js",
-    "static/media/background.svg": "/static/media/background.8b53df382e2eb8ba1ee1b1cb688b906d.svg",
+    "main.css": "/static/css/main.ef8d2058.css",
+    "main.js": "/static/js/main.31a9526a.js",
+    "static/media/background.svg": "/static/media/background.42bb25f428de673ede7a42630a86e75f.svg",
     "static/media/schiller-logo.png": "/static/media/schiller-logo.9e62c91632e5bf583d08.png",
     "static/media/mlh.svg": "/static/media/mlh.d48e27dc116c04b190deff5548dc549c.svg",
     "static/media/hth-logo.svg": "/static/media/hth-logo.6f913a4d890e20fed72f6ec50d15f6d3.svg",
     "static/media/slack-logo.svg": "/static/media/slack-logo.639319034d8c94e5878f689f39c9a16c.svg",
     "index.html": "/index.html",
-    "main.528eee79.css.map": "/static/css/main.528eee79.css.map",
-    "main.41a8eaa8.js.map": "/static/js/main.41a8eaa8.js.map"
+    "main.ef8d2058.css.map": "/static/css/main.ef8d2058.css.map",
+    "main.31a9526a.js.map": "/static/js/main.31a9526a.js.map"
   },
   "entrypoints": [
-    "static/css/main.528eee79.css",
-    "static/js/main.41a8eaa8.js"
+    "static/css/main.ef8d2058.css",
+    "static/js/main.31a9526a.js"
   ]
 }
