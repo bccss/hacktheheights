@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.9f947f88.css",
-    "main.js": "/static/js/main.36ce76e0.js",
+    "main.js": "/static/js/main.55f12d69.js",
     "static/media/background.svg": "/static/media/background.42bb25f428de673ede7a42630a86e75f.svg",
     "static/media/dell-logo.png": "/static/media/dell-logo.23b916eace9c567d51f8.png",
     "static/media/schiller-logo.png": "/static/media/schiller-logo.9e62c91632e5bf583d08.png",
@@ -11,10 +11,10 @@
     "static/media/slack-logo.svg": "/static/media/slack-logo.639319034d8c94e5878f689f39c9a16c.svg",
     "index.html": "/index.html",
     "main.9f947f88.css.map": "/static/css/main.9f947f88.css.map",
-    "main.36ce76e0.js.map": "/static/js/main.36ce76e0.js.map"
+    "main.55f12d69.js.map": "/static/js/main.55f12d69.js.map"
   },
   "entrypoints": [
     "static/css/main.9f947f88.css",
-    "static/js/main.36ce76e0.js"
+    "static/js/main.55f12d69.js"
   ]
 }
